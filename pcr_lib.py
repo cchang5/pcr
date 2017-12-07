@@ -80,16 +80,35 @@ def read_csv(switches):
     
 # fitter class
 class fitter_class():
-    # instantiate class
+    # INSTANTIATE CLASS
     def __init__(self,clist,mom,nstate):
         # nested for loop in the following order
         self.clist = clist # list of correlators [nucleon, dnucleon, gV, dgV]
         self.mom = mom # momentum list [0,1,2,...]
         self.nstate = nstate # n-states in ansatz
-    # concatenate data for fitting
-    # splices correct t-region
-    def cat_data(self,x,data_dict):
-        pass    
+    # FORMAT DATA FOR FITTER
+    # get independent variables
+    def x(self,switches,data,trange):
+        x = dict()
+        for k in data.keys():
+            cla = k.split('_')[0]
+            x[k] = dict()
+            x[k]['t'] = trange[cla]
+            if cla in ['gV','dgV']:
+                x[k]['T'] = int(k.split('_')[2][1:])
+        return x
+    # splices correct t-region for dependent variables
+    def y(self,x,data):
+        y = dict()
+        for k in data.keys():
+            y[k] = data[k][x[k]['t']]
+        return y
+    # FORMAT PRIORS
+    def p(self,switches):
+        p = dict()
+        pass
+        return p
+    # FIT FUNCTIONS
     # two point fit functions
     def E(self,p,q,n):
         En = p['E0_q%s' %str(q)]
