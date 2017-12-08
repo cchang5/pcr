@@ -81,9 +81,10 @@ def read_csv(switches):
 # fitter class
 class fitter_class():
     # INSTANTIATE CLASS
-    def __init__(self,clist,mom,nstate):
+    def __init__(self,clist,snk_src,mom,nstate):
         # nested for loop in the following order
         self.clist = clist # list of correlators [nucleon, dnucleon, gV, dgV]
+        self.snk_src = snk_src # smearing list ['SS','PS',...]
         self.mom = mom # momentum list [0,1,2,...]
         self.nstate = nstate # n-states in ansatz
     # FORMAT DATA FOR FITTER
@@ -96,6 +97,10 @@ class fitter_class():
             x[k]['t'] = trange[cla]
             if cla in ['gV','dgV']:
                 x[k]['T'] = int(k.split('_')[2][1:])
+                x[k]['cur'] = cla.split('d')[-1]
+            x[k]['q'] = int(k[-1])
+            x[k]['snk'] = k.split('_')[1][0].lower()
+            x[k]['src'] = k.split('_')[1][1].lower()
         return x
     # splices correct t-region for dependent variables
     def y(self,x,data):
@@ -105,8 +110,30 @@ class fitter_class():
         return y
     # FORMAT PRIORS
     def p(self,switches):
+        # all priors
+        ap = switches['p']
+        # parameter dependences
+        pdict = dict()
+        pdict['nucleon'] = ['E','Z']
+        pdict['dnucleon'] = ['E','Z','Y']
+        pdict['gV'] = ['E','Z','G']
+        pdict['dgV'] = ['E','Z','G','Y','F']
         p = dict()
-        pass
+        plist = np.array([])
+        for c in self.clist:
+            plist = np.unique(np.concatenate((plist,pdict[c])))
+        for k in ap.keys():
+            # filter prior, state, momentum
+            if k[0] in plist and int(k[1]) <= int(self.nstate) and int(k[-1]) in self.mom:
+                # create smearing list from self.snk_src
+                smears = ''
+                smears = [i.lower() for i in np.unique(list(smears.join(self.snk_src)))]
+                # for energy and matrix elements
+                if k[0] in ['E','G','F']:
+                    p[k] = ap[k]
+                # for smearing dependent quantities (overlaps)
+                elif k[2] in smears:
+                    p[k] = ap[k]
         return p
     # FIT FUNCTIONS
     # two point fit functions
@@ -116,12 +143,18 @@ class fitter_class():
             En += np.exp(p['E%s_q%s' %(str(i+1),str(q))])
         return En
     def Z(self,p,q,n,s):
-        return p['Z%s%s_q%s' %(str(s),str(n),str(q))]
+        return p['Z%s%s_q%s' %(str(n),str(s),str(q))]
     def dZ(self,p,q,ns):
-        return p['dZ%s%s_q%s' %(str(s),str(n),str(q))]
+        return p['Y%s%s_q%s' %(str(n),str(s),str(q))]
     def c2pt(self,T,En,Zn_snk,Zn_src):
         return Zn_snk*Zn_src*np.exp(-En*T) / (2.*En)
-    def twopt(T,p,q,snk,src):
+    def twopt(self,x,p):
+        # unpack x
+        T = x['t']
+        q = x['q']
+        snk = x['snk']
+        src = x['src']
+        # fit function
         r = 0
         for n in range(self.nstate):
             En = self.E(p,q,n)
@@ -129,7 +162,13 @@ class fitter_class():
             Zn_src = self.Z(p,n,q,src)
             r += self.c2pt(T,En,Zn_snk,Zn_src)
         return r
-    def dtwopt(T,p,q,snk,src):
+    def dtwopt(self,x,p):
+        # unpack x
+        T = x['t']
+        q = x['q']
+        snk = x['snk']
+        src = x['src']
+        # fit function
         r = 0
         for n in range(self.nstate):
             En = self.E(p,q,n)
@@ -144,10 +183,18 @@ class fitter_class():
     def G(self,p,m,n,q,cur):
         return p['G%s%s%s_q%s' %(str(cur),str(m),str(n),str(q))]
     def dG(self,p,n,m,q,cur):
-        return p['dG%s%s%s_q%s' %(str(cur),str(m),str(n),str(q))]
+        return p['F%s%s%s_q%s' %(str(cur),str(m),str(n),str(q))]
     def c3pt(self,t,T,Em,En,Zm_snk,Zn_src,Gmn):
         return Zm_snk*Gmn*Zn_src*np.exp(-Em*T-(En-Em)*t)/(4.*Em*En)
-    def threept(t,T,p,q,snk,cur,src):
+    def threept(self,x,p):
+        # unpack x
+        t = x['t']
+        T = x['T']
+        q = x['q']
+        snk = x['snk']
+        cur = x['cur']
+        src = x['src']
+        # fit function
         r = 0
         for m in range(self.nstate):
             for n in range(self.nstate):
@@ -157,7 +204,15 @@ class fitter_class():
                 Zn_src = self.Z(p,n,q,src)
                 Gmn = self.G(p,m,n,q,cur)
                 r += self.c3pt(t,T,Em,En,Zm_snk,Zn_src,Gmn)
-    def dthreept(t,T,p,q,snk,cur,src):
+    def dthreept(self,x,p):
+        # unpack x
+        t = x['t']
+        T = x['T']
+        q = x['q']
+        snk = x['snk']
+        cur = x['cur']
+        src = x['src']
+        # fit function
         r = 0
         for m in range(self.nstate):
             for n in range(self.nstate):
@@ -171,5 +226,16 @@ class fitter_class():
                 c3ptmn = self.c3pt(t,T,Em,En,Zm_snk,Zn_src,Gmn)
                 r += c3ptmn * (dGmn/Gmn + dZn_src/Zn_src - 0.5/Em**2 - 0.5*t/Em)
     # simultaneous fits
-    def fit_function(x,p):
-        pass
+    def fit_function(self,x,p):
+        r = dict()
+        for k in x.keys():
+            cla = k.split('_')[0]
+            if cla in ['nucleon']:
+                r[k] = self.twopt(x[k],p)
+            elif cla in ['dnucleon']:
+                r[k] = self.dtwopt(x[k],p)
+            elif cla in ['gV']:
+                r[k] = self.threept(x[k],p)
+            elif cla in ['dgV']:
+                r[k] = self.dthreept(x[k],p)
+        return r
