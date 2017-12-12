@@ -129,8 +129,7 @@ class fitter_class():
             # filter prior, state, momentum
             if k[0] in plist and int(k[1]) <= int(self.nstate) and int(k[-1]) in self.mom:
                 # create smearing list from self.snk_src
-                smears = ''
-                smears = [i.lower() for i in np.unique(list(smears.join(self.snk_src)))]
+                smears = [i.lower() for i in np.unique(list(''.join(self.snk_src)))]
                 # for energy and matrix elements
                 if k[0] in ['E','V','U']:
                     p[k] = ap[k]
@@ -180,7 +179,7 @@ class fitter_class():
             dZn_snk = self.dZ(p,q,n,snk)
             dZn_src = self.dZ(p,q,n,src)
             c2ptn = self.c2pt(T,En,Zn_snk,Zn_src)
-            r += c2ptn * (dZn_snk/Zn_snk + dZn_src/Zn_src - 0.5/En**2 - 0.5*T/En)
+            r += c2ptn * (dZn_snk + dZn_src - 0.5/En**2 - 0.5*T/En)
         return r
     # three point fit functions
     def G(self,p,q,m,n,cur):
@@ -195,10 +194,16 @@ class fitter_class():
             else:
                 return 0
     def dG(self,p,q,m,n,cur):
-        if cur in ['gV']:
-            return p['U%s%s_q%s' %(str(m),str(n),str(q))]
+        if n > m:
+            if cur in ['gV']:
+                return p['U%s%s_q%s' %(str(n),str(m),str(q))]
+            else:
+                return 0
         else:
-            return 0
+            if cur in ['gV']:
+                return p['U%s%s_q%s' %(str(m),str(n),str(q))]
+            else:
+                return 0
     def c3pt(self,t,T,Em,En,Zm_snk,Zn_src,Gmn):
         return Zm_snk*Gmn*Zn_src*np.exp(-Em*T-(En-Em)*t)
     def threept(self,x,p):
@@ -240,7 +245,7 @@ class fitter_class():
                 Gmn = self.G(p,q,m,n,cur)
                 dGmn = self.dG(p,q,m,n,cur)
                 c3ptmn = self.c3pt(t,T,Em,En,Zm_snk,Zn_src,Gmn)
-                r += c3ptmn * (dGmn/Gmn + dZn_src/Zn_src - 0.5/Em**2 - 0.5*t/Em)
+                r += c3ptmn * (dGmn + dZn_src - 0.5/Em**2 - 0.5*t/Em)
         return r
     # simultaneous fits
     def fit_function(self,x,p):
