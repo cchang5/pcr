@@ -8,7 +8,7 @@ import tqdm
 # some plotting functions
 def plot_2pt_z(data,title='2pt z-meff'):
     # two point
-    z = np.arange(1,32)
+    z = np.arange(1,len(data[0,0]))
     trange = [2,10]
     fig = plt.figure(title,figsize=(7,4.326237))
     ax = plt.axes([0.15,0.15,0.8,0.8])
@@ -20,16 +20,17 @@ def plot_2pt_z(data,title='2pt z-meff'):
     ax.set_yscale("log")
     plt.draw()
 
-def plot_3pt_z(data,title='gV'):
+def plot_3pt_z(data,q,title='gV'):
     # three point
-    z = np.arange(1,32)
+    z = np.arange(1,len(data[0,0]))
     trange = [2,10]
     fig = plt.figure(title,figsize=(7,4.326237))
     ax = plt.axes([0.15,0.15,0.8,0.8])
     for t in range(trange[0],trange[1]+1):
         pltdata = gv.dataset.avg_data(data[:,t,:])[z]
-    ax.errorbar(z,y=[i.mean for i in pltdata],yerr=[i.sdev for i in pltdata])
+    ax.errorbar(z,y=[i.mean for i in pltdata],yerr=[i.sdev for i in pltdata],label=q)
     ax.set_yscale("log")
+    ax.legend()
     plt.draw()
 
 # read csv files
@@ -42,15 +43,17 @@ def read_csv(switches):
             dataset = list()
             for s in [0,48]: # automatically read both sources
                 rd = dataset2.replace('SRC',str(s))
-                df = pd.read_csv('./data/%s' %rd,delimiter=' ',header=None)
+                df = pd.read_csv('./data/%s/%s' %(switches['fit']['ens'],rd),delimiter=' ',header=None)
                 tag = df[0][0]
                 key =tag.replace('t0_','')
                 # read zero momentum spatial correlator
                 corr = np.array([np.array(df.loc[df[0] == tag.replace('t0','t%s' %t)].as_matrix())[:,1:-1] for t in range(96)])
                 corr = np.swapaxes(corr,0,1) # swap axis to get [cfg,t,z]
-                # delete missing config 1470 from other datasets
-                if len(corr) == 196:
-                    corr = np.delete(corr,47,axis=0)
+                if switches['fit']['ens'] in ['3296']:
+                    # delete missing config 1470 from other datasets
+                    if len(corr) == 196:
+                        corr = np.delete(corr,47,axis=0)
+                else: pass
                 dataset.append(corr)
                 # average sources
             zdata[key] = (dataset[0]+dataset[1])/2
@@ -63,15 +66,17 @@ def read_csv(switches):
                 dataset=list()
                 for s in [0,48]:
                     rd = dataset3.replace('SRC',str(s)).replace('SNK',str(snk))
-                    df = pd.read_csv('./data/%s' %rd,delimiter=' ',header=None)
+                    df = pd.read_csv('./data/%s/%s' %(switches['fit']['ens'],rd),delimiter=' ',header=None)
                     tag = df[0][0]
                     key = tag.replace('t0_','')
                     # read zero momentum spatial correlator
                     corr = np.array([np.array(df.loc[df[0] == tag.replace('t0','t%s' %t)].as_matrix())[:,1:-1] for t in range(96)])
                     corr = np.swapaxes(corr,0,1) # swap axis to get [cfg,t,z]
-                    # delete missing config 1470 from other datasets
-                    if len(corr) == 196:
-                        corr = np.delete(corr,47,axis=0)
+                    if switches['fit']['ens'] in ['3296']:
+                        # delete missing config 1470 from other datasets
+                        if len(corr) == 196:
+                            corr = np.delete(corr,47,axis=0)
+                    else: pass
                     dataset.append(corr)
                 # average sources
                 zdata[key] = (dataset[0]+dataset[1])/2
