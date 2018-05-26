@@ -31,7 +31,7 @@
 \begin{document}
 
 
-\title{Derivatives of matrix element from Lattice QCD}
+\title{The Slope of Form Factors from Lattice QCD}
 
 \author{Chia~Cheng~Chang \begin{CJK*}{UTF8}{bsmi}(張家丞)\end{CJK*}}
 \affiliation{\lblnsd}
@@ -53,7 +53,21 @@
 
 \begin{abstract}
 % This is Lattice2016 abstract
-Momentum-space derivatives of matrix elements can be related to their coordinate-space moments through the Fourier transform. We derive these expressions as a function of momentum transfer $Q^2$ for asymptotic in/out states consisting of a single hadron. We calculate corrections to the finite volume moments by studying the spatial dependence of the lattice correlation functions. This method permits the computation of not only the values of matrix elements at momenta accessible on the lattice, but also the momentum-space derivatives, providing a priori information about the $Q^2$ dependence of form factors. As a specific application we use the method, at a single lattice spacing and with unphysically heavy quarks, to directly obtain the slope of the isovector form factor at various $Q^2$, whence the isovector charge radius. The method has potential application in the calculation of any hadronic matrix element with momentum transfer, including those relevant to hadronic weak decays.
+Momentum-space derivatives of matrix elements can be related to their
+coordinate-space moments through the Fourier transform. We derive
+these expressions as a function of momentum transfer $Q^2$ for
+asymptotic in/out states consisting of a single hadron. We calculate
+corrections to the finite volume moments by studying the spatial
+dependence of the lattice correlation functions. This method permits
+the computation of not only the values of matrix elements at momenta
+accessible on the lattice, but also the momentum-space derivatives,
+providing a priori information about the $Q^2$ dependence of form
+factors. As a specific application we use the method, at a single
+lattice spacing and with unphysically heavy quarks, to directly obtain
+the slope of the isovector form factor at various $Q^2$, whence the
+isovector charge radius. The method has potential application in the
+calculation of any hadronic matrix element with momentum transfer,
+including those relevant to hadronic weak decays.
 \end{abstract}
 \maketitle
 
@@ -61,26 +75,188 @@ Momentum-space derivatives of matrix elements can be related to their coordinate
 
 
 \section{Introduction\label{sec:intro}}
-Answers to some of the deepest mysteries of nature may be uncovered through fundamentally understanding how protons and neutrons, the basic building blocks of our world, interact with the universe. The lattice QCD community has contributed to our understanding of the strength of these interactions by direct calculations of form factors. In this work, we propose a method to directly calculate the slope of these form factors, which shed light on new ways to test our current understanding of the Standard Model.
+Answers to some of the deepest mysteries of nature may be uncovered
+through fundamentally understanding how protons and neutrons, the
+basic building blocks of our world, interact with the universe. The
+lattice QCD community has contributed to our understanding of the
+strength of these interactions by direct calculations of form
+factors. In this work, we propose a method to directly calculate the
+slope of these form factors, which shed light on new ways to test our
+current understanding of the Standard Model.
 
 \subsection{On the radius of the proton}
-The charged leptons are fundamental (point-like) particles in the Standard Model of particle physics, with identical coupling strengths to the electroweak currents, and only differ in mass between the three generations. This Standard Model paradigm, known as \textit{lepton universality}, is however, in tension with recent experimental observations of the proton charge radius~\cite{Carlson:2015jba}. In particular, measurement from muonic Hydrogen~\cite{nature09250} resulted in a 4\% smaller proton radius when compared to the CODATA average from 24 transition frequency measurements of atomic Hydrogen~\cite{RevModPhys.80.633}, in tension at 4 standard deviations. This discrepancy hints at the possibility that the electron and muon may differ fundamentally in ways unaccounted for by the Standard Model. Recently, evidence of possible resolution to the proton radius puzzle was provided by an updated measurement of the 2S-4P transition frequency~\cite{Beyer79} that is consistent with the muonic Hydrogen measurement. However, a recent update on the 1S-3S transition frequency~\cite{fleurbaey:tel-01633631} continues to re-enforce the discrepancy between atomic and muonic experiments. Additionally, recent electron scattering results continue to exhibit the long standing discrepancy with muonic Hydrogen~\cite{Sick:2018fzn}. Due to the vast number of transition frequencies from Lamb shift measurements, and tension from the electron scattering result, resolution to the charge radius puzzle may still require considerable additional effort from experimentalists. Furthermore, the ratio of semi-leptonic $B\rightarrow D^{(*)}\ell\bar{\nu}$ decays to the electron and tau final states is also observed to be in tension with the Standard Model prediction at 4 standard deviations~\cite{Ciezarek:2017yzh}, lending evidence that the discrepancy seen in the proton radius may in fact be a result of new physics.
+The charged leptons are fundamental (point-like) particles in the
+Standard Model of particle physics, with identical coupling strengths
+to the electroweak currents, and only differ in mass between the three
+generations. This Standard Model paradigm, known as \textit{lepton
+  universality}, is however, in tension with recent experimental
+observations of the proton charge radius~\cite{Carlson:2015jba}. In
+particular, measurement from muonic Hydrogen~\cite{nature09250}
+resulted in a 4\% smaller proton radius when compared to the CODATA
+average from 24 transition frequency measurements of atomic
+Hydrogen~\cite{RevModPhys.80.633}, in tension at 4 standard
+deviations. This discrepancy hints at the possibility that the
+electron and muon may differ fundamentally in ways unaccounted for by
+the Standard Model. Recently, evidence of possible resolution to the
+proton radius puzzle was provided by an updated measurement of the
+2S-4P transition frequency~\cite{Beyer79} that is consistent with the
+muonic Hydrogen measurement. However, a recent update on the 1S-3S
+transition frequency~\cite{fleurbaey:tel-01633631} continues to
+re-enforce the discrepancy between atomic and muonic
+experiments.
 
-While the measurement of the proton radius is very challenging, its definition is straightforward from a theory stand point. Specifically, the charge radius of the proton is defined as the $Q^2$ (momentum-squared) derivative of the vector form factor $F_V(Q^2)$ evaluated at zero-momentum transfer, and may be directly calculated from QCD using lattice methods. Current LQCD determinations of the radius however, leave much to be desired, because the derivative is extracted from modeling the $Q^2$ dependence of $F_V$ from calculations at discrete values of momentum accessible in a finite volume. Such calculations are susceptible to two major problems: first, the model dependence introduces uncontrolled systematic errors, and additionally, the smallest non-zero momentum is too large to perform a controlled extrapolation of the slope at zero-momentum since accessing small momentum in finite volumes requires very large lattices that are prohibitively expensive.
+Electron scattering results continue to exhibit the long standing
+discrepancy with muonic Hydrogen~\cite{Sick:2018fzn}. Due to the vast
+number of transition frequencies from Lamb shift measurements, and
+tension from the electron scattering result, resolution to the charge
+radius puzzle may still require considerable additional effort from
+experimentalists. Furthermore, the ratio of semi-leptonic
+$B\rightarrow D^{(*)}\ell\bar{\nu}$ decays to the electron and tau
+final states is also observed to be in tension with the Standard Model
+prediction at 4 standard deviations~\cite{Ciezarek:2017yzh}, lending
+evidence that the discrepancy seen in the proton radius may in fact be
+a result of new physics.
+
+While the measurement of the proton radius is very challenging, its
+definition is straightforward from a theory stand point. Specifically,
+the charge radius of the proton $\langle r \rangle$ is defined through the $Q^2$
+derivative of the Sach's form factor $G_E(Q^2)$
+evaluated at zero-momentum transfer
+\begin{equation}
+  \left. \frac{\partial G_E(Q^2)}{\partial Q^2} \right| = -\frac{1}{6}
+    \langle r^2 \rangle = \left. \frac{\partial F_1(Q^2)}{\partial
+      Q^2}\right| - \frac{F_2(0)}{4 M^2},\label{eq:radius}
+\end{equation}
+where $F_1(Q^2)$ and $F_2(Q^2)$ are the Dirac and Pauli form factors,
+and $M$ is the proton mass.
+These form factors are then defined in terms of the matrix elements of
+the electromagnetic current
+\begin{eqnarray}
+\lefteqn{\langle N(\vec{p}_f \mid V_{\mu}(0) \mid N(\vec{p}_i \rangle
+  =} \nonumber \\
+& &  \bar{u}(\vec{p}_f) \left[ F_q(q^2) \gamma_\mu + \sigma_{\mu\mu}
+    q_\nu \frac{F_2(q^2)}{2 M} \right] u(\vec{p}_i)
+\end{eqnarray}
+where $\vec{q} = \vec{p}_f - \vec{p}_i$ is the three-momentum transfer
+and $Q^2 = (E_f - E_i)^2 - \vec{q}^2$ is the four-momentum transfer
+entering into eqn.~\ref{eq:radius}.  The calculation of both the
+isovector and isoscalar electromagnetic form factors through the
+determination of the matrix element defined above is a
+well-established program in lattice QCD, with extensive studies aimed
+at controlling the systematic uncertainties that enter into their
+evaluation.
+
+Current lattice QCD determinations of the radius, however, remain
+problematical, because the derivative is extracted from modeling the
+$Q^2$ dependence of $F_1(Q^2)$ from calculations at the discrete
+values of momentum accessible in a finite volume.  Indeed, the
+problems encountered in extracting the charge radius from lattice
+calculations of the form factor in some respects mirror those in
+electron-scattering experiments, where the form factor is computed for
+a descrete, albeit closely spaced, set of finite $Q^2$, and the need
+to include dispersive methods in the analysis of the form factors over
+the values of $Q^2$ probed in experiment has been
+emphasised\cite{Alarcon:2018irp}.  Thus lattice calculations are
+susceptible to two major problems: the model dependence that
+introduces uncontrolled systematic errors, and that the smallest
+non-zero momentum is too large to perform a controlled extrapolation
+of the slope at zero-momentum since accessing small momentum in finite
+volumes requires very large lattices that are prohibitively expensive.
 
 \subsection{On the origin of matter}
-One of the outstanding mysteries of our universe lies in quest to understand the origin of matter, or more specifically the origin of the matter-antimatter asymmetry that we observe today. There is tantalizing evidence for possible sources of \textit{leptogenesis} recently revealed at the \textit{Tokai-2-Kamioka} (T2K) long-baseline neutrino experiment~\cite{Abe:2017uxa}, where CP conservation in the neutrino sector is excluded at 90\% confidence.  Future long-baseline neutrino experiments including the \textit{Deep Underground Neutrino Experiment} (DUNE), and the detector upgrade to Hyper-Kamiokande (T2HK) aims to provide more precise neutrino oscillation measurements in order to further resolve the neutrino CP-violating phase. Additionally, cost-effective projects such as \textit{CHerenkov detectors In mine PitS} (CHIPS)~\cite{Adamson:2013xka}, a water Cherenkov detector designed to be approximately 5 times larger than Super-Kamiokande, is planned with the intention to ultimately run off the DUNE beamline, providing a cost-efficient way to improve knowledge on neutrino parameters including the CP violating phase.
+One of the outstanding mysteries of our universe lies in quest to
+understand the origin of matter, or more specifically the origin of
+the matter-antimatter asymmetry that we observe today. There is
+tantalizing evidence for possible sources of \textit{leptogenesis}
+recently revealed at the \textit{Tokai-2-Kamioka} (T2K) long-baseline
+neutrino experiment~\cite{Abe:2017uxa}, where CP conservation in the
+neutrino sector is excluded at 90\% confidence.  Future long-baseline
+neutrino experiments including the \textit{Deep Underground Neutrino
+  Experiment} (DUNE), and the detector upgrade to Hyper-Kamiokande
+(T2HK) aims to provide more precise neutrino oscillation measurements
+in order to further resolve the neutrino CP-violating
+phase. Additionally, cost-effective projects such as \textit{CHerenkov
+  detectors In mine PitS} (CHIPS)~\cite{Adamson:2013xka}, a water
+Cherenkov detector designed to be approximately 5 times larger than
+Super-Kamiokande, is planned with the intention to ultimately run off
+the DUNE beamline, providing a cost-efficient way to improve knowledge
+on neutrino parameters including the CP violating phase.
 
-In order to fully benefit from the advances of next generation neutrino experiments, the theoretical description of neutrino scattering must also be made more precise through improving the current determination of the nucleon axial form factor $F_A(Q^2)$. The axial form factor parameterizes the strength in which the weak current couples to the nucleon, and consequently governs the neutrino scattering cross-section off nuclear targets in the regime of quasi-elastic scattering. There is currently a 1--2\% uncertainty on the determination of the cross-section~\cite{Adams:2013qkq} that is dominated by the hadronic uncertainty on the axial form factor at small momentum transfer up to approximately 1~GeV~\cite{Day:2012gb}. Similar to the determination of the charge radius, the shape of the form factor is often derived from the model dependent dipole ansatz. Recent progress in lattice QCD has demonstrated control at the percent-level over the axial form factor at zero-momentum transfer~\cite{Chang:2017oll}. The method introduced in this paper is extensible to calculations of the slope at non-zero momentum transfer and paves a way for controlling the full momentum dependence of the form factor at the same level of precision.
+In order to fully benefit from the advances of next generation
+neutrino experiments, the theoretical description of neutrino
+scattering must also be made more precise through improving the
+current determination of the nucleon axial form factor $F_A(Q^2)$. The
+axial form factor parameterizes the strength in which the weak current
+couples to the nucleon, and consequently governs the neutrino
+scattering cross-section off nuclear targets in the regime of
+quasi-elastic scattering. There is currently a 1--2\% uncertainty on
+the determination of the cross-section~\cite{Adams:2013qkq} that is
+dominated by the hadronic uncertainty on the axial form factor at
+small momentum transfer up to approximately
+1~GeV~\cite{Day:2012gb}. Similar to the determination of the charge
+radius, the shape of the form factor is often derived from the model
+dependent dipole ansatz. Recent progress in lattice QCD has
+demonstrated control at the percent-level over the axial form factor
+at zero-momentum transfer~\cite{Chang:2017oll}. The method introduced
+in this paper is extensible to calculations of the slope at non-zero
+momentum transfer and paves a way for controlling the full momentum
+dependence of the form factor at the same level of precision.
 
 \subsection{Overview}
-{\color{red} Need to write some outline paragraph. Highlight some main results and advantages of this method. Possible content:
- Main result: Introduce method for direct slope calculation. Main improvements: 1) Model independent 2) Does not require small momentum data, direct zero momentum evaluation. 
-}
+
+The remainder of the paper is laid out as follows.  In the next
+section, we introduce moment methods in which time-sliced
+correlation functions are weighted by moments of a spatial coordinate,
+and demonstrate how these methods enable the momentum-dependent slope of form factors to
+be directly computed at the momenta allowed on the lattice.  We
+describe previous applications of the method, and then describe how
+these methods can be used to determine the slope of the nucleon
+electromagnetic form factors at $Q^2 = 0$, and hence the charge radius
+of the nucleon.  We concluded the section by describing our analysis
+method, emphasising in particular the need to allow for excited-state
+contributions to the correlation functions, and the anticipated
+finite-volume behaviour.
+
+In Section~\ref{sec:results}, we present the application of the method
+to the isovector charge radius of the nucleon.  We begin by describing
+the parameters of the ensembles used in our calculation, emphasising
+the need to understand the dependence of the results on the spatial
+volume of our lattices.  We present results for the charge radius for
+several separations between the nucleon source and nucleon sink,
+demonstrating the need to include the contribution of excited nucleon
+states in our fitting procedure.  The calculation is performed at
+unphysically large values of the pion mass, and at a relatively coarse
+lattice spacing.  We conclude with an program of future work, and of
+other applications, including to the determination of the axial-vector
+charge radius.
+
+We emphasise that the aim of this paper is not to provide a direct
+calculation of the charge radius that can confront experiment, but
+rather to present a method that can address one of the main systematic
+uncertainties that plague present calculations.
 
 \section{Moments of correlation functions}
-{\color{red} This part is only slightly reworded from the proceedings. I am pointing this out in case any one thinks it's a problem.}
-Position-space moment methods was first introduced to calculate the slope of the Isgur-Wise function $\xi (w)$ at zero-recoil, in order to interpret experimental results near zero-recoil for $B \rightarrow D$ semi-leptonic decays~\cite{Lellouch:1994zu}, and later adapted to calculate the slope of the energy-momentum tensor form factor, yielding the angular momentum contribution to the spin of the nucleon~\cite{Mathur:1999uf,Gadiyak:2001fe}. Recently, there is revitalized interest in applying moment methods to calculate the hadronic vacuum polarization~\cite{Chakraborty:2016mwy,Blum:2016xpd}, and efforts to directly determine the anomalous magnetic moment of the nucleon and radii in nuclear physics~\cite{Alexandrou:2016rbj}. In parallel, momentum-space derivative methods are also being explored to access similar nucleon structure calculations such as the anomalous magnetic moment and various nucleon radii~\cite{deDivitiis:2012vs,Tiburzi:2014yra}. In this work, we present a coordinate-space method that directly calculates the slope of single particle form factors with respect to the squared momentum-transfer at any lattice accessible momenta.
+{\color{red} This part is only slightly reworded from the
+  proceedings. I am pointing this out in case any one thinks it's a
+  problem.}  Position-space moment methods was first introduced to
+calculate the slope of the Isgur-Wise function $\xi (w)$ at
+zero-recoil, in order to interpret experimental results near
+zero-recoil for $B \rightarrow D$ semi-leptonic
+decays~\cite{Lellouch:1994zu}, and later adapted to calculate the
+slope of the energy-momentum tensor form factor, yielding the angular
+momentum contribution to the spin of the
+nucleon~\cite{Mathur:1999uf,Gadiyak:2001fe}. Recently, there is
+revitalized interest in applying moment methods to calculate the
+hadronic vacuum polarization~\cite{Chakraborty:2016mwy,Blum:2016xpd},
+and efforts to directly determine the anomalous magnetic moment of the
+nucleon and radii in nuclear physics~\cite{Alexandrou:2016rbj}. In
+parallel, momentum-space derivative methods are also being explored to
+access similar nucleon structure calculations such as the anomalous
+magnetic moment and various nucleon
+radii~\cite{deDivitiis:2012vs,Tiburzi:2014yra}. In this work, we
+present a coordinate-space method that directly calculates the slope
+of single particle form factors with respect to the squared
+momentum-transfer at any lattice accessible momenta.
 
 \subsection{Formalism}
 \begin{figure}[t]
@@ -96,7 +272,17 @@ Given a three-point correlation function with the initial state at rest, and cur
 C^{\text{3pt}}(t, t^\prime) = \sum_{\vec{x},\vec{x}^\prime} \left<N^{\mathrm{snk}}_{t,\vec{x}}\Gamma_{t^\prime,\vec{x}^\prime} \overline{N}^{\mathrm{src}}_{0,\vec{0}}\right> e^{-ikx^\prime_z},
 \label{eq:3pt}
 \end{align}
-translational invariance allows us to shift the source to the origin $\vec{x}_{\mathrm{src}} = 0$ and the sink to $\vec{x}\equiv \vec{x}_{\mathrm{snk}} - \vec{x}_{\mathrm{src}}$. Since the sink has zero three-momentum, the only momentum dependence left is at the current insertion. The operators $N^{\mathrm{src}}$ and $N^{\mathrm{snk}}$ are the source and sink interpolation operators respectively, allowing for different choices of the nucleon interpolating operator~\cite{Basak:2005ir,Basak:2007kj} and operator smearing profiles. The operator $\Gamma$ is a generic current insertion at position $\vec{x}^\prime\equiv \vec{x}_J-\vec{x}_{\text{src}}$.
+translational invariance allows us to shift the source to the origin
+$\vec{x}_{\mathrm{src}} = 0$ and the sink to $\vec{x}\equiv
+\vec{x}_{\mathrm{snk}} - \vec{x}_{\mathrm{src}}$. Since the sink has
+zero three-momentum, the only momentum dependence left is at the
+current insertion. The operators $N^{\mathrm{src}}$ and
+$N^{\mathrm{snk}}$ are the source and sink interpolation operators
+respectively, allowing for different choices of the nucleon
+interpolating operator~\cite{Basak:2005ir,Basak:2007kj} and operator
+smearing profiles. The operator $\Gamma$ is a generic current
+insertion at position $\vec{x}^\prime\equiv
+\vec{x}_J-\vec{x}_{\text{src}}$.
 
 The derivative of the three-point correlator with respect to $k^2$ follows,
 \begin{align}
@@ -203,10 +389,33 @@ z^{\prime\mathrm{src(snk)}}_n\equiv & \frac{Z^{\prime\mathrm{src(snk)}}_n(k^2)}{
 g^\prime_{mn} \equiv & \frac{\Gamma^\prime_{mn}}{2g_{mn}\sqrt{E_m(0)E_n(k^2)}}.
 \end{align}
 {\color{red} This is perhaps the minimal required for this section.}
-\section{Charge radius of the proton}
+\section{Charge radius of the proton}\label{sec:results}
 {\color{red} Discuss ensemble information. Show fit on 3296 and 4896 data.}
-\subsection{Isotropic-clover ensembles}
-To demonstrate the efficacy of this approach, we perform a preliminary calculation of the connected up-quark contribution of the proton charge radius on two W\&M/JLab (William and Mary, and Jefferson Lab) isotropic-clover ensembles~\cite{}. Both ensembles have a lattice spacing of $\sim$0.12~fm with $\sim$400~MeV pion masses. In both cases, 200 configurations averaged over two sources are used to resolve the statistical uncertainty. The two ensembles differ in their spatial volumes, with length $N_l = \{32,48\}$~l.u. (lattice units) corresponding to $m_\pi L\sim \{7.7,11.5\}$, and are distinguished in the rest of the paper by the labels 'l3296' and 'l4896' respectively.
+\subsection{Computational Details}
+To demonstrate the efficacy of this approach, we perform the
+calculation on two ensembles of clover lattices, with two light
+(up/down) quark flavors, and a strange quark, that is fixed to its
+physical value, and at two different volumes.  Since an important aim
+of this paper is to investigate the dependence of the results on the
+spatial volume of the box in which the calculation is performed, we
+work at relatively coarse lattice spacing; in contrast to the
+preliminary results presented in ref.~\cite{Bouchard:2016gmc}, these
+ensembles are not replicated along the $z$ direction to give a
+sufficiently large length scale along one direction.  Properties of
+the ensembles are summarized in Table~\ref{tab:cfg}.
+\begin{table}
+  \begin{tabular}{ccccccc}
+    Label & Size & $\beta$ & $a$ (fm) & $m_\pi$ (MeV) & $m_\pi L$ $N_{\rm cfg}$ & $N_{\rm src}$\\
+    l3296 & $32^3 \times 96$ & 6.1 & 400 & 7.7 & 196 & 2\\
+    l4896 & $48^3 \times 96$ & 6.1 & 400 & 11.5 & 98 & 2\\
+  \end{tabular}
+  \caption{The details of the ensembles used in the calculation, denoted by the labels in the first column.  The
+    lattice spacing is obtained using $\omega_0$ to set the scale,
+    while the final column lists the number of time sources used for
+    the two-point and three-point functions on each
+    configuration.\label{tab:cfg}}
+\end{table}
+
 
 The three-point correlation functions are constructed using a `sequential propagator` with sink-locations at $T=\{10,14\}$.
 

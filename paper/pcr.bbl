@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{23}%
+\begin{thebibliography}{25}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -168,6 +168,15 @@
   {2017})},\ \Eprint {http://arxiv.org/abs/1703.01766} {arXiv:1703.01766
   [hep-ex]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1703.01766;%%
+\bibitem [{\citenamefont {Alarcón}\ and\ \citenamefont
+  {Weiss}(2018)}]{Alarcon:2018irp}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Alarcón}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Weiss}},\ }\href@noop {} {\  (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/1803.09748} {arXiv:1803.09748 [hep-ph]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1803.09748;%%
 \bibitem [{\citenamefont {Abe}\ \emph {et~al.}(2017)\citenamefont {Abe} \emph
   {et~al.}}]{Abe:2017uxa}%
   \BibitemOpen
@@ -373,4 +382,19 @@
   {http://arxiv.org/abs/hep-lat/0204024} {arXiv:hep-lat/0204024 [hep-lat]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/0204024;%%
+\bibitem [{\citenamefont {Bouchard}\ \emph {et~al.}(2016)\citenamefont
+  {Bouchard}, \citenamefont {Chang}, \citenamefont {Orginos},\ and\
+  \citenamefont {Richards}}]{Bouchard:2016gmc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Bouchard}}, \bibinfo {author} {\bibfnamefont {C.~C.}\ \bibnamefont {Chang}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Orginos}}, \ and\
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Richards}},\ }\bibfield
+  {booktitle} {\emph {\bibinfo {booktitle} {{Proceedings, 34th International
+  Symposium on Lattice Field Theory (Lattice 2016): Southampton, UK, July
+  24-30, 2016}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {PoS}\ }\textbf {\bibinfo {volume} {LATTICE2016}},\ \bibinfo {pages} {170}
+  (\bibinfo {year} {2016})},\ \Eprint {http://arxiv.org/abs/1610.02354}
+  {arXiv:1610.02354 [hep-lat]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1610.02354;%%
 \end{thebibliography}%

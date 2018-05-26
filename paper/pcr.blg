@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: pcr.aux
 The style file: apsrev4-1.bst
@@ -24,48 +24,49 @@ Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
 Warning--missing journal in Sick:2018fzn
+Warning--missing journal in Alarcon:2018irp
 Warning--missing journal in Adams:2013qkq
 Warning--missing journal in Chakraborty:2016mwy
 Warning--missing journal in Alexandrou:2016rbj
-You've used 25 entries,
+You've used 27 entries,
             5847 wiz_defined-function locations,
-            1823 strings with 21360 characters,
-and the built_in function-call counts, 28228 in all, are:
-= -- 1511
-> -- 913
-< -- 215
-+ -- 287
-- -- 249
-* -- 4849
-:= -- 2586
-add.period$ -- 23
-call.type$ -- 25
-change.case$ -- 93
-chr.to.int$ -- 33
-cite$ -- 29
-duplicate$ -- 2660
-empty$ -- 2021
-format.name$ -- 526
-if$ -- 5522
+            1839 strings with 21905 characters,
+and the built_in function-call counts, 30201 in all, are:
+= -- 1634
+> -- 964
+< -- 227
++ -- 303
+- -- 261
+* -- 5177
+:= -- 2779
+add.period$ -- 25
+call.type$ -- 27
+change.case$ -- 101
+chr.to.int$ -- 35
+cite$ -- 32
+duplicate$ -- 2851
+empty$ -- 2171
+format.name$ -- 558
+if$ -- 5904
 int.to.chr$ -- 1
-int.to.str$ -- 32
-missing$ -- 339
-newline$ -- 140
-num.names$ -- 69
-pop$ -- 1023
+int.to.str$ -- 34
+missing$ -- 361
+newline$ -- 148
+num.names$ -- 75
+pop$ -- 1103
 preamble$ -- 1
-purify$ -- 115
+purify$ -- 125
 quote$ -- 0
-skip$ -- 901
+skip$ -- 966
 stack$ -- 0
-substring$ -- 551
-swap$ -- 2674
-text.length$ -- 110
+substring$ -- 587
+swap$ -- 2852
+text.length$ -- 116
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 380
-warning$ -- 5
-while$ -- 71
+type$ -- 408
+warning$ -- 6
+while$ -- 76
 width$ -- 0
-write$ -- 264
-(There were 5 warnings)
+write$ -- 283
+(There were 6 warnings)
