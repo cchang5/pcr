@@ -62,9 +62,12 @@ def read_csv(switches):
     if len(set(switches['fit']['clist']).intersection(['gV','dgV'])) > 0:
         for snk_src in switches['fit']['snk_src']:
             dataset3 = 'barff_s22_%s_g8_TSNK_tsrc_SRC.dat.re' %str(snk_src)
+            dataset3d = 'barff_s22_%s_down_g8_TSNK_tsrc_SRC.dat.re' %str(snk_src)
             for snk in switches['fit']['T_3pt']:
                 dataset=list()
+                datasetd=list()
                 for s in [0,48]:
+                    # up quark
                     rd = dataset3.replace('SRC',str(s)).replace('SNK',str(snk))
                     df = pd.read_csv('./data/%s/%s' %(switches['fit']['ens'],rd),delimiter=' ',header=None)
                     tag = df[0][0]
@@ -78,8 +81,24 @@ def read_csv(switches):
                             corr = np.delete(corr,47,axis=0)
                     else: pass
                     dataset.append(corr)
+                    # down quark
+                    rd = dataset3d.replace('SRC',str(s)).replace('SNK',str(snk))
+                    df = pd.read_csv('./data/%s/%s' %(switches['fit']['ens'],rd),delimiter=' ',header=None)
+                    tag = df[0][0]
+                    key = tag.replace('t0_','')
+                    # read zero momentum spatial correlator
+                    corr = np.array([np.array(df.loc[df[0] == tag.replace('t0','t%s' %t)].as_matrix())[:,1:-1] for t in range(96)])
+                    corr = np.swapaxes(corr,0,1) # swap axis to get [cfg,t,z]
+                    if switches['fit']['ens'] in ['3296']:
+                        # delete missing config 1470 from other datasets
+                        if len(corr) == 196:
+                            corr = np.delete(corr,47,axis=0)
+                    else: pass
+                    datasetd.append(corr)
                 # average sources
-                zdata[key] = (dataset[0]+dataset[1])/2
+                udata = (dataset[0]+dataset[1])/2.
+                ddata = (datasetd[0]+datasetd[1])/2.
+                zdata[key] = udata-ddata #isovector
                 print('3pt:',key,np.shape(zdata[key]))
     return zdata
     
