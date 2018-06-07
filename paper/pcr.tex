@@ -53,21 +53,7 @@
 
 \begin{abstract}
 % This is Lattice2016 abstract
-Momentum-space derivatives of matrix elements can be related to their
-coordinate-space moments through the Fourier transform. We derive
-these expressions as a function of momentum transfer $Q^2$ for
-asymptotic in/out states consisting of a single hadron. We calculate
-corrections to the finite volume moments by studying the spatial
-dependence of the lattice correlation functions. This method permits
-the computation of not only the values of matrix elements at momenta
-accessible on the lattice, but also the momentum-space derivatives,
-providing a priori information about the $Q^2$ dependence of form
-factors. As a specific application we use the method, at a single
-lattice spacing and with unphysically heavy quarks, to directly obtain
-the slope of the isovector form factor at various $Q^2$, whence the
-isovector charge radius. The method has potential application in the
-calculation of any hadronic matrix element with momentum transfer,
-including those relevant to hadronic weak decays.
+Momentum-space derivatives of matrix elements can be related to their coordinate-space moments through the Fourier transform. We derive these expressions as a function of momentum transfer $Q^2$ for asymptotic in/out states consisting of a single hadron. We calculate corrections to the finite volume moments by studying the spatial dependence of the lattice correlation functions. This method permits the computation of not only the values of matrix elements at momenta accessible on the lattice, but also the momentum-space derivatives, providing a priori information about the $Q^2$ dependence of form factors. As a specific application we use the method, at a single lattice spacing and with unphysically heavy quarks, to directly obtain the slope of the isovector form factor at various $Q^2$, whence the isovector charge radius. The method has potential application in the calculation of any hadronic matrix element with momentum transfer, including those relevant to hadronic weak decays.
 \end{abstract}
 \maketitle
 
@@ -123,9 +109,9 @@ the charge radius of the proton $\langle r \rangle$ is defined through the $Q^2$
 derivative of the Sach's form factor $G_E(Q^2)$
 evaluated at zero-momentum transfer
 \begin{equation}
-  \left. \frac{\partial G_E(Q^2)}{\partial Q^2} \right| = -\frac{1}{6}
+  \left. \frac{\partial G_E(Q^2)}{\partial Q^2} \right|_{Q^2=0} = -\frac{1}{6}
     \langle r^2 \rangle = \left. \frac{\partial F_1(Q^2)}{\partial
-      Q^2}\right| - \frac{F_2(0)}{4 M^2},\label{eq:radius}
+      Q^2}\right|_{Q^2=0} - \frac{F_2(0)}{4 M^2},\label{eq:radius}
 \end{equation}
 where $F_1(Q^2)$ and $F_2(Q^2)$ are the Dirac and Pauli form factors,
 and $M$ is the proton mass.
@@ -136,6 +122,7 @@ the electromagnetic current
   =} \nonumber \\
 & &  \bar{u}(\vec{p}_f) \left[ F_1(Q^2) \gamma_\mu + i\sigma_{\mu\nu}
     q_\nu \frac{F_2(Q^2)}{2 M} \right] u(\vec{p}_i)
+\label{eq:VmuME}
 \end{eqnarray}
 where $\vec{q} = \vec{p}_f - \vec{p}_i$ is the three-momentum transfer
 and $Q^2 = (E_f - E_i)^2 - \vec{q}^2$ is the four-momentum transfer
@@ -259,7 +246,62 @@ of single particle form factors with respect to the squared
 momentum-transfer at any lattice accessible momenta.
 
 \subsection{Charge radius spinor algebra}
-
+Here we present the spinor algebra necessary to obtain the derivative of the Dirac form factor $F_1(Q^2)$ from the derivative of the electromagnetic matrix element. We work explicitly in the Degrand-Rossi basis defined as
+\begin{align}
+\gamma_1 = \begin{pmatrix}
+\phantom{-}0&\phantom{-}0&\phantom{-}0&\phantom{-}i\\
+\phantom{-}0&\phantom{-}0&\phantom{-}i&\phantom{-}0\\
+\phantom{-}0&-i&\phantom{-}0&\phantom{-}0\\
+-i&\phantom{-}0&\phantom{-}0&\phantom{-}0
+\end{pmatrix} &&
+\gamma_2=\begin{pmatrix}
+\phantom{-}0&\phantom{-}0&\phantom{-}0&-1\\
+\phantom{-}0&\phantom{-}0&\phantom{-}1&\phantom{-}0\\
+\phantom{-}0&\phantom{-}1&\phantom{-}0&\phantom{-}0\\
+-1&\phantom{-}0&\phantom{-}0&\phantom{-}0
+\end{pmatrix}\nonumber\\
+\gamma_3=\begin{pmatrix}
+\phantom{-}0&\phantom{-}0&\phantom{-}i&\phantom{-}0\\
+\phantom{-}0&\phantom{-}0&\phantom{-}0&-i\\
+-i&\phantom{-}0&\phantom{-}0&\phantom{-}0\\
+\phantom{-}0&\phantom{-}i&\phantom{-}0&\phantom{-}0
+\end{pmatrix}
+&&
+\gamma_4=\begin{pmatrix}
+\phantom{-}0&\phantom{-}0&\phantom{-}1&\phantom{-}0\\
+\phantom{-}0&\phantom{-}0&\phantom{-}0&\phantom{-}1\\
+\phantom{-}1&\phantom{-}0&\phantom{-}0&\phantom{-}0\\
+\phantom{-}0&\phantom{-}1&\phantom{-}0&\phantom{-}0
+\end{pmatrix}
+\end{align}
+and define momentum of the spinors to point in the $z$-direction without loss of generality. Additionally we restrict ourselves to aligning the spin to be (anti-)parallel with momentum, yielding the following positive- and negative-helicity particle spinors,
+\begin{align}
+u_+(p)=\begin{pmatrix}
+\sqrt{E-p}\\0\\ \sqrt{E+p}\\0
+\end{pmatrix}
+&&
+u_-(p)=\begin{pmatrix}
+0\\ \sqrt{E+p}\\0\\ \sqrt{E-p}
+\end{pmatrix}.
+\end{align}
+Next, we explicitly work out the spinor contraction for the $V_4$ current in the rest frame of the final state nucleon such that $\vec{p}_f=0$ and $\vec{p}_i = -q_3\equiv k$ as shown in Fig.~\ref{fig:3pt_kinematics}. Following Eq.~(\ref{eq:VmuME}),
+\begin{align}
+&\langle N(\vec{p}_f) | V_4(q^2)|N(\vec{p}_i) \rangle\nonumber \\
+= & \bar{u}(\vec{p}_f)\left[F_1(Q^2)\gamma_4 + i\sigma_{43}q_3\frac{F_2(Q^2)}{2M}\right]u(\vec{p}_i).
+\label{eq:V4ME}
+\end{align}
+In the case of a $u_{\pm}\rightarrow u_{\mp}$ transition, the matrix element vanishes. However, if helicity is conserved, then Eq.~(\ref{eq:V4ME}) simplifies to,
+\begin{equation}
+\langle N(0) | V_4 | N(k) \rangle = F_1\sqrt{M}\left(\sqrt{E+k} + \sqrt{E-k}\right),
+\end{equation}
+where $M$ is the rest mass of the nucleon. Taking the zero-momentum transfer limit after the 3-momentum-squared derivative yields,
+\begin{align}
+&\left.\frac{\partial}{\partial k^2} \langle N(0) | V_4 | N(k) \rangle\right|_{k=0} \nonumber \\
+= &\left.\frac{\partial F_1}{\partial k^2}\sqrt{M}\left(\sqrt{E+k} + \sqrt{E-k}\right)\right|_{k=0} \nonumber\\
+& \left.F_1\frac{\sqrt{M}}{4k}\left(\frac{1}{\sqrt{E+k}} -\frac{1}{\sqrt{E-k}}  \right)\right|_{k=0}\nonumber \\
+= & 2M \frac{\partial F_1}{\partial k^2},
+\end{align}
+yielding directly the derivative of the Dirac form factor at zero-momentum transfer. Following Eq.~(\ref{eq:V4ME}), $V_1$ and $V_2$ accesses matrix elements that are proportional to $kF_2$ but vanish in the zero-momentum transfer limit, while the $k^2$-derivative of $V_3$ diverges.
 
 \subsection{Formalism}
 \begin{figure}[t]
@@ -391,7 +433,13 @@ where
 z^{\prime\mathrm{src(snk)}}_n\equiv & \frac{Z^{\prime\mathrm{src(snk)}}_n(k^2)}{z_n^{\mathrm{src(snk)}}(k^2)\sqrt{2E_n(k^2)}},\\
 g^\prime_{mn} \equiv & \frac{\Gamma^\prime_{mn}}{2g_{mn}\sqrt{E_m(0)E_n(k^2)}}.
 \end{align}
-{\color{red} This is perhaps the minimal required for this section.}
+
+The Dirac radius contribution of Eq.~(\ref{eq:radius}), can therefore, be calculated directly from lattice QCD
+\begin{align}
+ -\frac{1}{6}\langle r_{\mathrm{Dirac}}^2 \rangle =& \left. \frac{\partial F_1(Q^2)}{\partial
+	Q^2}\right|_{Q^2=0}\nonumber \\
+=&g_{00} g^\prime_{00}.
+\end{align}
 \section{Charge radius of the proton}\label{sec:results}
 {\color{red} Discuss ensemble information. Show fit on 3296 and 4896 data.}
 \subsection{Computational Details}
@@ -420,7 +468,7 @@ the ensembles are summarized in Table~\ref{tab:cfg}.
 \end{table}
 
 
-The three-point correlation functions are constructed using a `sequential propagator` with sink-locations at $T=\{10,14\}$.
+The three-point correlation functions are constructed using a `sequential propagator` with sink-locations at $T=\{8,10\}$.
 
 \subsection{Correlator analysis}
 
