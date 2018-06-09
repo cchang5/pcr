@@ -130,11 +130,13 @@ class fitter_class():
             x[k]['src'] = k.split('_')[1][1].lower()
         return x
     # splices correct t-region for dependent variables
-    def y(self,x,data):
+    def y(self,x,gvdata,data):
         y = dict()
-        for k in data.keys():
-            y[k] = data[k][x[k]['t']]
-        return y
+        yraw = dict()
+        for k in gvdata.keys():
+            y[k] = gvdata[k][x[k]['t']]
+            yraw[k] = data[k][:,x[k]['t']]
+        return y, yraw
     # FORMAT PRIORS
     def p(self,switches):
         # all priors
@@ -151,7 +153,7 @@ class fitter_class():
             plist = np.unique(np.concatenate((plist,pdict[c])))
         for k in ap.keys():
             # filter prior, state, momentum
-            if k[0] in plist and int(k[1]) <= int(self.nstate) and int(k[-1]) in self.mom:
+            if k[0] in plist and int(k[1]) < int(self.nstate) and int(k[-1]) in self.mom:
                 # create smearing list from self.snk_src
                 smears = [i.lower() for i in np.unique(list(''.join(self.snk_src)))]
                 # for energy and matrix elements
@@ -165,8 +167,8 @@ class fitter_class():
     # two point fit functions
     def E(self,p,q,n):
         En = p['E0_q%s' %str(q)]
-        for i in range(n):
-            En += np.exp(p['E%s_q%s' %(str(i+1),str(q))])
+        for i in range(1,n+1):
+            En += np.exp(p['E%s_q%s' %(str(i),str(q))])
         return En
     def Z(self,p,q,n,s):
         return p['Z%s%s_q%s' %(str(n),str(s),str(q))]

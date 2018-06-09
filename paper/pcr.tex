@@ -301,7 +301,7 @@ where $M$ is the rest mass of the nucleon. Taking the zero-momentum transfer lim
 \begin{align}
 &\left.\frac{\partial}{\partial k^2} \langle N(0) | V_4 | N(k) \rangle\right|_{k=0} \nonumber \\
 = &\left.\frac{\partial F_1}{\partial k^2}\sqrt{M}\left(\sqrt{E+k} + \sqrt{E-k}\right)\right|_{k=0} \nonumber\\
-& \left.F_1\frac{\sqrt{M}}{4k}\left(\frac{1}{\sqrt{E+k}} -\frac{1}{\sqrt{E-k}}  \right)\right|_{k=0}\nonumber \\
+& +\left.F_1\frac{\sqrt{M}}{4k}\left(\frac{1}{\sqrt{E+k}} -\frac{1}{\sqrt{E-k}}  \right)\right|_{k=0}\nonumber \\
 = & 2M \frac{\partial F_1}{\partial k^2},
 \end{align}
 yielding directly the derivative of the Dirac form factor at zero-momentum transfer. Following Eq.~(\ref{eq:V4ME}), $V_1$ and $V_2$ accesses matrix elements that are proportional to $kF_2$ but vanish in the zero-momentum transfer limit, while the $k^2$-derivative of $V_3$ diverges.
@@ -443,25 +443,28 @@ The Dirac radius contribution of Eq.~(\ref{eq:radius}), can therefore, be calcul
 	Q^2}\right|_{Q^2=0}\nonumber \\
 =&g_{00} g^\prime_{00}.
 \end{align}
+
+
 \section{Charge radius of the proton}\label{sec:results}
-{\color{red} Discuss ensemble information. Show fit on 3296 and 4896 data.}
+
 \subsection{Computational Details}
 To demonstrate the efficacy of this approach, we perform the
-calculation on two ensembles of clover lattices, with two light
+calculation on the Jefferson Lab isotropic clover lattices, with two light
 (up/down) quark flavors, and a strange quark, that is fixed to its
 physical value, and at two different volumes.  Since an important aim
 of this paper is to investigate the dependence of the results on the
 spatial volume of the box in which the calculation is performed, we
-work at relatively coarse lattice spacing; in contrast to the
+work at relatively coarse lattice spacing of approximately 0.12fm; in contrast to the
 preliminary results presented in ref.~\cite{Bouchard:2016gmc}, these
-ensembles are not replicated along the $z$ direction to give a
-sufficiently large length scale along one direction.  Properties of
-the ensembles are summarized in Table~\ref{tab:cfg}.
+ensembles have larger spatial volume, and are not replicated along the $z$-direction.  Properties of the ensembles are summarized in Table~\ref{tab:cfg}.
 \begin{table}
-  \begin{tabular}{ccccccc}
-    Label & Size & $\beta$ & $a$ (fm) & $m_\pi$ (MeV) & $m_\pi L$ $N_{\rm cfg}$ & $N_{\rm src}$\\
-    l3296 & $32^3 \times 96$ & 6.1 & 400 & 7.7 & 196 & 2\\
-    l4896 & $48^3 \times 96$ & 6.1 & 400 & 11.5 & 98 & 2\\
+  \begin{tabular}{cccccccc}
+  	\hline\hline
+    Label & Size & $\beta$ & $a$[fm] & $m_\pi$[MeV] & $m_\pi L$ & $N_{\rm cfg}$ & $N_{\rm src}$\\
+    \hline
+    l3296 & $32^3 \times 96$ & 6.1 & 0.12 & 400 & 7.7 & 196 & 2\\
+    l4896 & $48^3 \times 96$ & 6.1 & 0.12 & 400 & 11.5 & 98 & 2\\
+    \hline\hline
   \end{tabular}
   \caption{The details of the ensembles used in the calculation, denoted by the labels in the first column.  The
     lattice spacing is obtained using $\omega_0$ to set the scale,
@@ -472,6 +475,9 @@ the ensembles are summarized in Table~\ref{tab:cfg}.
 
 
 The three-point correlation functions are constructed using a `sequential propagator` with sink-locations at $T=\{8,10\}$.
+
+\subsection{Analysis strategy}
+For the following analysis, the ground state parameters are extracted from a simultaneous fit to $C_{\mathrm{2pt}}(t)$, $C^\prime_{\mathrm{2pt}}(t)$, $C_{\mathrm{3pt}}(t,t^\prime)$, and $C^\prime_{\mathrm{3pt}}(t,t^\prime)$ for both $k=0$ and $2\pi/L$. Parametric inference is performed under the Bayesian framework and implemented by the Python library \texttt{lsqfit}~\cite{lsqfit-9.3}. Robustness of the fit is demonstrated by performing a sensitivity analysis under varying fit regions for all 8 correlation functions, and the number of states in the fit ansatz. Due to having relatively low statistics, the fit region is restricted to contain a smaller number of degrees-of-freedom to avoid systematic errors when inverting the covariance matrix. For example, the preferred fit on the l3296 ensemble contains 36 data points from 8 correlation functions, while the two-state fit ansatz contains a total of 24 parameters. A fit with more than two states will contain more parameters than data points, and prior information is required. 
 
 \subsection{Correlator analysis}
 

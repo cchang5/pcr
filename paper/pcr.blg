@@ -28,45 +28,45 @@ Warning--missing journal in Alarcon:2018irp
 Warning--missing journal in Adams:2013qkq
 Warning--missing journal in Chakraborty:2016mwy
 Warning--missing journal in Alexandrou:2016rbj
-You've used 27 entries,
+You've used 28 entries,
             5847 wiz_defined-function locations,
-            1839 strings with 21905 characters,
-and the built_in function-call counts, 30201 in all, are:
-= -- 1634
-> -- 964
-< -- 227
-+ -- 303
-- -- 261
-* -- 5177
-:= -- 2779
-add.period$ -- 25
-call.type$ -- 27
-change.case$ -- 101
-chr.to.int$ -- 35
-cite$ -- 32
-duplicate$ -- 2851
-empty$ -- 2171
-format.name$ -- 558
-if$ -- 5904
+            1845 strings with 22012 characters,
+and the built_in function-call counts, 30786 in all, are:
+= -- 1681
+> -- 973
+< -- 230
++ -- 307
+- -- 263
+* -- 5258
+:= -- 2852
+add.period$ -- 27
+call.type$ -- 28
+change.case$ -- 106
+chr.to.int$ -- 36
+cite$ -- 33
+duplicate$ -- 2906
+empty$ -- 2213
+format.name$ -- 563
+if$ -- 6012
 int.to.chr$ -- 1
-int.to.str$ -- 34
-missing$ -- 361
-newline$ -- 148
-num.names$ -- 75
-pop$ -- 1103
+int.to.str$ -- 35
+missing$ -- 366
+newline$ -- 151
+num.names$ -- 78
+pop$ -- 1126
 preamble$ -- 1
-purify$ -- 125
+purify$ -- 130
 quote$ -- 0
-skip$ -- 966
+skip$ -- 990
 stack$ -- 0
-substring$ -- 587
-swap$ -- 2852
-text.length$ -- 116
+substring$ -- 601
+swap$ -- 2898
+text.length$ -- 117
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 408
+type$ -- 420
 warning$ -- 6
-while$ -- 76
+while$ -- 78
 width$ -- 0
-write$ -- 283
+write$ -- 290
 (There were 6 warnings)
