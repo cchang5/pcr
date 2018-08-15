@@ -47,8 +47,9 @@ def read_csv(switches):
                 tag = df[0][0]
                 key =tag.replace('t0_','')
                 # read zero momentum spatial correlator
-                corr = np.array([np.array(df.loc[df[0] == tag.replace('t0','t%s' %t)].as_matrix())[:,1:-1] for t in range(96)])
+                corr = np.array([np.array(df.loc[df[0] == tag.replace('t0','t%s' %t)].values)[:,1:-1] for t in range(96)])
                 corr = np.swapaxes(corr,0,1) # swap axis to get [cfg,t,z]
+                print(snk_src,s,len(corr))
                 if switches['fit']['ens'] in ['3296']:
                     # delete missing config 1470 from other datasets
                     if len(corr) == 196:
@@ -73,7 +74,7 @@ def read_csv(switches):
                     tag = df[0][0]
                     key = tag.replace('t0_','')
                     # read zero momentum spatial correlator
-                    corr = np.array([np.array(df.loc[df[0] == tag.replace('t0','t%s' %t)].as_matrix())[:,1:-1] for t in range(96)])
+                    corr = np.array([np.array(df.loc[df[0] == tag.replace('t0','t%s' %t)].values)[:,1:-1] for t in range(96)])
                     corr = np.swapaxes(corr,0,1) # swap axis to get [cfg,t,z]
                     if switches['fit']['ens'] in ['3296']:
                         # delete missing config 1470 from other datasets
@@ -87,7 +88,7 @@ def read_csv(switches):
                     tag = df[0][0]
                     key = tag.replace('t0_','')
                     # read zero momentum spatial correlator
-                    corr = np.array([np.array(df.loc[df[0] == tag.replace('t0','t%s' %t)].as_matrix())[:,1:-1] for t in range(96)])
+                    corr = np.array([np.array(df.loc[df[0] == tag.replace('t0','t%s' %t)].values)[:,1:-1] for t in range(96)])
                     corr = np.swapaxes(corr,0,1) # swap axis to get [cfg,t,z]
                     if switches['fit']['ens'] in ['3296']:
                         # delete missing config 1470 from other datasets
@@ -105,18 +106,21 @@ def read_csv(switches):
 # fitter class
 class fitter_class():
     # INSTANTIATE CLASS
-    def __init__(self,clist,snk_src,mom,nstate):
+    def __init__(self,clist,snk_src,mom,nstate,tail_correction):
         # nested for loop in the following order
         self.clist = clist # list of correlators [nucleon, dnucleon, gV, dgV]
         self.snk_src = snk_src # smearing list ['SS','PS',...]
         self.mom = mom # momentum list [0,1,2,...]
         self.nstate = nstate # n-states in ansatz
+        self.tail = tail_correction
     # FORMAT DATA FOR FITTER
     # get independent variables
     def x(self,switches,data,trange):
         x = dict()
         for k in data.keys():
             cla = k.split('_')[0]
+            if cla in ['znucleon', 'zgV']:
+                continue
             x[k] = dict()
             if cla in ['nucleon','dnucleon']:
                 x[k]['t'] = trange[cla]
@@ -134,6 +138,8 @@ class fitter_class():
         y = dict()
         yraw = dict()
         for k in gvdata.keys():
+            if k.split('_')[0] in ['znucleon','zgV']:
+                continue
             y[k] = gvdata[k][x[k]['t']]
             yraw[k] = data[k][:,x[k]['t']]
         return y, yraw
