@@ -14,14 +14,15 @@
 \BOOKMARK [3][-]{section*.14}{Two-point correlation function}{section*.12}% 14
 \BOOKMARK [3][-]{section*.15}{4-momentum derivatives}{section*.12}% 15
 \BOOKMARK [2][-]{section*.16}{Reparameterization}{section*.7}% 16
-\BOOKMARK [1][-]{section*.17}{Charge radius of the proton}{section*.2}% 17
-\BOOKMARK [2][-]{section*.18}{Computational Details}{section*.17}% 18
-\BOOKMARK [2][-]{section*.19}{Analysis strategy}{section*.17}% 19
-\BOOKMARK [2][-]{section*.20}{Correlator analysis}{section*.17}% 20
-\BOOKMARK [3][-]{section*.21}{Prior selection}{section*.20}% 21
-\BOOKMARK [3][-]{section*.22}{Fit region}{section*.20}% 22
-\BOOKMARK [3][-]{section*.23}{Sensitivity analysis}{section*.20}% 23
-\BOOKMARK [3][-]{section*.24}{Finite volume dependence}{section*.20}% 24
+\BOOKMARK [2][-]{section*.17}{Valence finite volume correction}{section*.7}% 17
+\BOOKMARK [1][-]{section*.18}{Charge radius of the proton}{section*.2}% 18
+\BOOKMARK [2][-]{section*.19}{Computational Details}{section*.18}% 19
+\BOOKMARK [2][-]{section*.20}{Analysis strategy}{section*.18}% 20
+\BOOKMARK [2][-]{section*.21}{Correlator analysis}{section*.18}% 21
+\BOOKMARK [3][-]{section*.22}{Prior selection}{section*.21}% 22
+\BOOKMARK [3][-]{section*.23}{Fit region}{section*.21}% 23
+\BOOKMARK [3][-]{section*.24}{Sensitivity analysis}{section*.21}% 24
 \BOOKMARK [1][-]{section*.25}{Conclusions and outlook}{section*.2}% 25
 \BOOKMARK [1][-]{section*.26}{References}{section*.2}% 26
-\BOOKMARK [1][-]{section*.27}{Small volume correlator stability plots}{section*.2}% 27
+\BOOKMARK [1][-]{section*.27}{Small volume tmin correlator stability plots}{section*.2}% 27
+\BOOKMARK [1][-]{section*.28}{Small volume tmax correlator stability plots}{section*.2}% 28

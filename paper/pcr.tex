@@ -444,6 +444,10 @@ The Dirac radius contribution of Eq.~(\ref{eq:radius}), can therefore, be calcul
 =&g_{00} g^\prime_{00}.
 \end{align}
 
+\subsection{Valence finite volume correction}
+The valence finite volume corrections results from 1) truncating the spatial moment at $z=L/2$, and 2) applying the incorrect spatial moment between $[0,L/2]$ for periodic images. In this section we discuss how to correct for valence finite volume effects which arise from both contributions.
+
+
 
 \section{Charge radius of the proton}\label{sec:results}
 
@@ -491,19 +495,11 @@ For example, the preferred fit on the l3296 ensemble contains 36 data points fro
 \subsubsection{Sensitivity analysis}
 
 \begin{figure*}[t]{
-		\includegraphics[width=0.49\textwidth]{plots/figures/2pt_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/2pt_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_tmax_dgV.pdf}
 		\caption{(Left) Stability plot and (Right) $Q$-value for the matrix element derivative under varying $t_{\mathrm{min}}$ of the two-point correlation function, and $n$-states. The preferred fit is shown by the solid green points.}
 		\label{fig:stability_main}
 }\end{figure*}
-
-\begin{figure}[h]{
-		\includegraphics[width=0.49\textwidth]{plots/figures/logGBF.pdf}
-		\caption{Normalized log Bayes Factor for the preferred fit region. The model marked by the solid star ($n$-state = 2) is more likely to reproduce the data by two orders of magnitude over the $n$-state = 3 and 4, as indicated by the normalized Bayes Factor.}
-		\label{fig:logGBF}
-}\end{figure}
-
-\subsubsection{Finite volume dependence}
 
 \section{Conclusions and outlook}
 This is a great paper. Please publish. Thanks.
@@ -514,28 +510,29 @@ This is a great paper. Please publish. Thanks.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix
 
+\clearpage
 \newpage
 \onecolumngrid
-\section{Small volume correlator stability plots}
+\section{Small volume $t_{\mathrm{min}}$ correlator stability plots}
 \begin{figure*}[h]{
-		\includegraphics[width=0.49\textwidth]{plots/figures/2pt_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/d2pt_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/2pt_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/d2pt_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/2pt_dgV.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/d2pt_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_2pt_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_d2pt_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_2pt_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_d2pt_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_2pt_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_d2pt_dgV.pdf}
 		\caption{Fit sensitivity to variations of $C_{\mathrm{2pt}}(t)$ and $C^\prime_{\mathrm{2pt}}(t)$ fit regions. Shown here are the $t_{\mathrm{min}}$ and $n$-state stability plots for the $Q$-value (top row), $z^\prime_0$ (middle row) and $g^\prime_{00}$ (bottom row). The colors indicate fits with $n$-state=1 (red), 2 (green), 3 (blue), and 4 (purple). The different momenta are given by k=0 (circle), and k=$2\pi/L$ (square). The preferred fit is denoted by the solid symbol. The dashed line is set to $Q=0.1$. The $t_{\mathrm{min}}$ values are integer-valued and staggered for visual clarity.}
 		\label{fig:stability_c2pt}
 }\end{figure*}
 
 \newpage
 \begin{figure*}[h]{
-		\includegraphics[width=0.49\textwidth]{plots/figures/gV8_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/dgV8_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/gV8_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/dgV8_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/gV8_dgV.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/dgV8_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV8_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV8_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV8_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_dgV.pdf}
 		\caption{
 			Fit sensitivity to variations of $C_{\mathrm{3pt}}(8,t^\prime)$ and $C^\prime_{\mathrm{3pt}}(8,t^\prime)$ fit regions. For $C_{\mathrm{3pt}}$, the data is removed symmetrically around the mid-point. Analogous to Fig.~\ref{fig:stability_c2pt}.}
 		\label{fig:stability_c3pt8}
@@ -543,12 +540,52 @@ This is a great paper. Please publish. Thanks.
 
 \newpage
 \begin{figure*}[h]{
-		\includegraphics[width=0.49\textwidth]{plots/figures/gV10_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/dgV10_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/gV10_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/dgV10_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/gV10_dgV.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/dgV10_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV10_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV10_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV10_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV10_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV10_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV10_dgV.pdf}
+		\caption{
+			Fit sensitivity to variations of $C_{\mathrm{3pt}}(10,t^\prime)$ and $C^\prime_{\mathrm{3pt}}(10,t^\prime)$ fit regions. For $C_{\mathrm{3pt}}$, the data is removed symmetrically around the mid-point. Analogous to Fig.~\ref{fig:stability_c2pt}.}
+		\label{fig:stability_c3pt10}
+}\end{figure*}
+
+\clearpage
+\newpage
+\section{Small volume $t_{\mathrm{max}}$ correlator stability plots}
+\begin{figure*}[h]{
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_2pt_tmax_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_d2pt_tmax_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_2pt_tmax_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_d2pt_tmax_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_2pt_tmax_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_d2pt_tmax_dgV.pdf}
+		\caption{Fit sensitivity to variations of $C_{\mathrm{2pt}}(t)$ and $C^\prime_{\mathrm{2pt}}(t)$ fit regions. Shown here are the $t_{\mathrm{max}}$ and $n$-state stability plots for the $Q$-value (top row), $z^\prime_0$ (middle row) and $g^\prime_{00}$ (bottom row). The colors indicate fits with $n$-state=1 (red), 2 (green), 3 (blue), and 4 (purple). The different momenta are given by k=0 (circle), and k=$2\pi/L$ (square). The preferred fit is denoted by the solid symbol. The dashed line is set to $Q=0.1$. The $t_{\mathrm{max}}$ values are integer-valued and staggered for visual clarity.}
+		\label{fig:stability_c2pt}
+}\end{figure*}
+
+\newpage
+\begin{figure*}[h]{
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV8_tmax_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_tmax_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV8_tmax_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_tmax_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV8_tmax_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_tmax_dgV.pdf}
+		\caption{
+			Fit sensitivity to variations of $C_{\mathrm{3pt}}(8,t^\prime)$ and $C^\prime_{\mathrm{3pt}}(8,t^\prime)$ fit regions. For $C_{\mathrm{3pt}}$, the data is removed symmetrically around the mid-point. Analogous to Fig.~\ref{fig:stability_c2pt}.}
+		\label{fig:stability_c3pt8}
+}\end{figure*}
+
+\newpage
+\begin{figure*}[h]{
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV10_tmax_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV10_tmax_Q.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV10_tmax_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV10_tmax_dZ0.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV10_tmax_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV10_tmax_dgV.pdf}
 		\caption{
 			Fit sensitivity to variations of $C_{\mathrm{3pt}}(10,t^\prime)$ and $C^\prime_{\mathrm{3pt}}(10,t^\prime)$ fit regions. For $C_{\mathrm{3pt}}$, the data is removed symmetrically around the mid-point. Analogous to Fig.~\ref{fig:stability_c2pt}.}
 		\label{fig:stability_c3pt10}
