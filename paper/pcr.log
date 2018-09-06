@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.1)  5 SEP 2018 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.1)  5 SEP 2018 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1238,29 +1238,24 @@ File: figures/zcorr_d3pt.pdf Graphic file (type pdf)
 <use figures/zcorr_d3pt.pdf>
 Package pdftex.def Info: figures/zcorr_d3pt.pdf  used on input line 452.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
- [5]
-Overfull \hbox (6.09233pt too wide) detected at line 487
-[]
- []
-
-[6 <./figures/zcorr_3pt.pdf> <./figures/zcorr_d3pt.pdf
+ [5] [6 <./figures/zcorr_3pt.pdf> <./figures/zcorr_d3pt.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/zcorr_d3pt.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >]
-<plots/figures/3296_dgV8_dgV.pdf, id=471, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV8_dgV.pdf, id=476, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV8_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV8_dgV.pdf>
-Package pdftex.def Info: plots/figures/3296_dgV8_dgV.pdf  used on input line 53
-5.
+Package pdftex.def Info: plots/figures/3296_dgV8_dgV.pdf  used on input line 55
+0.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_dgV8_tmax_dgV.pdf, id=472, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV8_tmax_dgV.pdf, id=477, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV8_tmax_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV8_tmax_dgV.pdf>
 Package pdftex.def Info: plots/figures/3296_dgV8_tmax_dgV.pdf  used on input li
-ne 536.
+ne 551.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
- (./pcr.bbl
+ (./pcr.bbl [7]
 Underfull \hbox (badness 10000) in paragraph at lines 133--139
  []\OT1/cmr/m/n/9 A. Beyer, L. Maisen-bacher, A. Matveev,
  []
@@ -1286,7 +1281,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--172
  []\OT1/cmr/m/n/9 G. Ciezarek, M. Franco Sevilla, B. Hamil-ton,
  []
 
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 311--317
  []\OT1/cmr/m/n/9 C. Alexan-drou, M. Con-stanti-nou, G. Kout-sou,
  []
@@ -1316,84 +1311,84 @@ page
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 553.
+(hyperref)                removing `math shift' on input line 568.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 553.
+(hyperref)                removing `subscript' on input line 568.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 553.
+(hyperref)                removing `math shift' on input line 568.
 
-<plots/figures/3296_2pt_Q.pdf, id=626, 506.45947pt x 313.00912pt>
+<plots/figures/3296_2pt_Q.pdf, id=632, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_2pt_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_2pt_Q.pdf>
-Package pdftex.def Info: plots/figures/3296_2pt_Q.pdf  used on input line 555.
+Package pdftex.def Info: plots/figures/3296_2pt_Q.pdf  used on input line 570.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_d2pt_Q.pdf, id=627, 506.45947pt x 313.00912pt>
+<plots/figures/3296_d2pt_Q.pdf, id=633, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_d2pt_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_d2pt_Q.pdf>
-Package pdftex.def Info: plots/figures/3296_d2pt_Q.pdf  used on input line 556.
+Package pdftex.def Info: plots/figures/3296_d2pt_Q.pdf  used on input line 571.
 
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_2pt_dZ0.pdf, id=628, 506.45947pt x 313.00912pt>
+<plots/figures/3296_2pt_dZ0.pdf, id=634, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_2pt_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_2pt_dZ0.pdf>
-Package pdftex.def Info: plots/figures/3296_2pt_dZ0.pdf  used on input line 557
+Package pdftex.def Info: plots/figures/3296_2pt_dZ0.pdf  used on input line 572
 .
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_d2pt_dZ0.pdf, id=629, 506.45947pt x 313.00912pt>
+<plots/figures/3296_d2pt_dZ0.pdf, id=635, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_d2pt_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_d2pt_dZ0.pdf>
-Package pdftex.def Info: plots/figures/3296_d2pt_dZ0.pdf  used on input line 55
-8.
+Package pdftex.def Info: plots/figures/3296_d2pt_dZ0.pdf  used on input line 57
+3.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_2pt_dgV.pdf, id=630, 506.45947pt x 313.00912pt>
+<plots/figures/3296_2pt_dgV.pdf, id=636, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_2pt_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_2pt_dgV.pdf>
-Package pdftex.def Info: plots/figures/3296_2pt_dgV.pdf  used on input line 559
+Package pdftex.def Info: plots/figures/3296_2pt_dgV.pdf  used on input line 574
 .
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_d2pt_dgV.pdf, id=631, 506.45947pt x 313.00912pt>
+<plots/figures/3296_d2pt_dgV.pdf, id=637, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_d2pt_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_d2pt_dgV.pdf>
-Package pdftex.def Info: plots/figures/3296_d2pt_dgV.pdf  used on input line 56
-0.
+Package pdftex.def Info: plots/figures/3296_d2pt_dgV.pdf  used on input line 57
+5.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_gV8_Q.pdf, id=632, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV8_Q.pdf, id=638, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV8_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV8_Q.pdf>
-Package pdftex.def Info: plots/figures/3296_gV8_Q.pdf  used on input line 567.
+Package pdftex.def Info: plots/figures/3296_gV8_Q.pdf  used on input line 582.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_dgV8_Q.pdf, id=633, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV8_Q.pdf, id=639, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV8_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV8_Q.pdf>
-Package pdftex.def Info: plots/figures/3296_dgV8_Q.pdf  used on input line 568.
+Package pdftex.def Info: plots/figures/3296_dgV8_Q.pdf  used on input line 583.
 
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_gV8_dZ0.pdf, id=634, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV8_dZ0.pdf, id=640, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV8_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV8_dZ0.pdf>
-Package pdftex.def Info: plots/figures/3296_gV8_dZ0.pdf  used on input line 569
+Package pdftex.def Info: plots/figures/3296_gV8_dZ0.pdf  used on input line 584
 .
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_dgV8_dZ0.pdf, id=635, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV8_dZ0.pdf, id=641, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV8_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV8_dZ0.pdf>
-Package pdftex.def Info: plots/figures/3296_dgV8_dZ0.pdf  used on input line 57
-0.
+Package pdftex.def Info: plots/figures/3296_dgV8_dZ0.pdf  used on input line 58
+5.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_gV8_dgV.pdf, id=636, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV8_dgV.pdf, id=642, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV8_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV8_dgV.pdf>
-Package pdftex.def Info: plots/figures/3296_gV8_dgV.pdf  used on input line 571
+Package pdftex.def Info: plots/figures/3296_gV8_dgV.pdf  used on input line 586
 .
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
 File: plots/figures/3296_dgV8_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV8_dgV.pdf>
-Package pdftex.def Info: plots/figures/3296_dgV8_dgV.pdf  used on input line 57
-2.
+Package pdftex.def Info: plots/figures/3296_dgV8_dgV.pdf  used on input line 58
+7.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
 [9 <./plots/figures/3296_2pt_Q.pdf> <./plots/figures/3296_d2pt_Q.pdf
 
@@ -1416,41 +1411,41 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_2pt_dgV
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_d2pt_dg
 V.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<plots/figures/3296_gV10_Q.pdf, id=872, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV10_Q.pdf, id=878, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV10_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV10_Q.pdf>
-Package pdftex.def Info: plots/figures/3296_gV10_Q.pdf  used on input line 580.
+Package pdftex.def Info: plots/figures/3296_gV10_Q.pdf  used on input line 595.
 
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_dgV10_Q.pdf, id=873, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV10_Q.pdf, id=879, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV10_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV10_Q.pdf>
-Package pdftex.def Info: plots/figures/3296_dgV10_Q.pdf  used on input line 581
+Package pdftex.def Info: plots/figures/3296_dgV10_Q.pdf  used on input line 596
 .
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_gV10_dZ0.pdf, id=874, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV10_dZ0.pdf, id=880, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV10_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV10_dZ0.pdf>
-Package pdftex.def Info: plots/figures/3296_gV10_dZ0.pdf  used on input line 58
-2.
+Package pdftex.def Info: plots/figures/3296_gV10_dZ0.pdf  used on input line 59
+7.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_dgV10_dZ0.pdf, id=875, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV10_dZ0.pdf, id=881, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV10_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV10_dZ0.pdf>
 Package pdftex.def Info: plots/figures/3296_dgV10_dZ0.pdf  used on input line 5
-83.
+98.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_gV10_dgV.pdf, id=876, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV10_dgV.pdf, id=882, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV10_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV10_dgV.pdf>
-Package pdftex.def Info: plots/figures/3296_gV10_dgV.pdf  used on input line 58
-4.
+Package pdftex.def Info: plots/figures/3296_gV10_dgV.pdf  used on input line 59
+9.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_dgV10_dgV.pdf, id=877, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV10_dgV.pdf, id=883, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV10_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV10_dgV.pdf>
-Package pdftex.def Info: plots/figures/3296_dgV10_dgV.pdf  used on input line 5
-85.
+Package pdftex.def Info: plots/figures/3296_dgV10_dgV.pdf  used on input line 6
+00.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
  [10 <./plots/figures/3296_gV8_Q.pdf> <./plots/figures/3296_dgV8_Q.pdf
 
@@ -1493,86 +1488,86 @@ gV.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 593.
+(hyperref)                removing `math shift' on input line 608.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 593.
+(hyperref)                removing `subscript' on input line 608.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 593.
+(hyperref)                removing `math shift' on input line 608.
 
-<plots/figures/3296_2pt_tmax_Q.pdf, id=1327, 506.45947pt x 313.00912pt>
+<plots/figures/3296_2pt_tmax_Q.pdf, id=1333, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_2pt_tmax_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_2pt_tmax_Q.pdf>
 Package pdftex.def Info: plots/figures/3296_2pt_tmax_Q.pdf  used on input line 
-595.
+610.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_d2pt_tmax_Q.pdf, id=1328, 506.45947pt x 313.00912pt>
+<plots/figures/3296_d2pt_tmax_Q.pdf, id=1334, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_d2pt_tmax_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_d2pt_tmax_Q.pdf>
 Package pdftex.def Info: plots/figures/3296_d2pt_tmax_Q.pdf  used on input line
- 596.
+ 611.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_2pt_tmax_dZ0.pdf, id=1329, 506.45947pt x 313.00912pt>
+<plots/figures/3296_2pt_tmax_dZ0.pdf, id=1335, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_2pt_tmax_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_2pt_tmax_dZ0.pdf>
 Package pdftex.def Info: plots/figures/3296_2pt_tmax_dZ0.pdf  used on input lin
-e 597.
+e 612.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_d2pt_tmax_dZ0.pdf, id=1330, 506.45947pt x 313.00912pt>
+<plots/figures/3296_d2pt_tmax_dZ0.pdf, id=1336, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_d2pt_tmax_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_d2pt_tmax_dZ0.pdf>
 Package pdftex.def Info: plots/figures/3296_d2pt_tmax_dZ0.pdf  used on input li
-ne 598.
+ne 613.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_2pt_tmax_dgV.pdf, id=1331, 506.45947pt x 313.00912pt>
+<plots/figures/3296_2pt_tmax_dgV.pdf, id=1337, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_2pt_tmax_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_2pt_tmax_dgV.pdf>
 Package pdftex.def Info: plots/figures/3296_2pt_tmax_dgV.pdf  used on input lin
-e 599.
+e 614.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_d2pt_tmax_dgV.pdf, id=1332, 506.45947pt x 313.00912pt>
+<plots/figures/3296_d2pt_tmax_dgV.pdf, id=1338, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_d2pt_tmax_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_d2pt_tmax_dgV.pdf>
 Package pdftex.def Info: plots/figures/3296_d2pt_tmax_dgV.pdf  used on input li
-ne 600.
+ne 615.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_gV8_tmax_Q.pdf, id=1333, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV8_tmax_Q.pdf, id=1339, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV8_tmax_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV8_tmax_Q.pdf>
 Package pdftex.def Info: plots/figures/3296_gV8_tmax_Q.pdf  used on input line 
-607.
+622.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_dgV8_tmax_Q.pdf, id=1334, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV8_tmax_Q.pdf, id=1340, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV8_tmax_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV8_tmax_Q.pdf>
 Package pdftex.def Info: plots/figures/3296_dgV8_tmax_Q.pdf  used on input line
- 608.
+ 623.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_gV8_tmax_dZ0.pdf, id=1335, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV8_tmax_dZ0.pdf, id=1341, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV8_tmax_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV8_tmax_dZ0.pdf>
 Package pdftex.def Info: plots/figures/3296_gV8_tmax_dZ0.pdf  used on input lin
-e 609.
+e 624.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_dgV8_tmax_dZ0.pdf, id=1336, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV8_tmax_dZ0.pdf, id=1342, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV8_tmax_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV8_tmax_dZ0.pdf>
 Package pdftex.def Info: plots/figures/3296_dgV8_tmax_dZ0.pdf  used on input li
-ne 610.
+ne 625.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_gV8_tmax_dgV.pdf, id=1337, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV8_tmax_dgV.pdf, id=1343, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV8_tmax_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV8_tmax_dgV.pdf>
 Package pdftex.def Info: plots/figures/3296_gV8_tmax_dgV.pdf  used on input lin
-e 611.
+e 626.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
 File: plots/figures/3296_dgV8_tmax_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV8_tmax_dgV.pdf>
 Package pdftex.def Info: plots/figures/3296_dgV8_tmax_dgV.pdf  used on input li
-ne 612.
+ne 627.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
 [12 <./plots/figures/3296_2pt_tmax_Q.pdf> <./plots/figures/3296_d2pt_tmax_Q.pdf
 
@@ -1601,41 +1596,41 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_d2pt_tm
 ax_dgV.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
 >]
-<plots/figures/3296_gV10_tmax_Q.pdf, id=1591, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV10_tmax_Q.pdf, id=1597, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV10_tmax_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV10_tmax_Q.pdf>
 Package pdftex.def Info: plots/figures/3296_gV10_tmax_Q.pdf  used on input line
- 620.
+ 635.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_dgV10_tmax_Q.pdf, id=1592, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV10_tmax_Q.pdf, id=1598, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV10_tmax_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV10_tmax_Q.pdf>
 Package pdftex.def Info: plots/figures/3296_dgV10_tmax_Q.pdf  used on input lin
-e 621.
+e 636.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_gV10_tmax_dZ0.pdf, id=1593, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV10_tmax_dZ0.pdf, id=1599, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV10_tmax_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV10_tmax_dZ0.pdf>
 Package pdftex.def Info: plots/figures/3296_gV10_tmax_dZ0.pdf  used on input li
-ne 622.
+ne 637.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_dgV10_tmax_dZ0.pdf, id=1594, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV10_tmax_dZ0.pdf, id=1600, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV10_tmax_dZ0.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV10_tmax_dZ0.pdf>
 Package pdftex.def Info: plots/figures/3296_dgV10_tmax_dZ0.pdf  used on input l
-ine 623.
+ine 638.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_gV10_tmax_dgV.pdf, id=1595, 506.45947pt x 313.00912pt>
+<plots/figures/3296_gV10_tmax_dgV.pdf, id=1601, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_gV10_tmax_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_gV10_tmax_dgV.pdf>
 Package pdftex.def Info: plots/figures/3296_gV10_tmax_dgV.pdf  used on input li
-ne 624.
+ne 639.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
-<plots/figures/3296_dgV10_tmax_dgV.pdf, id=1596, 506.45947pt x 313.00912pt>
+<plots/figures/3296_dgV10_tmax_dgV.pdf, id=1602, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_dgV10_tmax_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV10_tmax_dgV.pdf>
 Package pdftex.def Info: plots/figures/3296_dgV10_tmax_dgV.pdf  used on input l
-ine 625.
+ine 640.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
  [13 <./plots/figures/3296_gV8_tmax_Q.pdf> <./plots/figures/3296_dgV8_tmax_Q.pd
 f
@@ -1685,10 +1680,10 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_dgV10_t
 max_dgV.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 631.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 646.
  (./pcr.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 631.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 631.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 646.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 646.
 Package rerunfilecheck Info: File `pcr.out' has not changed.
 (rerunfilecheck)             Checksum: 7AB464FB9D67FAC4FB00B7AC6EA9DBBC;1974.
 
@@ -1697,13 +1692,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20147 strings out of 492982
- 358868 string characters out of 6132528
- 446945 words of memory out of 5000000
- 23150 multiletter control sequences out of 15000+600000
+ 20152 strings out of 492982
+ 358931 string characters out of 6132528
+ 461972 words of memory out of 5000000
+ 23153 multiletter control sequences out of 15000+600000
  15562 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,17n,56p,1323b,958s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,56p,1076b,958s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu4e.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5b.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5f.pfb></usr/local/texl
@@ -1729,10 +1724,10 @@ ic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt9.pfb>
-Output written on pcr.pdf (14 pages, 940524 bytes).
+Output written on pcr.pdf (14 pages, 943111 bytes).
 PDF statistics:
- 2158 PDF objects out of 2487 (max. 8388607)
- 1014 compressed objects within 11 object streams
- 115 named destinations out of 1000 (max. 500000)
+ 2164 PDF objects out of 2487 (max. 8388607)
+ 1020 compressed objects within 11 object streams
+ 117 named destinations out of 1000 (max. 500000)
  444 words of extra memory for PDF output out of 10000 (max. 10000000)
 

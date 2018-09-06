@@ -454,37 +454,52 @@ The valence finite volume corrections results from 1) truncating the spatial mom
 		\label{fig:finite_volume}
 }\end{figure*}
 
-Before discussing the volume corrections, we first discuss the various contributions to the three-point correlation function in the spatial direction. In Fig.~\ref{fig:finite_volume} (Left), we plot the correlator as a function of current insertion position $z^\prime$ after projecting to zero-momentum in $x^\prime$, $y^\prime$, and $t^\prime$. We then perform a 3-state fit from $z^\prime = [4,16]$ and extract the ground state and first excited-state parameters. Note that the correlator is symmetric by construction from averaging with the parity inverted counterpart, and in conjunction, a symmetric fit function is also employed. We observe that at $\sim 400$~MeV pion masses, the propagating scale in the spatial-direction for the three-point correlator is $\sim 820$~MeV, corresponding to the mass of the rho-meson ($\sim 770$~MeV) {\color{red} what is the rho at 400 MeV?} with one unit of momentum ($\sim 120$~MeV) for a total energy of $\sim780$~MeV {\color{red} update if rho mass changes?}. This is consistent with expectation since the vector current yields a vector-meson propagating state, and the temporal direction has anti-periodic boundary conditions with length $T=96$. Additionally, we observe that beyond $L/2$, the correlation function is dominated by the ground state.
+Before discussing the volume corrections, we first discuss the various contributions to the three-point correlation function in the spatial direction. In Fig.~\ref{fig:finite_volume} (Left), we plot the correlator as a function of current insertion position $z^\prime$ after projecting to zero-momentum in $x^\prime$, $y^\prime$, and $t^\prime$. We then perform a 3-state fit from $z^\prime = [4,16]$ and extract the ground state and first excited-state parameters. Note that the correlator is symmetric by construction from averaging with the parity inverted counterpart, and in conjunction, a symmetric fit function is also employed defined as the following,
+\begin{equation}
+C(z^\prime) = \sum_n A_n\left(e^{-E_n z^\prime} + e^{-E_n(L-z^\prime)}\right).
+\end{equation} We observe that at $\sim 400$~MeV pion masses, the propagating scale in the spatial-direction for the three-point correlator is $\sim 820$~MeV, corresponding to the mass of the rho-meson ($\sim 770$~MeV) {\color{red} what is the rho at 400 MeV?} with one unit of momentum ($\sim 120$~MeV) for a total energy of $\sim780$~MeV {\color{red} update if rho mass changes?}. This is consistent with expectation since the vector current yields a vector-meson propagating state, and the temporal direction has anti-periodic boundary conditions with length $T=96$. Additionally, we observe that beyond $L/2$, the correlation function is dominated by the ground state.
 
 In Fig.~\ref{fig:finite_volume} (Right), we take the results from Fig.~\ref{fig:finite_volume} (Left) and construct the zero-momentum moment correlation function. As expected, the spatial moment pushes the dominant contribution of the correlation function to larger values of $z^\prime$ (maximally around $z^\prime \sim 7$ instead of at zero). Additionally, since the spatial moment is itself not periodic and truncated at $z^\prime = L/2$, the moment correlation function deviates from Eq.~(\ref{eq:3ptmoment0}). We observe again however, that only the ground-state needs to be considered, since the first-excited state has insignificant contribution for $z^\prime \geq L/2$.
 
 The positive-correction to truncating the spatial moment at $L/2$ is given as follows.
 \begin{align}
-\left.\delta_{1}\right|_{k\neq 0}= & 2\int_{L/2}^{\infty} \frac{-iA_0}{2k} z(-i \sin(kz))e^{-E_0z} dz \label{eq:dfv_1.1}\\
-=& \frac{-A_0e^{-E_0L/2}}{2(E_0^2+k^2)^2}\left[E_0^2L+k^2L+4E_0\right]\cos(kL/2) \label{eq:dfv_1.2}
+\left.\delta^n_{1}\right|_{k\neq 0}= & 2\int_{L/2}^{\infty} \frac{-iA_n}{2k} z(-i \sin(kz))e^{-E_n z} dz \label{eq:dfv_1.1}\\
+=& \frac{A_n e^{-E_n L/2}}{2(E_n^2+k^2)^2}(-1)^m\left[E_n^2L+k^2L+4E_n\right] \label{eq:dfv_1.2}\\
+\lim_{k\rightarrow 0}\delta^n_{1} =& -A_n\left(\frac{L^2}{4E_n}+\frac{L}{E_n^2}+\frac{2}{E_n^3}\right)e^{-E_n L/2}. \label{eq:dfv_1.0}
 \end{align}
-\begin{align}
-\lim_{k\rightarrow 0}\delta_{I} =& -A_0\left(\frac{L^2}{4E_0}+\frac{L}{E_0^2}+\frac{2}{E_0^3}\right)e^{-E_0L/2}. \label{eq:dfv_1.0}
-\end{align}
-The factor of 2 in Eq.~(\ref{eq:dfv_1.1}) arises from performing a symmetric integral around the origin, $E_0$ is the ground state energy, $A_0$ is the ground-state coefficient of the correlation function, and $k=\frac{2n\pi}{L}$. Taking the zero-momentum limit requires keeping the $\sin({kL/2})$ contribution of Eq.~(\ref{eq:dfv_1.2}), which otherwise vanishes at non-zero momentum from symmetry.
+The factor of 2 in Eq.~(\ref{eq:dfv_1.1}) arises from performing a symmetric integral around the origin, $E_n$ is the $n$-th state energy, $A_n$ is the $n$-th state coefficient of the correlation function, and $k=\frac{2m\pi}{L}$ which simplifies $\cos(kL/2) = (-1)^m$. Taking the zero-momentum limit requires keeping the $\sin({kL/2})$ contribution of Eq.~(\ref{eq:dfv_1.2}), which otherwise vanishes at non-zero momentum from symmetry.
 
 The negative-correction from applying the spatial moment to periodic images from $z^\prime \geq L$ is derived below. 
 \begin{align}
-\left.\delta_{2}\right|_{k\neq 0} =& 2\int_0^{L/2} \frac{-iA_0}{2k}z(-i\sin(kz)) \sum_{n=1}^\infty e^{E_0(z-nL)} dz \label{eq:dfv_2.1}\\
-\end{align}
-\begin{align}
-\lim_{k\rightarrow 0}\delta_2= & \frac{A_0e^{-E_0L}}{1-e^{-E_0L}}\left[ e^{E_0L/2}\left(\frac{L^2}{4E_0}-\frac{L}{E_0^2}+\frac{2}{E_0^3}\right)-\frac{2}{E_0^3}\right].
-\label{eq:dfv_2.2}
+\left.\delta^n_{2}\right|_{k\neq 0} =& 2\int_0^{L/2} \frac{-iA_n}{2k}z(-i\sin(kz)) \sum_{s=1}^\infty e^{E_0(z-sL)} dz \label{eq:dfv_2.1}\\
+= & \frac{A_n e^{-E_n L}}{1-e^{-E_n L}}\frac{1}{2(E_n^2+k^2)^2}\nonumber\\
+&\times\left[(-1)^m e^{E_n L/2}(E_n^2L+k^2L-4E_n) + 4E_n\right]\label{eq:dfv_2.2}\\
+\lim_{k\rightarrow 0}\delta^n_2= & \frac{A_n e^{-E_n L}}{1-e^{-E_n L}}\nonumber\\
+&\times\left[e^{E_n L/2} \left( -\frac{L^2}{4E_n} + \frac{L}{E_n^2} -\frac{2}{E_n^3} \right) + \frac{2}{E_n^3}\right].
+\label{eq:dfv_2.0}
 \end{align}
 
 Finally, the negative-correction from applying the spatial moment to periodic images from $z^\prime \leq -L$ is,
 \begin{align}
-\left.\delta_{3}\right|_{k\neq 0}= & 2\int_{0}^{L/2}  \frac{-iA_0}{2k}z(-i\sin(kz)) \sum_{n=1}^\infty e^{-E_0(z+nL)} dz \label{eq:dfv_3.1}\\
-\end{align}
-\begin{align}
-\lim_{k\rightarrow 0} \delta_3= & \frac{A_0e^{-E_0L}}{1-e^{-E_0L}}\left[ e^{-E_0L/2}\left(\frac{L^2}{4E_0}+\frac{L}{E_0^2}+\frac{2}{E_0^3}\right)-\frac{2}{E_0^3}\right].
+\left.\delta^n_{3}\right|_{k\neq 0}= & 2\int_{0}^{L/2}  \frac{-iA_n}{2k} z (-i\sin(kz)) \sum_{s=1}^\infty e^{-E_n(z+sL)} dz \label{eq:dfv_3.1}\\
+=&\frac{A_n e^{-E_n L}}{1-e^{-E_n L}}\frac{1}{2(E_n^2+k^2)^2}\nonumber\\
+&\times\left[(-1)^m e^{-E_n L/2}(E_n^2L+k^2L+4E_n) - 4E_n\right]\\
+\lim_{k\rightarrow 0} \delta^n_3= & \frac{A_n e^{-E_n L}}{1-e^{-E_n L}}\nonumber\\
+&\times \left[ e^{-E_n L/2}\left(\frac{L^2}{4E_n}+\frac{L}{E_n^2}+\frac{2}{E_n^3}\right)-\frac{2}{E_n^3}\right].
 \label{eq:dfv_3.0}
 \end{align}
+
+The complete valence finite volume correction is
+\begin{equation}
+\delta_{\mathrm{valence}} = \sum_{n=0}^\infty \delta^n_1 - \delta^n_2 - \delta^n_3,
+\label{eq:total_vfv}
+\end{equation}
+However, in practice Fig~\ref{fig:finite_volume} suggests that one may only need to consider the ground-state contribution from $z^\prime_{\mathrm{src}}=\{0, L\}$. Specifically for the small-volume (l3296) $T=8$ moment correlator, after substituting $A_0$ and $E_0$ into Eq.~(\ref{eq:total_vfv}), we estimate the valence finite volume effect to be a $6.0\pm 1.2$\% correction to the correlation function summed over $z^\prime$. Under the assumption that excited-state are insignificant, this correction is independent of source-sink separation time within the quoted uncertainty.
+
+Because the volume correction relies on extracting $A_0$ and $E_0$ after 3-momentum projection, the volume corrected three-point correlation function should be analyzed using the summation method. However, the data set of this preliminary study only has two source-sink separations and precludes such an option. In the example calculation discussed in Sec.~\ref{sec:results}, we demonstrate the efficacy of this method without considering the volume correction.
+
+Finally, the two-point moment correlation function has analogous volume corrections, propagating with the mass of the final state hadron with one unit of momentum ($\sim 1.47$~GeV), which in this study corresponds to the nucleon ($m_N \sim 1.32$~GeV). As a result, the volume corrections are exponentially damped compared to the three-point moment correlation functions, and only contribute to a correction of $0.070(5)$\% to the small volume (l3296) calculation. It is important to point out that while the volume effects are small for the two-point correlation function, it can not be corrected by Eq.~(\ref{eq:total_vfv}) via the summation method. {\color{red} Discuss ideas to circumvent this? or just leave it as is.}
+
 
 \section{Charge radius of the proton}\label{sec:results}
 
