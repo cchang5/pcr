@@ -445,9 +445,46 @@ The Dirac radius contribution of Eq.~(\ref{eq:radius}), can therefore, be calcul
 \end{align}
 
 \subsection{Valence finite volume correction}
-The valence finite volume corrections results from 1) truncating the spatial moment at $z=L/2$, and 2) applying the incorrect spatial moment between $[0,L/2]$ for periodic images. In this section we discuss how to correct for valence finite volume effects which arise from both contributions.
+The valence finite volume corrections results from 1) truncating the spatial moment at $z=L/2$, and applying the incorrect spatial moment between $[0,L/2]$ for periodic images coming from 2) $z\geq L$ and 3) $z \leq -L$. In this section we discuss how to correct for valence finite volume effects which arise from both contributions. In the following derivation, we make the assumption that past $L/2$, only the salient contribution comes from the ground state.
 
+\begin{figure*}[t]{
+		\includegraphics[width=0.49\textwidth]{figures/zcorr_3pt.pdf}
+		\includegraphics[width=0.49\textwidth]{figures/zcorr_d3pt.pdf}
+		\caption{(Left) blah blah..}
+		\label{fig:finite_volume}
+}\end{figure*}
 
+Before discussing the volume corrections, we first discuss the various contributions to the three-point correlation function in the spatial direction. In Fig.~\ref{fig:finite_volume} (Left), we plot the correlator as a function of current insertion position $z^\prime$ after projecting to zero-momentum in $x^\prime$, $y^\prime$, and $t^\prime$. We then perform a 3-state fit from $z^\prime = [4,16]$ and extract the ground state and first excited-state parameters. Note that the correlator is symmetric by construction from averaging with the parity inverted counterpart, and in conjunction, a symmetric fit function is also employed. We observe that at $\sim 400$~MeV pion masses, the propagating scale in the spatial-direction for the three-point correlator is $\sim 820$~MeV, corresponding to the mass of the rho-meson ($\sim 770$~MeV) {\color{red} what is the rho at 400 MeV?} with one unit of momentum ($\sim 120$~MeV) for a total energy of $\sim780$~MeV {\color{red} update if rho mass changes?}. This is consistent with expectation since the vector current yields a vector-meson propagating state, and the temporal direction has anti-periodic boundary conditions with length $T=96$. Additionally, we observe that beyond $L/2$, the correlation function is dominated by the ground state.
+
+In Fig.~\ref{fig:finite_volume} (Right), we take the results from Fig.~\ref{fig:finite_volume} (Left) and construct the zero-momentum moment correlation function. As expected, the spatial moment pushes the dominant contribution of the correlation function to larger values of $z^\prime$ (maximally around $z^\prime \sim 7$ instead of at zero). Additionally, since the spatial moment is itself not periodic and truncated at $z^\prime = L/2$, the moment correlation function deviates from Eq.~(\ref{eq:3ptmoment0}). We observe again however, that only the ground-state needs to be considered, since the first-excited state has insignificant contribution for $z^\prime \geq L/2$.
+
+The positive-correction to truncating the spatial moment at $L/2$ is given as follows.
+\begin{align}
+\left.\delta_{1}\right|_{k\neq 0}= & 2\int_{L/2}^{\infty} \frac{-iA_0}{2k} z(-i \sin(kz))e^{-E_0z} dz \label{eq:dfv_1.1}\\
+=& \frac{-A_0e^{-E_0L/2}}{2(E_0^2+k^2)^2}\left[E_0^2L+k^2L+4E_0\right]\cos(kL/2) \label{eq:dfv_1.2}
+\end{align}
+\begin{align}
+\lim_{k\rightarrow 0}\delta_{I} =& -A_0\left(\frac{L^2}{4E_0}+\frac{L}{E_0^2}+\frac{2}{E_0^3}\right)e^{-E_0L/2}. \label{eq:dfv_1.0}
+\end{align}
+The factor of 2 in Eq.~(\ref{eq:dfv_1.1}) arises from performing a symmetric integral around the origin, $E_0$ is the ground state energy, $A_0$ is the ground-state coefficient of the correlation function, and $k=\frac{2n\pi}{L}$. Taking the zero-momentum limit requires keeping the $\sin({kL/2})$ contribution of Eq.~(\ref{eq:dfv_1.2}), which otherwise vanishes at non-zero momentum from symmetry.
+
+The negative-correction from applying the spatial moment to periodic images from $z^\prime \geq L$ is derived below. 
+\begin{align}
+\left.\delta_{2}\right|_{k\neq 0} =& 2\int_0^{L/2} \frac{-iA_0}{2k}z(-i\sin(kz)) \sum_{n=1}^\infty e^{E_0(z-nL)} dz \label{eq:dfv_2.1}\\
+\end{align}
+\begin{align}
+\lim_{k\rightarrow 0}\delta_2= & \frac{A_0e^{-E_0L}}{1-e^{-E_0L}}\left[ e^{E_0L/2}\left(\frac{L^2}{4E_0}-\frac{L}{E_0^2}+\frac{2}{E_0^3}\right)-\frac{2}{E_0^3}\right].
+\label{eq:dfv_2.2}
+\end{align}
+
+Finally, the negative-correction from applying the spatial moment to periodic images from $z^\prime \leq -L$ is,
+\begin{align}
+\left.\delta_{3}\right|_{k\neq 0}= & 2\int_{0}^{L/2}  \frac{-iA_0}{2k}z(-i\sin(kz)) \sum_{n=1}^\infty e^{-E_0(z+nL)} dz \label{eq:dfv_3.1}\\
+\end{align}
+\begin{align}
+\lim_{k\rightarrow 0} \delta_3= & \frac{A_0e^{-E_0L}}{1-e^{-E_0L}}\left[ e^{-E_0L/2}\left(\frac{L^2}{4E_0}+\frac{L}{E_0^2}+\frac{2}{E_0^3}\right)-\frac{2}{E_0^3}\right].
+\label{eq:dfv_3.0}
+\end{align}
 
 \section{Charge radius of the proton}\label{sec:results}
 
