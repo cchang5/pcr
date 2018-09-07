@@ -457,7 +457,7 @@ The valence finite volume corrections results from 1) truncating the spatial mom
 Before discussing the volume corrections, we first discuss the various contributions to the three-point correlation function in the spatial direction. In Fig.~\ref{fig:finite_volume} (Left), we plot the correlator as a function of current insertion position $z^\prime$ after projecting to zero-momentum in $x^\prime$, $y^\prime$, and $t^\prime$. We then perform a 3-state fit from $z^\prime = [4,16]$ and extract the ground state and first excited-state parameters. Note that the correlator is symmetric by construction from averaging with the parity inverted counterpart, and in conjunction, a symmetric fit function is also employed defined as the following,
 \begin{equation}
 C(z^\prime) = \sum_n A_n\left(e^{-E_n z^\prime} + e^{-E_n(L-z^\prime)}\right).
-\end{equation} We observe that at $\sim 400$~MeV pion masses, the propagating scale in the spatial-direction for the three-point correlator is $\sim 820$~MeV, corresponding to the mass of the rho-meson ($\sim 770$~MeV) {\color{red} what is the rho at 400 MeV?} with one unit of momentum ($\sim 120$~MeV) for a total energy of $\sim780$~MeV {\color{red} update if rho mass changes?}. This is consistent with expectation since the vector current yields a vector-meson propagating state, and the temporal direction has anti-periodic boundary conditions with length $T=96$. Additionally, we observe that beyond $L/2$, the correlation function is dominated by the ground state.
+\end{equation} We observe that at $\sim 400$~MeV pion masses, the propagating scale in the spatial-direction for the three-point correlator is $\sim 820$~MeV, corresponding to the mass of the rho-meson ($m_\rho \sim 770$~MeV) {\color{red} what is the rho at 400 MeV?} with one unit of momentum ($\sim 120$~MeV) for a total energy of $\sim780$~MeV {\color{red} update if rho mass changes?}. This is consistent with expectation since the vector current yields a vector-meson propagating state, and the temporal direction has anti-periodic boundary conditions with length $T=96$. Additionally, we observe that beyond $L/2$, the correlation function is dominated by the ground state.
 
 In Fig.~\ref{fig:finite_volume} (Right), we take the results from Fig.~\ref{fig:finite_volume} (Left) and construct the zero-momentum moment correlation function. As expected, the spatial moment pushes the dominant contribution of the correlation function to larger values of $z^\prime$ (maximally around $z^\prime \sim 7$ instead of at zero). Additionally, since the spatial moment is itself not periodic and truncated at $z^\prime = L/2$, the moment correlation function deviates from Eq.~(\ref{eq:3ptmoment0}). We observe again however, that only the ground-state needs to be considered, since the first-excited state has insignificant contribution for $z^\prime \geq L/2$.
 
@@ -489,19 +489,25 @@ Finally, the negative-correction from applying the spatial moment to periodic im
 \label{eq:dfv_3.0}
 \end{align}
 
-The complete valence finite volume correction is
+{\color{red} non-zero momentum FV correction needs to be check. I'm pretty sure there's an error some where. The zero-momentum should be correct though.} The complete valence finite volume correction is
 \begin{equation}
 \delta_{\mathrm{valence}} = \sum_{n=0}^\infty \delta^n_1 - \delta^n_2 - \delta^n_3,
 \label{eq:total_vfv}
 \end{equation}
-However, in practice Fig~\ref{fig:finite_volume} suggests that one may only need to consider the ground-state contribution from $z^\prime_{\mathrm{src}}=\{0, L\}$. Specifically for the small-volume (l3296) $T=8$ moment correlator, after substituting $A_0$ and $E_0$ into Eq.~(\ref{eq:total_vfv}), we estimate the valence finite volume effect to be a $6.0\pm 1.2$\% correction to the correlation function summed over $z^\prime$. Under the assumption that excited-state are insignificant, this correction is independent of source-sink separation time within the quoted uncertainty.
+However, in practice Fig~\ref{fig:finite_volume} suggests that one may only need to consider the ground-state contribution from $z^\prime_{\mathrm{src}}=\{0, L\}$. Specifically for the small-volume (l3296) $T=8$ moment correlator, after substituting $A_0$ and $E_0$ into Eq.~(\ref{eq:total_vfv}), we estimate the valence finite volume effect to be a $6.0\pm 1.2$\% correction to the correlation function summed over $z^\prime$. Under the assumption that excited-state are insignificant, this correction is independent of source-sink separation time within the quoted uncertainty. Fig.~\ref{fig:fv_relerr} shows the size of the relative volume correction as a function of the spatial length $L$ and ground state energy $E_0$.
+
+\begin{figure}[t]{
+		\includegraphics[width=0.49\textwidth]{figures/fv_relerr_0mom.pdf}
+		\caption{(Left) blah blah..}
+		\label{fig:fv_relerr}
+}\end{figure}
 
 Because the volume correction relies on extracting $A_0$ and $E_0$ after 3-momentum projection, the volume corrected three-point correlation function should be analyzed using the summation method. However, the data set of this preliminary study only has two source-sink separations and precludes such an option. In the example calculation discussed in Sec.~\ref{sec:results}, we demonstrate the efficacy of this method without considering the volume correction.
 
 Finally, the two-point moment correlation function has analogous volume corrections, propagating with the mass of the final state hadron with one unit of momentum ($\sim 1.47$~GeV), which in this study corresponds to the nucleon ($m_N \sim 1.32$~GeV). As a result, the volume corrections are exponentially damped compared to the three-point moment correlation functions, and only contribute to a correction of $0.070(5)$\% to the small volume (l3296) calculation. It is important to point out that while the volume effects are small for the two-point correlation function, it can not be corrected by Eq.~(\ref{eq:total_vfv}) via the summation method. {\color{red} Discuss ideas to circumvent this? or just leave it as is.}
 
 
-\section{Charge radius of the proton}\label{sec:results}
+\section{Dirac radius of the nucleon}\label{sec:results}
 
 \subsection{Computational Details}
 To demonstrate the efficacy of this approach, we perform the
@@ -530,27 +536,56 @@ ensembles have larger spatial volume, and are not replicated along the $z$-direc
 \end{table}
 
 
-The three-point correlation functions are constructed using a `sequential propagator` with sink-locations at $T=\{8,10\}$.
+The three-point correlation functions are constructed using a \textit{sequential propagator} with sink-locations at $T=[8,10]$, and projected to $k^\prime=[0,2\pi/L]$ momentum at the interaction, and zero-momentum at the sink. The two-point correlation function is projected to $k=[0,2\pi/L]$ momentum at the sink. While not considered in this study, this method can also be applied to the Breit frame.
 
 \subsection{Analysis strategy}
-For the following analysis, the ground state parameters are extracted from a simultaneous fit to $C_{\mathrm{2pt}}(t)$, $C^\prime_{\mathrm{2pt}}(t)$, $C_{\mathrm{3pt}}(t,t^\prime)$, and $C^\prime_{\mathrm{3pt}}(t,t^\prime)$ for both $k=0$ and $2\pi/L$. Parametric inference is performed under the Bayesian framework and implemented by the Python library \texttt{lsqfit}~\cite{lsqfit-9.3}. Robustness of the fit is demonstrated by performing a sensitivity analysis under varying fit regions for all 8 correlation functions, and the number of states in the fit ansatz. Due to having relatively low statistics, the fit region is restricted to contain a smaller number of degrees-of-freedom to avoid systematic errors when inverting the covariance matrix. Additionally, we check that the ground state energy and the overlap factors satisfy the dispersion relation over different momenta.
+For the following analysis, parametric inference is performed under the Bayesian framework and implemented by the Python library \texttt{lsqfit}~\cite{lsqfit-9.3}. The posterior distributions are extracted from a \textit{chained fit} to $C_{\mathrm{2pt}}(t)$, $C^\prime_{\mathrm{2pt}}(t)$, $C_{\mathrm{3pt}}(t,t^\prime)$, and $C^\prime_{\mathrm{3pt}}(t,t^\prime)$ for $k^{(\prime)}=[0,2\pi/L]$. A chained fit sequentially minimizes the loss function against each correlation function while preserving the covariance between all data and posterior distributions. Due to having relatively low statistics, a chained fit is employed to limit the number of degrees-of-freedom in each step of the chain, and avoids systematic errors that arise from inverting an ill-conditioned covariance matrix. Robustness of the fit is demonstrated by performing a sensitivity analysis under varying fit regions for all 8 correlation functions. Additionally, we check that the ground state energy and the overlap factors satisfy the dispersion relation over different momenta. We include only the first excited state in fit ansatz to avoid an under-constrained fit against three-point correlation functions with two source-sink separations times.
 
-\subsection{Correlator analysis}
-
+\subsection{Analysis details}
 \subsubsection{Prior selection}
+The ground state priors $(\tilde{E}_0, \tilde{z}_0, \tilde{z}^\prime_0, \tilde{g}_{00}, \tilde{g}^\prime_{00})$ are loosely constrained through visual inspection of the respective plateau values shown in Fig.~\ref{fig:effective_mass} and Fig.~\ref{fig:effective} obtained from plotting the \textit{effective mass} and other similar quantities. The prior widths are orders of magnitude wider than the resulting ground state posterior distributions for all parameters.
+
+\begin{figure}[t]{
+	\includegraphics[width=0.49\textwidth]{figures/3296_meff.pdf}
+	\caption{Effective mass.}
+	\label{fig:effective_mass}
+}\end{figure}
+
+The excited-state energy is parameterized as a log-normal splitting with the median at the two-pion splitting with the one-pion splitting within the 68\% credible interval. The excited-state overlap factor is set to $\tilde{z}_1\sim \mathcal{N}(0,\langle \tilde{z}_0\rangle/2)$, reflecting the fact that we expect the magnitude to be half the ground state mean value due to operator smearing, but are agnostic about the sign. The excited-state slope of the overlap factor is set to the same distribution as the ground state, since we expect the slope to be constant up to discretization corrections as required by the dispersion relation. The excited-state vector charges and radii are set to $\tilde{g}^{(\prime)}_{nm}\sim \mathcal{N}(0,\langle \tilde{g}^{(\prime)}_{00}\rangle)$ with similar reasoning as $\tilde{z}_1$. 
+
+\subsubsection{Fit region and sensitivity analysis}
+
+\begin{figure}[b]{
+		\includegraphics[width=0.49\textwidth]{figures/3296_dgV8_dgV.pdf}
+		%\includegraphics[width=0.49\textwidth]{figures/3296_dgV8_tmax_dgV.pdf}
+		\caption{Stability plot.}
+		\label{fig:stability_main}
+}\end{figure}
+
+The robustness of the final results are demonstrated by observing stability of the ground state under varying the fit region across all eight correlation functions. Fig.~\ref{fig:stability_main} shows that the ground state radius is stable when fitting over different values of $t^\prime_{\mathrm{min}}$ and $t^\prime_{\mathrm{max}}$. We remind the reader that $t^\prime$ denotes the current insertion time, and a complete analysis should also include a study of stability under varying the source-sink separation time $t$. The complete study of the fit region, to the extent permitted by the data, is shown in Sec.~\ref{Appendix:small_volume_stability}.
+
+In Fig.~\ref{fig:effective_mass} and Fig.~\ref{fig:effective}, the data between the vertical gray lines are included in the analysis of the preferred fit. We observe that the resulting ground-state posterior distributions lie on top of the expected value suggested by the effective mass and analogous plots. The posterior distribution is observed to be consistently more precise than what the individual correlation functions suggests because a correlated analysis is performed across all data sets.
+
+\subsubsection{Finite volume effects}
+{\color{red} Need 4896 data...}
+
+\subsection{Results}
+We present the first results from applying the spatial moments method for extracting directly from LQCD, the slope of the isovector vector form factor. In Fig.~\ref{fig:radius}, the values of $Z_0$ and $g_V$ at zero (black) and 350~MeV (red) momentum ($k=[0, 2\pi/L]$) are extracted from the lattice calculation. Additionally, the slope of the dashed lines are directly extracted from the same lattice calculation from the analysis of the correlation function with the spatial moment.
+
+{\color{red} Work out disc. correction to dispersion relation (Wilson should still be asq). Say if Z follows dispersion relation.}
 
 
-\subsubsection{Fit region}
-
-For example, the preferred fit on the l3296 ensemble contains 36 data points from 8 correlation functions, while the two-state fit ansatz contains a total of 24 parameters. A fit with more than two states will contain more parameters than data points, and prior information is required. 
-
-\subsubsection{Sensitivity analysis}
+Following this analysis, we quote the value of the isovector Dirac radius of the nucleon to be
+\begin{equation}
+\left( r_1 \right) ^{u-d} = 0.1753(64)\ \mathrm{fm}
+\end{equation}
+on the $a\sim 0.11$~fm and $m_\pi \sim 400$~MeV isoclover lattice with a 4\% statistical uncertainty.
 
 \begin{figure*}[t]{
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_dgV.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_tmax_dgV.pdf}
+		\includegraphics[width=0.49\textwidth]{figures/Zs_chain.pdf}
+		\includegraphics[width=0.49\textwidth]{figures/gV_chain.pdf}
 		\caption{(Left) Stability plot and (Right) $Q$-value for the matrix element derivative under varying $t_{\mathrm{min}}$ of the two-point correlation function, and $n$-states. The preferred fit is shown by the solid green points.}
-		\label{fig:stability_main}
+		\label{fig:radius}
 }\end{figure*}
 
 \section{Conclusions and outlook}
@@ -560,52 +595,28 @@ This is a great paper. Please publish. Thanks.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliography{pcr_bib}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{comment}
 \appendix
 
 \clearpage
 \newpage
 \onecolumngrid
-\section{Small volume $t_{\mathrm{min}}$ correlator stability plots}
-\begin{figure*}[h]{
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_2pt_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_d2pt_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_2pt_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_d2pt_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_2pt_dgV.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_d2pt_dgV.pdf}
-		\caption{Fit sensitivity to variations of $C_{\mathrm{2pt}}(t)$ and $C^\prime_{\mathrm{2pt}}(t)$ fit regions. Shown here are the $t_{\mathrm{min}}$ and $n$-state stability plots for the $Q$-value (top row), $z^\prime_0$ (middle row) and $g^\prime_{00}$ (bottom row). The colors indicate fits with $n$-state=1 (red), 2 (green), 3 (blue), and 4 (purple). The different momenta are given by k=0 (circle), and k=$2\pi/L$ (square). The preferred fit is denoted by the solid symbol. The dashed line is set to $Q=0.1$. The $t_{\mathrm{min}}$ values are integer-valued and staggered for visual clarity.}
-		\label{fig:stability_c2pt}
-}\end{figure*}
 
-\newpage
+\section{Small volume effective mass and related plots}
 \begin{figure*}[h]{
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV8_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV8_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV8_dgV.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV8_dgV.pdf}
-		\caption{
-			Fit sensitivity to variations of $C_{\mathrm{3pt}}(8,t^\prime)$ and $C^\prime_{\mathrm{3pt}}(8,t^\prime)$ fit regions. For $C_{\mathrm{3pt}}$, the data is removed symmetrically around the mid-point. Analogous to Fig.~\ref{fig:stability_c2pt}.}
-		\label{fig:stability_c3pt8}
-}\end{figure*}
-
-\newpage
-\begin{figure*}[h]{
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV10_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV10_Q.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV10_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV10_dZ0.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_gV10_dgV.pdf}
-		\includegraphics[width=0.49\textwidth]{plots/figures/3296_dgV10_dgV.pdf}
-		\caption{
-			Fit sensitivity to variations of $C_{\mathrm{3pt}}(10,t^\prime)$ and $C^\prime_{\mathrm{3pt}}(10,t^\prime)$ fit regions. For $C_{\mathrm{3pt}}$, the data is removed symmetrically around the mid-point. Analogous to Fig.~\ref{fig:stability_c2pt}.}
-		\label{fig:stability_c3pt10}
+\includegraphics[width=0.49\textwidth]{figures/3296_zeff.pdf}
+\includegraphics[width=0.49\textwidth]{figures/3296_dzeff.pdf}
+\includegraphics[width=0.49\textwidth]{figures/3296_gVeff.pdf}
+\includegraphics[width=0.49\textwidth]{figures/3296_dgVeff.pdf}
+\caption{(Left) Stability plot and (Right) $Q$-value for the matrix element derivative under varying $t_{\mathrm{min}}$ of the two-point correlation function, and $n$-states. The preferred fit is shown by the solid green points.}
+\label{fig:effective}
 }\end{figure*}
 
 \clearpage
 \newpage
 \section{Small volume $t_{\mathrm{max}}$ correlator stability plots}
+\label{Appendix:small_volume_stability}
 \begin{figure*}[h]{
 		\includegraphics[width=0.49\textwidth]{plots/figures/3296_2pt_tmax_Q.pdf}
 		\includegraphics[width=0.49\textwidth]{plots/figures/3296_d2pt_tmax_Q.pdf}
@@ -642,5 +653,6 @@ This is a great paper. Please publish. Thanks.
 			Fit sensitivity to variations of $C_{\mathrm{3pt}}(10,t^\prime)$ and $C^\prime_{\mathrm{3pt}}(10,t^\prime)$ fit regions. For $C_{\mathrm{3pt}}$, the data is removed symmetrically around the mid-point. Analogous to Fig.~\ref{fig:stability_c2pt}.}
 		\label{fig:stability_c3pt10}
 }\end{figure*}
+%\end{comment}
 
 \end{document}
