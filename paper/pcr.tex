@@ -66,8 +66,8 @@ Momentum-space derivatives of matrix elements can be related to their coordinate
 
 
 \section{Introduction\label{sec:intro}}
-Answers to some of the deepest mysteries of nature may be uncovered
-through fundamentally understanding how protons and neutrons, the
+Answers to some of the deepest mysteries of Nature may lie in a more 
+fundamental understanding of how protons and neutrons, the
 basic building blocks of our world, interact with the universe. The
 lattice QCD community has contributed to our understanding of the
 strength of these interactions by direct calculations of form
@@ -77,15 +77,14 @@ current understanding of the Standard Model.
 
 \subsection{On the radius of the proton}
 The charged leptons are fundamental (point-like) particles in the
-Standard Model of particle physics, with identical coupling strengths
-to the electroweak currents, and only differ in mass between the three
-generations. This Standard Model paradigm, known as \textit{lepton
-  universality}, is however, in tension with recent experimental
-observations of the proton charge radius~\cite{Carlson:2015jba}. In
-particular, measurement from muonic Hydrogen~\cite{nature09250}
-resulted in a 4\% smaller proton radius when compared to the CODATA
-average from 24 transition frequency measurements of atomic
-Hydrogen~\cite{RevModPhys.80.633}, in tension at 4 standard
+Standard Model of particle physics, with identical couplings 
+to the electroweak currents, and differ only in mass between the three
+generations. This Standard Model paradigm, known as \textit{lepton flavor universality}, 
+is however, in tension with recent experimental observations of the proton 
+charge radius~\cite{Carlson:2015jba}. In particular, measurement from muonic 
+Hydrogen~\cite{nature09250} resulted in a 4\% smaller proton radius when 
+compared to the CODATA average from 24 transition frequency measurements 
+of atomic Hydrogen~\cite{RevModPhys.80.633}, in tension at 4 standard
 deviations. This discrepancy hints at the possibility that the
 electron and muon may differ fundamentally in ways unaccounted for by
 the Standard Model. Recently, evidence of possible resolution to the
@@ -105,127 +104,77 @@ experimentalists. Furthermore, the ratio of semi-leptonic
 $B\rightarrow D^{(*)}\ell\bar{\nu}$ decays to the electron and tau
 final states is also observed to be in tension with the Standard Model
 prediction at 4 standard deviations~\cite{Ciezarek:2017yzh}, lending
-evidence that the discrepancy seen in the proton radius may in fact be
-a result of new physics.
+evidence that the discrepancy seen in the proton radius may in fact result 
+from a violation of lepton flavor universality.
 
-While the measurement of the proton radius is very challenging, its
-definition is straightforward from a theory stand point. Specifically,
-the charge radius of the proton $\langle r \rangle$ is defined through the $Q^2$
+While the measurement of the proton radius is challenging, its definition is straightforward. 
+Specifically, the charge radius of the proton $\langle r \rangle$ is defined through the $Q^2$
 derivative of the Sach's form factor $G_E(Q^2)$
-evaluated at zero-momentum transfer
+evaluated at zero-momentum transfer,
 \begin{equation}
-  \left. \frac{\partial G_E(Q^2)}{\partial Q^2} \right|_{Q^2=0} = -\frac{1}{6}
-    \langle r^2 \rangle = \left. \frac{\partial F_1(Q^2)}{\partial
-      Q^2}\right|_{Q^2=0} - \frac{F_2(0)}{4 M^2},\label{eq:radius}
+-\frac{1}{6} \langle r^2 \rangle \equiv \left. \frac{\partial G_E(Q^2)}{\partial Q^2} \right|_{Q^2=0} 
+= \left. \frac{\partial F_1(Q^2)}{\partial Q^2} \right|_{Q^2=0} - \frac{F_2(0)}{4 M^2}
+\label{eq:radius},
 \end{equation}
 where $F_1(Q^2)$ and $F_2(Q^2)$ are the Dirac and Pauli form factors,
 and $M$ is the proton mass.
-These form factors are then defined in terms of the matrix elements of
-the electromagnetic current
+The form factors parameterize the matrix element of the electromagnetic current,
 \begin{eqnarray}
-\lefteqn{\langle N(\vec{p}_f) \mid V_{\mu}(0) \mid N(\vec{p}_i \rangle
+\lefteqn{\langle N(p_f) \mid V_{\mu}(q) \mid N(p_i) \rangle
   =} \nonumber \\
-& &  \bar{u}(\vec{p}_f) \left[ F_1(Q^2) \gamma_\mu + i\sigma_{\mu\nu}
-    q_\nu \frac{F_2(Q^2)}{2 M} \right] u(\vec{p}_i)
+& &\qquad  \bar{u}(p_f) \left[ \gamma_\mu F_1(Q^2)  + i\sigma_{\mu\nu}
+    q_\nu \frac{F_2(Q^2)}{2 M} \right] u(p_i)
 \label{eq:VmuME}
 \end{eqnarray}
-where $\vec{q} = \vec{p}_f - \vec{p}_i$ is the three-momentum transfer
-and $Q^2 = (E_f - E_i)^2 - \vec{q}^2$ is the four-momentum transfer
-entering into eqn.~\ref{eq:radius}.  The calculation of both the
-isovector and isoscalar electromagnetic form factors through the
-determination of the matrix element defined above is a
-well-established program in lattice QCD, with extensive studies aimed
-at controlling the systematic uncertainties that enter into their
-evaluation.
+where $q = p_i - p_f$ is the four-momentum carried away by the current, and $Q^2 = -q^2$.  
+%
+We indicate the initial and final states by $N$ to indicate a generic nucleon,
+in anticipation of our lattice simulation in which differences between the up and down quark,
+hence the proton and neutron, are neglected.
+%
+The calculation of both the isovector and isoscalar electromagnetic form factors through the
+determination of the matrix element defined above is a well-established program in lattice QCD, 
+with extensive studies aimed at controlling associated systematic uncertainties.
 
-Current lattice QCD determinations of the radius, however, remain
-problematical, because the derivative is extracted from modeling the
-$Q^2$ dependence of $F_1(Q^2)$ from calculations at the discrete
-values of momentum accessible in a finite volume.  Indeed, the
-problems encountered in extracting the charge radius from lattice
-calculations of the form factor in some respects mirror those in
-electron-scattering experiments, where the form factor is computed for
-a descrete, albeit closely spaced, set of finite $Q^2$, and the need
-to include dispersive methods in the analysis of the form factors over
-the values of $Q^2$ probed in experiment has been
-emphasised\cite{Alarcon:2018irp}.  Thus lattice calculations are
-susceptible to two major problems: the model dependence that
-introduces uncontrolled systematic errors, and that the smallest
-non-zero momentum is too large to perform a controlled extrapolation
-of the slope at zero-momentum since accessing small momentum in finite
-volumes requires very large lattices that are prohibitively expensive.
+Current lattice QCD determinations of the radius, however, remain problematic because the derivative is extracted from modeling the $Q^2$ dependence of $F_1(Q^2)$ from calculations at the discrete momenta accessible in a finite volume.  
+Indeed, problems encountered in extracting the charge radius from lattice calculations of form factors in some respects mirror those in electron-scattering experiments, 
+where the form factor is computed for a discrete, albeit closely spaced, set of $Q^2$.
+The need to include dispersive methods in the analysis of the form factors over the values of $Q^2$ probed in experiment has been emphasized in~\cite{Alarcon:2018irp}.  
+Thus lattice calculations are susceptible to two major problems: 
+the model dependence that introduces uncontrolled systematic errors, 
+and that the smallest non-zero momentum is too large to perform a controlled extrapolation of the slope at zero-momentum since accessing small momentum in finite volumes requires prohibitively expensive large lattices.
 
 \subsection{On the origin of matter}
-One of the outstanding mysteries of our universe lies in quest to
-understand the origin of matter, or more specifically the origin of
-the matter-antimatter asymmetry that we observe today. There is
-tantalizing evidence for possible sources of \textit{leptogenesis}
-recently revealed at the \textit{Tokai-2-Kamioka} (T2K) long-baseline
-neutrino experiment~\cite{Abe:2017uxa}, where CP conservation in the
-neutrino sector is excluded at 90\% confidence.  Future long-baseline
-neutrino experiments including the \textit{Deep Underground Neutrino
-  Experiment} (DUNE), and the detector upgrade to Hyper-Kamiokande
-(T2HK) aims to provide more precise neutrino oscillation measurements
-in order to further resolve the neutrino CP-violating
-phase. Additionally, cost-effective projects such as \textit{CHerenkov
-  detectors In mine PitS} (CHIPS)~\cite{Adamson:2013xka}, a water
-Cherenkov detector designed to be approximately 5 times larger than
-Super-Kamiokande, is planned with the intention to ultimately run off
-the DUNE beamline, providing a cost-efficient way to improve knowledge
-on neutrino parameters including the CP violating phase.
+One of the outstanding mysteries of our universe is the origin of the observed matter-antimatter asymmetry. 
+There is tantalizing evidence for possible sources of \textit{leptogenesis} recently revealed at the \textit{Tokai-2-Kamioka} (T2K) long-baseline neutrino experiment~\cite{Abe:2017uxa}, where CP conservation in the
+neutrino sector is excluded at 90\% confidence.  
+Future long-baseline neutrino experiments including the \textit{Deep Underground Neutrino Experiment} (DUNE), and the detector upgrade to Hyper-Kamiokande (T2HK) aim to provide more precise neutrino oscillation measurements in order to further resolve the neutrino CP-violating phase. 
+Additionally, cost-effective projects such as \textit{CHerenkov detectors In mine PitS} (CHIPS)~\cite{Adamson:2013xka}, a water Cherenkov detector designed to be approximately 5 times larger than Super-Kamiokande, is planned with the intention to ultimately run off the DUNE beamline, providing a cost-efficient way to improve knowledge on neutrino parameters including the CP-violating phase.
 
-In order to fully benefit from the advances of next generation
-neutrino experiments, the theoretical description of neutrino
-scattering must also be made more precise through improving the
-current determination of the nucleon axial form factor $F_A(Q^2)$. The
-axial form factor parameterizes the strength in which the weak current
-couples to the nucleon, and consequently governs the neutrino
-scattering cross-section off nuclear targets in the regime of
-quasi-elastic scattering. There is currently a 1--2\% uncertainty on
-the determination of the cross-section~\cite{Adams:2013qkq} that is
-dominated by the hadronic uncertainty on the axial form factor at
-small momentum transfer up to approximately
-1~GeV~\cite{Day:2012gb}. Similar to the determination of the charge
-radius, the shape of the form factor is often derived from the model
-dependent dipole ansatz. Recent progress in lattice QCD has
-demonstrated control at the percent-level over the axial form factor
-at zero-momentum transfer~\cite{Chang:2017oll}. The method introduced
-in this paper is extensible to calculations of the slope at non-zero
-momentum transfer and paves a way for controlling the full momentum
-dependence of the form factor at the same level of precision.
+In order to fully benefit from the advances of next generation neutrino experiments, the theoretical description of neutrino scattering must also be made more precise through improving the current determination of the nucleon axial form factor $F_A(Q^2)$. 
+The axial form factor parameterizes the strength in which the weak current couples to the nucleon, and consequently governs the neutrino scattering cross-section off nuclear targets in the regime of quasi-elastic scattering. 
+The current a 1--2\% uncertainty on the determination of the cross-section~\cite{Adams:2013qkq} is
+dominated by hadronic uncertainty on the axial form factor at small momentum transfer, up to approximately 1~GeV~\cite{Day:2012gb}. 
+The slope of the form factor is often derived from the model-dependent dipole ansatz. 
+Recent progress in lattice QCD has demonstrated control at the percent-level over the axial form factor at zero-momentum transfer~\cite{Chang:2018uxx}.%~\cite{Chang:2017oll}. 
+The method introduced in this paper is applicable to calculations of the slope at non-zero momentum transfer and paves a way for determining the momentum dependence of the form factor at a similar level of precision.
 
 \subsection{Overview}
 
-The remainder of the paper is laid out as follows.  In the next
-section, we introduce moment methods in which time-sliced
-correlation functions are weighted by moments of a spatial coordinate,
-and demonstrate how these methods enable the momentum-dependent slope of form factors to
-be directly computed at the momenta allowed on the lattice.  We
-describe previous applications of the method, and then describe how
-these methods can be used to determine the slope of the nucleon
-electromagnetic form factors at $Q^2 = 0$, and hence the charge radius
-of the nucleon.  We concluded the section by describing our analysis
-method, emphasising in particular the need to allow for excited-state
-contributions to the correlation functions, and the anticipated
-finite-volume behaviour.
+The remainder of the paper is laid out as follows.  
+In the next section, after a discussion of earlier, related works, we demonstrate how correlation functions weighted by moments of a spatial coordinate are related to the momentum-dependent slope of associated form factors.  
+We then describe how this method can be used to determine directly the slope of the nucleon electromagnetic form factors at $Q^2 = 0$, and hence the charge radius of the nucleon.  
+We conclude the section by describing our analysis, emphasizing in particular the need to account for excited-state contributions to the correlation functions, and the anticipated finite-volume behavior.
 
-In Section~\ref{sec:results}, we present the application of the method
-to the isovector charge radius of the nucleon.  We begin by describing
-the parameters of the ensembles used in our calculation, emphasising
-the need to understand the dependence of the results on the spatial
-volume of our lattices.  We present results for the charge radius for
-several separations between the nucleon source and nucleon sink,
-demonstrating the need to include the contribution of excited nucleon
-states in our fitting procedure.  The calculation is performed at
-unphysically large values of the pion mass, and at a relatively coarse
-lattice spacing.  We conclude with an program of future work, and of
-other applications, including to the determination of the axial-vector
-charge radius.
+In Section~\ref{sec:results}, we present the application of the method to the isovector charge radius of the nucleon.  
+We begin by describing the parameters of the ensembles used in our calculation, emphasizing the need to understand the dependence of the results on the spatial volume of our lattices.  
+We present results for the charge radius for several separations between the nucleon source and sink, demonstrating the need to include the contribution of excited nucleon states in the fitting procedure.  
+The calculation is performed at unphysically large values of the pion mass, and at one relatively coarse
+lattice spacing.  
+We conclude with a program of future work, and of other applications, including the determination of the axial-vector charge radius.
 
-We emphasise that the aim of this paper is not to provide a direct
-calculation of the charge radius that can confront experiment, but
-rather to present a method that can address one of the main systematic
-uncertainties that plague present calculations.
+The aim of this paper is not to provide a calculation of the charge radius to confront experiment, but
+rather to present a method that can address one of the main systematic uncertainties that plague present calculations.
 
 \section{Moments of correlation functions}
 Position-space moment methods was first introduced to
@@ -249,62 +198,95 @@ of single particle form factors with respect to the squared
 momentum-transfer at any lattice accessible momenta.
 
 \subsection{Charge radius spinor algebra}
-Here we present the spinor algebra necessary to obtain the derivative of the Dirac form factor $F_1(Q^2)$ from the derivative of the electromagnetic matrix element. We work explicitly in the Degrand-Rossi basis defined as
+Here we present the spinor algebra necessary to obtain the derivative of the Dirac form factor $F_1(Q^2)$ from the derivative of the hadronic matrix element of the electromagnetic current.
+We work in the Degrand-Rossi basis~\cite{DeGrand:1990dk}, where
+%
 \begin{align}
 \gamma_1 = \begin{pmatrix}
 \phantom{-}0&\phantom{-}0&\phantom{-}0&\phantom{-}i\\
 \phantom{-}0&\phantom{-}0&\phantom{-}i&\phantom{-}0\\
 \phantom{-}0&-i&\phantom{-}0&\phantom{-}0\\
 -i&\phantom{-}0&\phantom{-}0&\phantom{-}0
-\end{pmatrix} &&
+\end{pmatrix}, &&
 \gamma_2=\begin{pmatrix}
 \phantom{-}0&\phantom{-}0&\phantom{-}0&-1\\
 \phantom{-}0&\phantom{-}0&\phantom{-}1&\phantom{-}0\\
 \phantom{-}0&\phantom{-}1&\phantom{-}0&\phantom{-}0\\
 -1&\phantom{-}0&\phantom{-}0&\phantom{-}0
-\end{pmatrix}\nonumber\\
+\end{pmatrix}, \nonumber\\
 \gamma_3=\begin{pmatrix}
 \phantom{-}0&\phantom{-}0&\phantom{-}i&\phantom{-}0\\
 \phantom{-}0&\phantom{-}0&\phantom{-}0&-i\\
 -i&\phantom{-}0&\phantom{-}0&\phantom{-}0\\
 \phantom{-}0&\phantom{-}i&\phantom{-}0&\phantom{-}0
-\end{pmatrix}
+\end{pmatrix},
 &&
 \gamma_4=\begin{pmatrix}
 \phantom{-}0&\phantom{-}0&\phantom{-}1&\phantom{-}0\\
 \phantom{-}0&\phantom{-}0&\phantom{-}0&\phantom{-}1\\
 \phantom{-}1&\phantom{-}0&\phantom{-}0&\phantom{-}0\\
 \phantom{-}0&\phantom{-}1&\phantom{-}0&\phantom{-}0
-\end{pmatrix}
-\end{align}
-and define momentum of the spinors to point in the $z$-direction without loss of generality. Additionally we restrict ourselves to aligning the spin to be (anti-)parallel with momentum, yielding the following positive- and negative-helicity particle spinors,
-\begin{align}
-u_+(p)=\begin{pmatrix}
-\sqrt{E-p}\\0\\ \sqrt{E+p}\\0
-\end{pmatrix}
-&&
-u_-(p)=\begin{pmatrix}
-0\\ \sqrt{E+p}\\0\\ \sqrt{E-p}
 \end{pmatrix}.
 \end{align}
-Next, we explicitly work out the spinor contraction for the $V_4$ current in the rest frame of the final state nucleon such that $\vec{p}_f=0$ and $\vec{p}_i = -q_3\equiv k$ as shown in Fig.~\ref{fig:3pt_kinematics}. Following Eq.~(\ref{eq:VmuME}),
+%
+For a nucleon with three-momentum in the $z$-direction, $p = (E, 0, 0, k)$, the positive- and negative-helicity spinors are,
+%
 \begin{align}
-&\langle N(\vec{p}_f) | V_4(q^2)|N(\vec{p}_i) \rangle\nonumber \\
-= & \bar{u}(\vec{p}_f)\left[F_1(Q^2)\gamma_4 + i\sigma_{43}q_3\frac{F_2(Q^2)}{2M}\right]u(\vec{p}_i).
-\label{eq:V4ME}
+u_+(p)=\begin{pmatrix}
+\sqrt{E-k}\\0\\ \sqrt{E+k}\\0
+\end{pmatrix},
+&&
+u_-(p)=\begin{pmatrix}
+0\\ \sqrt{E+k}\\0\\ \sqrt{E-k}
+\end{pmatrix}.
 \end{align}
-In the case of a $u_{\pm}\rightarrow u_{\mp}$ transition, the matrix element vanishes. However, if helicity is conserved, then Eq.~(\ref{eq:V4ME}) simplifies to,
+%
+We contract the spinors with the $V_4$ current in the rest frame of the final state nucleon, as indicated in Fig.~\ref{fig:3pt_kinematics}, with four momenta
+%
 \begin{equation}
-\langle N(0) | V_4 | N(k) \rangle = F_1\sqrt{M}\left(\sqrt{E+k} + \sqrt{E-k}\right),
+p_i = (E,0,0,k),\ p_f =(M,0,0,0),\ q = (E-M, 0, 0, k).
 \end{equation}
-where $M$ is the rest mass of the nucleon. Taking the zero-momentum transfer limit after the 3-momentum-squared derivative yields,
+%
+Following Eq.~(\ref{eq:VmuME}), we have
+%
+\begin{equation}
+\langle N(0) | V_4(k) | N(k) \rangle = \bar{u}(0)\left[\gamma_4 F_1(k) + \frac{i\sigma_{43} k}{2M} F_2(k)\right]u(k),
+\label{eq:V4ME}
+\end{equation}
+%
+%\begin{align}
+%& \langle N(p_f) | V_4(q) | N(p_i) \rangle = \nonumber \\
+%& \qquad \bar{u}(p_f)\left[\gamma_4 F_1(Q^2) + i\sigma_{43} k \frac{F_2(Q^2)}{2M}\right]u(p_i).
+%\label{eq:V4ME}
+%\end{align}
+%
+where we have made explicit the dependence on the three momentum carried away by the current.
+In the case of a $u_{\pm}\rightarrow u_{\mp}$ transition, the matrix element vanishes. 
+However, if helicity is conserved, then Eq.~(\ref{eq:V4ME}) simplifies to,
 \begin{align}
-&\left.\frac{\partial}{\partial k^2} \langle N(0) | V_4 | N(k) \rangle\right|_{k=0} \nonumber \\
-= &\left.\frac{\partial F_1}{\partial k^2}\sqrt{M}\left(\sqrt{E+k} + \sqrt{E-k}\right)\right|_{k=0} \nonumber\\
-& +\left.F_1\frac{\sqrt{M}}{4k}\left(\frac{1}{\sqrt{E+k}} -\frac{1}{\sqrt{E-k}}  \right)\right|_{k=0}\nonumber \\
-= & 2M \frac{\partial F_1}{\partial k^2},
+& \langle N(0) | V_4(k) | N(k) \rangle =  \nonumber\\
+&\qquad\qquad F_1(k) \sqrt{M}\left(\sqrt{E+k} + \sqrt{E-k}\right) - \nonumber \\
+&\qquad\qquad F_2(k)\frac{ik}{\sqrt{M}}(\sqrt{E+k} - \sqrt{E-k}).
 \end{align}
-yielding directly the derivative of the Dirac form factor at zero-momentum transfer. Following Eq.~(\ref{eq:V4ME}), $V_1$ and $V_2$ accesses matrix elements that are proportional to $kF_2$ but vanish in the zero-momentum transfer limit, while the $k^2$-derivative of $V_3$ diverges.
+%
+The derivative of the matrix element with respect to $k^2$, evaluated at zero three momentum transfer, is then
+%
+%\begin{align}
+%& \left.\frac{\partial}{\partial k^2} \langle N(0) | V_4(k) | N(k) \rangle\right|_{k^2=0} \nonumber \\
+%&\qquad =  2M \left.\frac{\partial F_1(k)}{\partial k^2}\right|_{k^2=0} + \frac{F_1(0)}{4M},
+%\end{align}
+%
+\begin{align}
+ &\left.\frac{\partial \langle N(0) | V_4(k) | N(k) \rangle}{\partial k^2} \right|_{k^2=0} = \nonumber \\
+ &\qquad\qquad\ \ 2M \left.\frac{\partial F_1(k)}{\partial k^2}\right|_{k^2=0} + \frac{F_1(0)-iF_2(0)}{4M},
+ \label{eq:MEslope}
+\end{align}
+%
+where $F_1(0)$ is one for the proton and zero for the neutron.
+Eq.~(\ref{eq:MEslope}) relates the derivative of the Dirac form factor at zero-momentum transfer to that of the matrix element.
+We access the derivative of the matrix element directly, via spatial moments of lattice correlation functions, as explained in the following section.
+%
+Derivatives with respect to $k^2$ of the matrix elements of $V_{1,2,3}$ diverge in the $k^2\to 0$ limit.
 
 \subsection{Formalism}
 \begin{figure}[t]
@@ -494,7 +476,7 @@ Finally, the negative-correction from applying the spatial moment to periodic im
 \delta_{\mathrm{valence}} = \sum_{n=0}^\infty \delta^n_1 - \delta^n_2 - \delta^n_3,
 \label{eq:total_vfv}
 \end{equation}
-However, in practice Fig~\ref{fig:finite_volume} suggests that one may only need to consider the ground-state contribution from $z^\prime_{\mathrm{src}}=\{0, L\}$. Specifically for the small-volume (l3296) $T=8$ moment correlator, after substituting $A_0$ and $E_0$ into Eq.~(\ref{eq:total_vfv}), we estimate the valence finite volume effect to be a $6.0\pm 1.2$\% correction to the correlation function summed over $z^\prime$. Under the assumption that excited-state are insignificant, this correction is independent of source-sink separation time within the quoted uncertainty. Fig.~\ref{fig:fv_relerr} shows the size of the relative volume correction as a function of the spatial length $L$ and ground state energy $E_0$.
+However, in practice Fig.~\ref{fig:finite_volume} suggests that one may only need to consider the ground-state contribution from $z^\prime_{\mathrm{src}}=\{0, L\}$. Specifically for the small-volume (l3296) $T=8$ moment correlator, after substituting $A_0$ and $E_0$ into Eq.~(\ref{eq:total_vfv}), we estimate the valence finite volume effect to be a $6.0\pm 1.2$\% correction to the correlation function summed over $z^\prime$. Under the assumption that excited-state are insignificant, this correction is independent of source-sink separation time within the quoted uncertainty. Fig.~\ref{fig:fv_relerr} shows the size of the relative volume correction as a function of the spatial length $L$ and ground state energy $E_0$.
 
 \begin{figure}[t]{
 		\includegraphics[width=0.49\textwidth]{figures/fv_relerr_0mom.pdf}
