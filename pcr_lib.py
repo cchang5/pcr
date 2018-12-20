@@ -37,18 +37,28 @@ def plot_3pt_z(data,q,title='gV'):
 def read_csv(switches):
     zdata = dict()
     # read two point
+    if switches['fit']['ens'] == '3296':
+        src_list = [0,48]
+    elif switches['fit']['ens'] == '4896':
+        src_list = [0,48]
     if len(set(switches['fit']['clist']).intersection(['nucleon','dnucleon'])) > 0:
         for snk_src in switches['fit']['snk_src']:
             dataset2 = 'bar_s22_%s_tsrc_SRC.dat.re' %str(snk_src)
             dataset = list()
-            for s in [0,48]: # automatically read both sources
+            for s in src_list: # automatically read both sources
                 rd = dataset2.replace('SRC',str(s))
                 df = pd.read_csv('./data/%s/%s' %(switches['fit']['ens'],rd),delimiter=' ',header=None)
+                print("reading 2pt data from: ./data/%s/%s" %(switches['fit']['ens'],rd))
                 tag = df[0][0]
                 key =tag.replace('t0_','')
+                #if switches['fit']['ens'] == '4896':
+                #    key = key[5:]
+                print("key:", key)
                 # read zero momentum spatial correlator
                 corr = np.array([np.array(df.loc[df[0] == tag.replace('t0','t%s' %t)].values)[:,1:-1] for t in range(96)])
                 corr = np.swapaxes(corr,0,1) # swap axis to get [cfg,t,z]
+                #print(np.shape(corr))
+                #corr = np.roll(corr,-1*s,axis=1)
                 print(snk_src,s,len(corr))
                 if switches['fit']['ens'] in ['3296']:
                     # delete missing config 1470 from other datasets
@@ -57,7 +67,12 @@ def read_csv(switches):
                 else: pass
                 dataset.append(corr)
                 # average sources
-            zdata[key] = (dataset[0]+dataset[1])/2
+            #for i in range(len(dataset)):
+            #    print(np.shape(dataset[i]))
+            #    print(gv.dataset.avg_data(np.sum(dataset[i],axis=2)))
+            zdata[key] = np.mean(dataset,axis=0)
+            #print("AVERAGED CORRELATOR %s" %key)
+            #print(zdata[key])
             print('2pt:',key,np.shape(zdata[key]))
     # read three point
     if len(set(switches['fit']['clist']).intersection(['gV','dgV'])) > 0:
@@ -67,10 +82,11 @@ def read_csv(switches):
             for snk in switches['fit']['T_3pt']:
                 dataset=list()
                 datasetd=list()
-                for s in [0,48]:
+                for s in src_list:
                     # up quark
                     rd = dataset3.replace('SRC',str(s)).replace('SNK',str(snk))
                     df = pd.read_csv('./data/%s/%s' %(switches['fit']['ens'],rd),delimiter=' ',header=None)
+                    print("reading 3pt data from: ./data/%s/%s" %(switches['fit']['ens'],rd))
                     tag = df[0][0]
                     key = tag.replace('t0_','')
                     # read zero momentum spatial correlator
@@ -87,20 +103,33 @@ def read_csv(switches):
                     df = pd.read_csv('./data/%s/%s' %(switches['fit']['ens'],rd),delimiter=' ',header=None)
                     tag = df[0][0]
                     key = tag.replace('t0_','')
+                    print("key:", key)
                     # read zero momentum spatial correlator
                     corr = np.array([np.array(df.loc[df[0] == tag.replace('t0','t%s' %t)].values)[:,1:-1] for t in range(96)])
                     corr = np.swapaxes(corr,0,1) # swap axis to get [cfg,t,z]
+                    #corr = np.roll(corr,-1*s,axis=1)
                     if switches['fit']['ens'] in ['3296']:
                         # delete missing config 1470 from other datasets
                         if len(corr) == 196:
                             corr = np.delete(corr,47,axis=0)
                     else: pass
                     datasetd.append(corr)
+                #for i in range(len(dataset)):
+                #    print("UU")
+                #    print(np.shape(dataset[i]))
+                #    print(gv.dataset.avg_data(np.sum(dataset[i],axis=2)))
+                #    print("DD")
+                #    print(np.shape(datasetd[i]))
+                #    print(gv.dataset.avg_data(np.sum(datasetd[i],axis=2)))
                 # average sources
-                udata = (dataset[0]+dataset[1])/2.
-                ddata = (datasetd[0]+datasetd[1])/2.
+                udata = np.mean(dataset,axis=0) 
+                ddata = np.mean(datasetd,axis=0)
                 zdata[key] = udata-ddata #isovector
-                print('3pt:',key,np.shape(zdata[key]))
+                #print("AVERAGED CORRELATOR %s" %key)
+                #print(zdata[key])
+                #print('3pt:',key,np.shape(zdata[key]))
+                #print(udata)
+                #print(ddata)
     return zdata
     
 # fitter class
