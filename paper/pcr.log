@@ -1,12 +1,21 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.1)  8 OCT 2018 10:06
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.18)  9 NOV 2018 17:24
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**pcr.tex
+**pcr
 (./pcr.tex
+<<<<<<< HEAD
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/revtex/revtex4-1.cls
+=======
+LaTeX2e <2018-04-01> patch level 5
+(/usr/local/texlive/2018/texmf-dist/tex/latex/revtex/revtex4-1.cls
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
 ex4/ for documentation)
  Copyright (c) 2009 The American Physical Society.
@@ -23,18 +32,18 @@ Class revtex4-1 Info: Repairing broken LaTeX eqnarray on input line 358.
 Class revtex4-1 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
 note on input line 433.
 Class revtex4-1 Info: Repairing broken LateX \@sect on input line 755.
-\intertabularlinepenalty=\count79
-\@tbpen=\count80
+\intertabularlinepenalty=\count80
+\@tbpen=\count81
 \@arstrutbox@hline=\box26
 Class revtex4-1 Info: Repairing broken LaTeX \@xbitor on input line 1786.
 Class revtex4-1 Info: Making \typeout \long on input line 2046.
 ltxfront[2010/07/25/20:33:00 4.1r frontmatter package (AO,DPC)]
-\c@affil=\count81
-\c@collab=\count82
+\c@affil=\count82
+\c@collab=\count83
 \absbox=\box27
 ltxgrid[2010/07/25/20:33:00 4.1r page grid package (portions licensed from W. E
 . Baxter web at superscript.com)]
-\c@linecount=\count83
+\c@linecount=\count84
 \output@latex=\toks14
 \box@size@1=\box28
 \box@size@2=\box29
@@ -45,28 +54,32 @@ ltxgrid[2010/07/25/20:33:00 4.1r page grid package (portions licensed from W. E
 \column@recovered=\box33
 \pagesofar=\box34
 \footsofar=\box35
-\pagegrid@col=\count84
+\pagegrid@col=\count85
 Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
  \\  on input line 5578.
-\c@part=\count85
-\c@section=\count86
-\c@subsection=\count87
-\c@subsubsection=\count88
-\c@paragraph=\count89
-\c@subparagraph=\count90
+\c@part=\count86
+\c@section=\count87
+\c@subsection=\count88
+\c@subsubsection=\count89
+\c@paragraph=\count90
+\c@subparagraph=\count91
 \abovecaptionskip=\skip42
 \belowcaptionskip=\skip43
-\c@figure=\count91
+\c@figure=\count92
 \fbox@1=\box36
-\c@table=\count92
+\c@table=\count93
 \fbox@2=\box37
-\c@video=\count93
+\c@video=\count94
 \fbox@4=\box38
 \@bibdataout=\write3
 \widetext@top=\box39
 \widetext@bot=\box40
 Class revtex4-1 Info: Selecting society aps on input line 7542.
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/revtex/aps4-1.rtx
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/revtex/aps4-1.rtx
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
 mentation)
 Class revtex4-1 Info: RevTeX society APS selected on input line 31.
@@ -74,11 +87,16 @@ Class revtex4-1 Info: RevTeX society APS selected on input line 31.
 Class revtex4-1 Info: Selecting journal prd on input line 7544.
 Class revtex4-1 Info: APS journal PRD selected on input line 7545.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
 documentation)
 Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 )
@@ -87,34 +105,60 @@ Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip44
 \bibsep=\skip45
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count94
+\c@NAT@ctr=\count95
 )
 Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/revtex/revsymb4-1.sty
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/revtex/revsymb4-1.sty
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
 or documentation)
 LaTeX Info: Redefining \REV@mathfrak on input line 119.
 ))
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen102
 )
 LaTeX Info: Redefining \text on input line 28.
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen103
@@ -129,6 +173,22 @@ LaTeX Info: Redefining \frac on input line 213.
 LaTeX Info: Redefining \overline on input line 375.
 \classnum@=\count98
 \DOTSCASE@=\count99
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen103
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count99
+\DOTSCASE@=\count100
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -137,15 +197,20 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen104
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+<<<<<<< HEAD
 \macc@depth=\count100
 \c@MaxMatrixCols=\count101
+=======
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 \dotsspace@=\muskip11
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
 \tag@help=\toks17
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
 \andhelp@=\toks18
 \eqnshift@=\dimen105
 \alignsep@=\dimen106
@@ -160,10 +225,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -172,7 +244,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 LaTeX Info: Redefining \frak on input line 111.
 LaTeX Info: Redefining \Bbb on input line 113.
 ))
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/bm.sty
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/bm.sty
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -180,6 +256,7 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
 
@@ -198,24 +275,56 @@ Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+
+Excluding comment 'comment')
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
@@ -223,11 +332,21 @@ Package: cancel 2013/04/12 v2.2 Cancel math terms
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 x
 \pgfutil@everybye=\toks22
 \pgfutil@tempdima=\dimen113
 \pgfutil@tempdimb=\dimen114
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -248,6 +367,28 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \pgfkeys@temptoks=\toks24
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box43
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 ode.tex
 \pgfkeys@tmptoks=\toks25
 ))
@@ -269,11 +410,16 @@ ode.tex
 \t@pgf@tokb=\toks27
 \t@pgf@tokc=\toks28
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
 ef
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
@@ -283,11 +429,23 @@ df.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count111
 \pgfsyssoftpath@bigbuffer@items=\count112
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -295,6 +453,15 @@ File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -309,12 +476,21 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 \pgfmath@dimen=\dimen123
 \pgfmath@count=\count113
 \pgfmath@box=\box44
@@ -322,6 +498,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@stack@operand=\toks30
 \pgfmath@stack@operation=\toks31
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
@@ -344,6 +521,30 @@ erarithmetics.code.tex)))
 \c@pgfmathroundto@lastzeros=\count114
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count115
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen124
@@ -361,19 +562,31 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen136
 \pgf@zy=\dimen137
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen138
 \pgf@path@lasty=\dimen139
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 .code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen140
 \pgf@shorten@start@additional=\dimen141
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 de.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box45
@@ -381,18 +594,27 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgf@layerbox@main=\box47
 \pgf@picture@serial@count=\count115
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen142
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 ations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen143
 \pgf@pt@y=\dimen144
 \pgf@pt@temp=\dimen145
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -406,25 +628,53 @@ ssing.code.tex
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 de.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen146
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen147
 \pgf@sys@shading@range@num=\count116
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box48
 ))
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
@@ -438,20 +688,44 @@ code.tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 e.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box49
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen148
 \pgf@nodesepend=\dimen149
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
@@ -465,11 +739,27 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 \pgffor@iter=\dimen150
 \pgffor@skip=\dimen151
 \pgffor@stack=\toks32
 \pgffor@toks=\toks33
 ))
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -478,6 +768,16 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count117
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count118
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 \pgfplotmarksize=\dimen152
 )
 \tikz@lastx=\dimen153
@@ -495,7 +795,11 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count120
 \tikz@fig@count=\count121
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count122
@@ -504,6 +808,7 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count125
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
@@ -847,6 +1152,38 @@ Package: CJK 2015/04/18 4.8.4
 Package: MULEenc 2015/04/18 4.8.4
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
+Package: CJKutf8 2015/04/18 4.8.4
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks34
+\inpenc@posthook=\toks35
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: CJK.enc 2015/04/18 4.8.4
 Now handling font encoding C00 ...
 ... no UTF-8 mapping file for font encoding C00
@@ -916,6 +1253,7 @@ Now handling font encoding C62 ...
 LaTeX Info: Redefining \selectfont on input line 755.
 \CJK@indent=\box54
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 ))
@@ -927,6 +1265,19 @@ Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -944,7 +1295,11 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+<<<<<<< HEAD
 Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+=======
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -965,6 +1320,7 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
@@ -972,20 +1328,37 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen159
 \Hy@linkcounter=\count126
 \Hy@pagecounter=\count127
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count128
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4509.
@@ -996,7 +1369,11 @@ Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
 LaTeX Info: Redefining \href on input line 5026.
+<<<<<<< HEAD
 \c@Hy@tempcnt=\count129
+=======
+\c@Hy@tempcnt=\count130
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen160
 \Fld@menulength=\count130
@@ -1011,6 +1388,7 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
+<<<<<<< HEAD
 \Hy@abspage=\count131
 \c@Item=\count132
 \c@Hfootnote=\count133
@@ -1023,6 +1401,20 @@ File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \c@bookmark@seq@number=\count135
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+=======
+\Hy@abspage=\count132
+\c@Item=\count133
+\c@Hfootnote=\count134
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count135
+\c@bookmark@seq@number=\count136
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -1130,7 +1522,11 @@ LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count139
 \scratchdimen=\dimen163
@@ -1143,10 +1539,17 @@ LaTeX Font Info:    ... okay on input line 31.
 \MPnumerator=\count143
 \makeMPintoPDFobject=\count144
 \everyMPtoPDFconversion=\toks37
+<<<<<<< HEAD
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+=======
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1156,7 +1559,11 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -1164,10 +1571,17 @@ ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box56
 Package hyperref Info: Link coloring ON on input line 31.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count145
@@ -1185,11 +1599,16 @@ Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 31.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 61.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 61.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1200,11 +1619,24 @@ File: UTF8.bdg 2015/04/18 4.8.4
 File: UTF8.enc 2015/04/18 4.8.4
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 File: UTF8.chr 2015/04/18 4.8.4
 )
 LaTeX Font Info:    Try loading font information for C70+bsmi on input line 63.
 
 
+<<<<<<< HEAD
 (/usr/local/texlive/2017/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fd
 File: c70bsmi.fd 2015/04/18 4.8.4
 )
@@ -1221,11 +1653,26 @@ Underfull \hbox (badness 1406) in paragraph at lines 148--153
 File: ./cropped_kinematics.pdf Graphic file (type pdf)
 <use ./cropped_kinematics.pdf>
 Package pdftex.def Info: ./cropped_kinematics.pdf  used on input line 294.
+=======
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fd
+File: c70bsmi.fd 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fdx
+File: c70bsmi.fdx 2015/04/18 4.8.4
+)
+[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2]
+<./cropped_kinematics.pdf, id=195, 667.49374pt x 179.67125pt>
+File: ./cropped_kinematics.pdf Graphic file (type pdf)
+<use ./cropped_kinematics.pdf>
+Package pdftex.def Info: ./cropped_kinematics.pdf  used on input line 322.
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 (pdftex.def)             Requested size: 246.0pt x 66.21686pt.
  [3 <./cropped_kinematics.pdf>] [4]
-<figures/zcorr_3pt.pdf, id=329, 506.45947pt x 313.00912pt>
+<figures/zcorr_3pt.pdf, id=325, 506.45947pt x 313.00912pt>
 File: figures/zcorr_3pt.pdf Graphic file (type pdf)
 <use figures/zcorr_3pt.pdf>
+<<<<<<< HEAD
 Package pdftex.def Info: figures/zcorr_3pt.pdf  used on input line 433.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
 <figures/zcorr_d3pt.pdf, id=330, 506.45947pt x 313.00912pt>
@@ -1242,47 +1689,82 @@ DF inclusion: multiple pdfs with page group included in a single page
 File: figures/fv_relerr_0mom.pdf Graphic file (type pdf)
 <use figures/fv_relerr_0mom.pdf>
 Package pdftex.def Info: figures/fv_relerr_0mom.pdf  used on input line 482.
+=======
+Package pdftex.def Info: figures/zcorr_3pt.pdf  used on input line 477.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<figures/zcorr_d3pt.pdf, id=326, 506.45947pt x 313.00912pt>
+File: figures/zcorr_d3pt.pdf Graphic file (type pdf)
+<use figures/zcorr_d3pt.pdf>
+Package pdftex.def Info: figures/zcorr_d3pt.pdf  used on input line 478.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+ [5] [6 <./figures/zcorr_3pt.pdf> <./figures/zcorr_d3pt.pdf
+
+pdfTeX warning: pdflatex (file ./figures/zcorr_d3pt.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]
+<figures/fv_relerr_0mom.pdf, id=476, 506.45947pt x 313.00912pt>
+File: figures/fv_relerr_0mom.pdf Graphic file (type pdf)
+<use figures/fv_relerr_0mom.pdf>
+Package pdftex.def Info: figures/fv_relerr_0mom.pdf  used on input line 534.
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
 
-Overfull \hbox (3.9028pt too wide) in paragraph at lines 482--483
+Overfull \hbox (3.9028pt too wide) in paragraph at lines 534--535
  [][] 
  []
 
 [7 <./figures/fv_relerr_0mom.pdf>]
-<figures/3296_meff.pdf, id=544, 506.45947pt x 313.00912pt>
+<figures/3296_meff.pdf, id=542, 506.45947pt x 313.00912pt>
 File: figures/3296_meff.pdf Graphic file (type pdf)
 <use figures/3296_meff.pdf>
+<<<<<<< HEAD
 Package pdftex.def Info: figures/3296_meff.pdf  used on input line 531.
+=======
+Package pdftex.def Info: figures/3296_meff.pdf  used on input line 583.
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
 
-Overfull \hbox (3.9028pt too wide) in paragraph at lines 531--532
+Overfull \hbox (3.9028pt too wide) in paragraph at lines 583--584
  [][] 
  []
 
-<figures/3296_dgV8_dgV.pdf, id=545, 506.45947pt x 313.00912pt>
+<figures/3296_dgV8_dgV.pdf, id=543, 506.45947pt x 313.00912pt>
 File: figures/3296_dgV8_dgV.pdf Graphic file (type pdf)
 <use figures/3296_dgV8_dgV.pdf>
+<<<<<<< HEAD
 Package pdftex.def Info: figures/3296_dgV8_dgV.pdf  used on input line 541.
+=======
+Package pdftex.def Info: figures/3296_dgV8_dgV.pdf  used on input line 593.
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
 
-Overfull \hbox (3.9028pt too wide) in paragraph at lines 541--543
+Overfull \hbox (3.9028pt too wide) in paragraph at lines 593--595
  [][] 
  []
 
-<figures/Zs_chain.pdf, id=551, 505.89pt x 312.65717pt>
+<figures/Zs_chain.pdf, id=549, 505.89pt x 312.65717pt>
 File: figures/Zs_chain.pdf Graphic file (type pdf)
 <use figures/Zs_chain.pdf>
+<<<<<<< HEAD
 Package pdftex.def Info: figures/Zs_chain.pdf  used on input line 567.
 (pdftex.def)             Requested size: 249.9028pt x 154.4485pt.
 <figures/gV_chain.pdf, id=552, 505.89pt x 312.65717pt>
 File: figures/gV_chain.pdf Graphic file (type pdf)
 <use figures/gV_chain.pdf>
 Package pdftex.def Info: figures/gV_chain.pdf  used on input line 568.
+=======
+Package pdftex.def Info: figures/Zs_chain.pdf  used on input line 619.
+(pdftex.def)             Requested size: 249.9028pt x 154.4485pt.
+<figures/gV_chain.pdf, id=550, 505.89pt x 312.65717pt>
+File: figures/gV_chain.pdf Graphic file (type pdf)
+<use figures/gV_chain.pdf>
+Package pdftex.def Info: figures/gV_chain.pdf  used on input line 620.
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 (pdftex.def)             Requested size: 249.9028pt x 154.4485pt.
 (./pcr.bbl [8 <./figures/3296_meff.pdf> <./figures/3296_dgV8_dgV.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/3296_dgV8_dgV.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./figures/3296_dgV8_dgV.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
 >]
 Underfull \hbox (badness 10000) in paragraph at lines 133--139
  []\OT1/cmr/m/n/9 A. Beyer, L. Maisen-bacher, A. Matveev,
@@ -1333,14 +1815,15 @@ Underfull \hbox (badness 4096) in paragraph at lines 330--337
 
 [9 <./figures/Zs_chain.pdf> <./figures/gV_chain.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/gV_chain.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./figures/gV_chain.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
 >]
 Underfull \hbox (badness 2088) in paragraph at lines 401--409
  \OT1/cmr/m/it/9 Pro-ceed-ings, 34th In-ter-na-tional Sym-po-sium on Lat-
  []
 
 ) [10]
+<<<<<<< HEAD
 <figures/3296_zeff.pdf, id=784, 506.45947pt x 313.00912pt>
 File: figures/3296_zeff.pdf Graphic file (type pdf)
 <use figures/3296_zeff.pdf>
@@ -1360,36 +1843,58 @@ Package pdftex.def Info: figures/3296_gVeff.pdf  used on input line 592.
 File: figures/3296_dgVeff.pdf Graphic file (type pdf)
 <use figures/3296_dgVeff.pdf>
 Package pdftex.def Info: figures/3296_dgVeff.pdf  used on input line 593.
+=======
+<figures/3296_zeff.pdf, id=783, 506.45947pt x 313.00912pt>
+File: figures/3296_zeff.pdf Graphic file (type pdf)
+<use figures/3296_zeff.pdf>
+Package pdftex.def Info: figures/3296_zeff.pdf  used on input line 642.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<figures/3296_dzeff.pdf, id=784, 506.45947pt x 313.00912pt>
+File: figures/3296_dzeff.pdf Graphic file (type pdf)
+<use figures/3296_dzeff.pdf>
+Package pdftex.def Info: figures/3296_dzeff.pdf  used on input line 643.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<figures/3296_gVeff.pdf, id=785, 506.45947pt x 313.00912pt>
+File: figures/3296_gVeff.pdf Graphic file (type pdf)
+<use figures/3296_gVeff.pdf>
+Package pdftex.def Info: figures/3296_gVeff.pdf  used on input line 644.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<figures/3296_dgVeff.pdf, id=786, 506.45947pt x 313.00912pt>
+File: figures/3296_dgVeff.pdf Graphic file (type pdf)
+<use figures/3296_dgVeff.pdf>
+Package pdftex.def Info: figures/3296_dgVeff.pdf  used on input line 645.
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
  [11 <./figures/3296_zeff.pdf> <./figures/3296_dzeff.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/3296_dzeff.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./figures/3296_dzeff.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
 > <./figures/3296_gVeff.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/3296_gVeff.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./figures/3296_gVeff.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
 > <./figures/3296_dgVeff.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/3296_dgVeff.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./figures/3296_dgVeff.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 600.
+(hyperref)                removing `math shift' on input line 652.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 600.
+(hyperref)                removing `subscript' on input line 652.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 600.
+(hyperref)                removing `math shift' on input line 652.
 
-<plots/figures/3296_2pt_tmax_Q.pdf, id=945, 506.45947pt x 313.00912pt>
+<plots/figures/3296_2pt_tmax_Q.pdf, id=944, 506.45947pt x 313.00912pt>
 File: plots/figures/3296_2pt_tmax_Q.pdf Graphic file (type pdf)
 <use plots/figures/3296_2pt_tmax_Q.pdf>
 Package pdftex.def Info: plots/figures/3296_2pt_tmax_Q.pdf  used on input line 
+<<<<<<< HEAD
 603.
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
 <plots/figures/3296_d2pt_tmax_Q.pdf, id=946, 506.45947pt x 313.00912pt>
@@ -1457,30 +1962,96 @@ File: plots/figures/3296_dgV8_tmax_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV8_tmax_dgV.pdf>
 Package pdftex.def Info: plots/figures/3296_dgV8_tmax_dgV.pdf  used on input li
 ne 620.
+=======
+655.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_d2pt_tmax_Q.pdf, id=945, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_d2pt_tmax_Q.pdf Graphic file (type pdf)
+<use plots/figures/3296_d2pt_tmax_Q.pdf>
+Package pdftex.def Info: plots/figures/3296_d2pt_tmax_Q.pdf  used on input line
+ 656.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_2pt_tmax_dZ0.pdf, id=946, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_2pt_tmax_dZ0.pdf Graphic file (type pdf)
+<use plots/figures/3296_2pt_tmax_dZ0.pdf>
+Package pdftex.def Info: plots/figures/3296_2pt_tmax_dZ0.pdf  used on input lin
+e 657.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_d2pt_tmax_dZ0.pdf, id=947, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_d2pt_tmax_dZ0.pdf Graphic file (type pdf)
+<use plots/figures/3296_d2pt_tmax_dZ0.pdf>
+Package pdftex.def Info: plots/figures/3296_d2pt_tmax_dZ0.pdf  used on input li
+ne 658.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_2pt_tmax_dgV.pdf, id=948, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_2pt_tmax_dgV.pdf Graphic file (type pdf)
+<use plots/figures/3296_2pt_tmax_dgV.pdf>
+Package pdftex.def Info: plots/figures/3296_2pt_tmax_dgV.pdf  used on input lin
+e 659.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_d2pt_tmax_dgV.pdf, id=949, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_d2pt_tmax_dgV.pdf Graphic file (type pdf)
+<use plots/figures/3296_d2pt_tmax_dgV.pdf>
+Package pdftex.def Info: plots/figures/3296_d2pt_tmax_dgV.pdf  used on input li
+ne 660.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_gV8_tmax_Q.pdf, id=950, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_gV8_tmax_Q.pdf Graphic file (type pdf)
+<use plots/figures/3296_gV8_tmax_Q.pdf>
+Package pdftex.def Info: plots/figures/3296_gV8_tmax_Q.pdf  used on input line 
+667.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_dgV8_tmax_Q.pdf, id=951, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_dgV8_tmax_Q.pdf Graphic file (type pdf)
+<use plots/figures/3296_dgV8_tmax_Q.pdf>
+Package pdftex.def Info: plots/figures/3296_dgV8_tmax_Q.pdf  used on input line
+ 668.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_gV8_tmax_dZ0.pdf, id=952, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_gV8_tmax_dZ0.pdf Graphic file (type pdf)
+<use plots/figures/3296_gV8_tmax_dZ0.pdf>
+Package pdftex.def Info: plots/figures/3296_gV8_tmax_dZ0.pdf  used on input lin
+e 669.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_dgV8_tmax_dZ0.pdf, id=953, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_dgV8_tmax_dZ0.pdf Graphic file (type pdf)
+<use plots/figures/3296_dgV8_tmax_dZ0.pdf>
+Package pdftex.def Info: plots/figures/3296_dgV8_tmax_dZ0.pdf  used on input li
+ne 670.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_gV8_tmax_dgV.pdf, id=954, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_gV8_tmax_dgV.pdf Graphic file (type pdf)
+<use plots/figures/3296_gV8_tmax_dgV.pdf>
+Package pdftex.def Info: plots/figures/3296_gV8_tmax_dgV.pdf  used on input lin
+e 671.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_dgV8_tmax_dgV.pdf, id=955, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_dgV8_tmax_dgV.pdf Graphic file (type pdf)
+<use plots/figures/3296_dgV8_tmax_dgV.pdf>
+Package pdftex.def Info: plots/figures/3296_dgV8_tmax_dgV.pdf  used on input li
+ne 672.
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
 [12 <./plots/figures/3296_2pt_tmax_Q.pdf> <./plots/figures/3296_d2pt_tmax_Q.pdf
 
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_d2pt_tm
-ax_Q.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
-ge
+pdfTeX warning: pdflatex (file ./plots/figures/3296_d2pt_tmax_Q.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_2pt_tmax_dZ0.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_2pt_tma
-x_dZ0.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
+pdfTeX warning: pdflatex (file ./plots/figures/3296_2pt_tmax_dZ0.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_d2pt_tmax_dZ0.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_d2pt_tm
-ax_dZ0.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file ./plots/figures/3296_d2pt_tmax_dZ0.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_2pt_tmax_dgV.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_2pt_tma
-x_dgV.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
+pdfTeX warning: pdflatex (file ./plots/figures/3296_2pt_tmax_dgV.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_d2pt_tmax_dgV.pdf
 
+<<<<<<< HEAD
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_d2pt_tm
 ax_dgV.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
@@ -1520,68 +2091,99 @@ File: plots/figures/3296_dgV10_tmax_dgV.pdf Graphic file (type pdf)
 <use plots/figures/3296_dgV10_tmax_dgV.pdf>
 Package pdftex.def Info: plots/figures/3296_dgV10_tmax_dgV.pdf  used on input l
 ine 633.
+=======
+pdfTeX warning: pdflatex (file ./plots/figures/3296_d2pt_tmax_dgV.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+>]
+<plots/figures/3296_gV10_tmax_Q.pdf, id=1209, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_gV10_tmax_Q.pdf Graphic file (type pdf)
+<use plots/figures/3296_gV10_tmax_Q.pdf>
+Package pdftex.def Info: plots/figures/3296_gV10_tmax_Q.pdf  used on input line
+ 680.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_dgV10_tmax_Q.pdf, id=1210, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_dgV10_tmax_Q.pdf Graphic file (type pdf)
+<use plots/figures/3296_dgV10_tmax_Q.pdf>
+Package pdftex.def Info: plots/figures/3296_dgV10_tmax_Q.pdf  used on input lin
+e 681.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_gV10_tmax_dZ0.pdf, id=1211, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_gV10_tmax_dZ0.pdf Graphic file (type pdf)
+<use plots/figures/3296_gV10_tmax_dZ0.pdf>
+Package pdftex.def Info: plots/figures/3296_gV10_tmax_dZ0.pdf  used on input li
+ne 682.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_dgV10_tmax_dZ0.pdf, id=1212, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_dgV10_tmax_dZ0.pdf Graphic file (type pdf)
+<use plots/figures/3296_dgV10_tmax_dZ0.pdf>
+Package pdftex.def Info: plots/figures/3296_dgV10_tmax_dZ0.pdf  used on input l
+ine 683.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_gV10_tmax_dgV.pdf, id=1213, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_gV10_tmax_dgV.pdf Graphic file (type pdf)
+<use plots/figures/3296_gV10_tmax_dgV.pdf>
+Package pdftex.def Info: plots/figures/3296_gV10_tmax_dgV.pdf  used on input li
+ne 684.
+(pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
+<plots/figures/3296_dgV10_tmax_dgV.pdf, id=1214, 506.45947pt x 313.00912pt>
+File: plots/figures/3296_dgV10_tmax_dgV.pdf Graphic file (type pdf)
+<use plots/figures/3296_dgV10_tmax_dgV.pdf>
+Package pdftex.def Info: plots/figures/3296_dgV10_tmax_dgV.pdf  used on input l
+ine 685.
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 (pdftex.def)             Requested size: 249.9028pt x 154.44565pt.
  [13 <./plots/figures/3296_gV8_tmax_Q.pdf> <./plots/figures/3296_dgV8_tmax_Q.pd
 f
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_dgV8_tm
-ax_Q.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
-ge
+pdfTeX warning: pdflatex (file ./plots/figures/3296_dgV8_tmax_Q.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_gV8_tmax_dZ0.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_gV8_tma
-x_dZ0.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
+pdfTeX warning: pdflatex (file ./plots/figures/3296_gV8_tmax_dZ0.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_dgV8_tmax_dZ0.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_dgV8_tm
-ax_dZ0.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file ./plots/figures/3296_dgV8_tmax_dZ0.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_gV8_tmax_dgV.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_gV8_tma
-x_dgV.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
+pdfTeX warning: pdflatex (file ./plots/figures/3296_gV8_tmax_dgV.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_dgV8_tmax_dgV.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_dgV8_tm
-ax_dgV.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file ./plots/figures/3296_dgV8_tmax_dgV.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
 >] [14 <./plots/figures/3296_gV10_tmax_Q.pdf> <./plots/figures/3296_dgV10_tmax_
 Q.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_dgV10_t
-max_Q.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
+pdfTeX warning: pdflatex (file ./plots/figures/3296_dgV10_tmax_Q.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_gV10_tmax_dZ0.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_gV10_tm
-ax_dZ0.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file ./plots/figures/3296_gV10_tmax_dZ0.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_dgV10_tmax_dZ0.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_dgV10_t
-max_dZ0.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
+pdfTeX warning: pdflatex (file ./plots/figures/3296_dgV10_tmax_dZ0.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_gV10_tmax_dgV.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_gV10_tm
-ax_dgV.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file ./plots/figures/3296_gV10_tmax_dgV.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
 > <./plots/figures/3296_dgV10_tmax_dgV.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/figures/3296_dgV10_t
-max_dgV.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
+pdfTeX warning: pdflatex (file ./plots/figures/3296_dgV10_tmax_dgV.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
 >]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 640.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 692.
  (./pcr.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 640.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 640.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 692.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 692.
 Package rerunfilecheck Info: File `pcr.out' has not changed.
-(rerunfilecheck)             Checksum: D96AA5BC2D65E637E7BF1CFDF1E60100;2054.
+(rerunfilecheck)             Checksum: 106C90F74BEB7AE0EEDB262827EA738B;1983.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  20125 strings out of 492982
  357300 string characters out of 6132528
  447317 words of memory out of 5000000
@@ -1613,11 +2215,44 @@ blic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
+=======
+ 19761 strings out of 492646
+ 353653 string characters out of 6129563
+ 452090 words of memory out of 5000000
+ 23099 multiletter control sequences out of 15000+600000
+ 15562 words of font info for 58 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,17n,56p,1249b,958s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu4e.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5b.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5f.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmti9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/a
+>>>>>>> 513e4f70da4c542d95d4a1a2d94deccf2b54385d
 msfonts/cm/cmtt9.pfb>
-Output written on pcr.pdf (14 pages, 880959 bytes).
+Output written on pcr.pdf (14 pages, 881411 bytes).
 PDF statistics:
- 1817 PDF objects out of 2073 (max. 8388607)
- 902 compressed objects within 10 object streams
- 122 named destinations out of 1000 (max. 500000)
- 407 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1814 PDF objects out of 2073 (max. 8388607)
+ 899 compressed objects within 9 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 399 words of extra memory for PDF output out of 10000 (max. 10000000)
 

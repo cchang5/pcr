@@ -66,14 +66,16 @@ Momentum-space derivatives of matrix elements can be related to their coordinate
 
 
 \section{Introduction\label{sec:intro}}
-Answers to some of the deepest mysteries of Nature may lie in a more 
-fundamental understanding of how protons and neutrons, the
-basic building blocks of our world, interact with the universe. The
-lattice QCD community has contributed to our understanding of the
-strength of these interactions by direct calculations of form
-factors. In this work, we propose a method to directly calculate the
-slope of these form factors, which shed light on new ways to test our
-current understanding of the Standard Model.
+A fundamental understanding of the structure of protons and neutrons,
+and of their interactions, is key to addressing some of the deepest
+mysteries of Nature.  The lattice QCD community has contributed to our
+understanding of the strength of these interactions through \textit{ab
+  initio} calculations of fundamental measures of hadron structure,
+and in particular of the various form factors, encapsulating the
+structure of the hadron probed in elastic scattering as a function of
+the momentum $Q^2$. In this work, we 
+directly calculate the slope of these form factors, which shed light
+on new ways to test our current understanding of the Standard Model.
 
 \subsection{On the radius of the proton}
 The charged leptons are fundamental (point-like) particles in the
@@ -144,12 +146,26 @@ Thus lattice calculations are susceptible to two major problems:
 the model dependence that introduces uncontrolled systematic errors, 
 and that the smallest non-zero momentum is too large to perform a controlled extrapolation of the slope at zero-momentum since accessing small momentum in finite volumes requires prohibitively expensive large lattices.
 
-\subsection{On the origin of matter}
-One of the outstanding mysteries of our universe is the origin of the observed matter-antimatter asymmetry. 
-There is tantalizing evidence for possible sources of \textit{leptogenesis} recently revealed at the \textit{Tokai-2-Kamioka} (T2K) long-baseline neutrino experiment~\cite{Abe:2017uxa}, where CP conservation in the
-neutrino sector is excluded at 90\% confidence.  
-Future long-baseline neutrino experiments including the \textit{Deep Underground Neutrino Experiment} (DUNE), and the detector upgrade to Hyper-Kamiokande (T2HK) aim to provide more precise neutrino oscillation measurements in order to further resolve the neutrino CP-violating phase. 
-Additionally, cost-effective projects such as \textit{CHerenkov detectors In mine PitS} (CHIPS)~\cite{Adamson:2013xka}, a water Cherenkov detector designed to be approximately 5 times larger than Super-Kamiokande, is planned with the intention to ultimately run off the DUNE beamline, providing a cost-efficient way to improve knowledge on neutrino parameters including the CP-violating phase.
+%\subsection{On the origin of matter}
+There are other key quantities in hadronic physics where a knowledge
+of the ``charge radius'' of a form factor has an essential role, most
+notably in the application to the study of neutrino interactions with
+matter.  One of the outstanding mysteries of our universe is the
+origin of the observed matter-antimatter asymmetry.  There is
+tantalizing evidence for possible sources of \textit{leptogenesis}
+recently revealed at the \textit{Tokai-2-Kamioka} (T2K) long-baseline
+neutrino experiment~\cite{Abe:2017uxa}, where CP conservation in the
+neutrino sector is excluded at 90\% confidence.  Future long-baseline
+neutrino experiments including the \textit{Deep Underground Neutrino
+  Experiment} (DUNE), and the detector upgrade to Hyper-Kamiokande
+(T2HK) aim to provide more precise neutrino oscillation measurements
+in order to further resolve the neutrino CP-violating phase.
+Additionally, cost-effective projects such as \textit{CHerenkov
+  detectors In mine PitS} (CHIPS)~\cite{Adamson:2013xka}, a water
+Cherenkov detector designed to be approximately 5 times larger than
+Super-Kamiokande, is planned with the intention to ultimately run off
+the DUNE beamline, providing a cost-efficient way to improve knowledge
+on neutrino parameters including the CP-violating phase.
 
 In order to fully benefit from the advances of next generation neutrino experiments, the theoretical description of neutrino scattering must also be made more precise through improving the current determination of the nucleon axial form factor $F_A(Q^2)$. 
 The axial form factor parameterizes the strength in which the weak current couples to the nucleon, and consequently governs the neutrino scattering cross-section off nuclear targets in the regime of quasi-elastic scattering. 
@@ -161,33 +177,45 @@ The method introduced in this paper is applicable to calculations of the slope a
 
 \subsection{Overview}
 
-The remainder of the paper is laid out as follows.  
-In the next section, after a discussion of earlier, related works, we demonstrate how correlation functions weighted by moments of a spatial coordinate are related to the momentum-dependent slope of associated form factors.  
-We then describe how this method can be used to determine directly the slope of the nucleon electromagnetic form factors at $Q^2 = 0$, and hence the charge radius of the nucleon.  
-We conclude the section by describing our analysis, emphasizing in particular the need to account for excited-state contributions to the correlation functions, and the anticipated finite-volume behavior.
+The remainder of the paper is laid out as follows.  In the next
+section, after a discussion of earlier, related works, we demonstrate
+how correlation functions weighted by moments of a spatial coordinate
+are related to the momentum-dependent slope of associated form
+factors.  We then describe how this method can be used to determine
+directly the slope of the nucleon electromagnetic form factors at $Q^2
+= 0$, and hence the charge radius of the nucleon.  We conclude the
+section by describing our analysis method, emphasizing in particular the need
+to account for excited-state contributions to the correlation
+functions, and the anticipated finite-volume behavior.
 
-In Section~\ref{sec:results}, we present the application of the method to the isovector charge radius of the nucleon.  
-We begin by describing the parameters of the ensembles used in our calculation, emphasizing the need to understand the dependence of the results on the spatial volume of our lattices.  
-We present results for the charge radius for several separations between the nucleon source and sink, demonstrating the need to include the contribution of excited nucleon states in the fitting procedure.  
-The calculation is performed at unphysically large values of the pion mass, and at one relatively coarse
-lattice spacing.  
-We conclude with a program of future work, and of other applications, including the determination of the axial-vector charge radius.
+In Section~\ref{sec:results}, we present the application of the method
+to the isovector charge radius of the nucleon.  We begin by describing
+the parameters of the ensembles used in our calculation, emphasizing
+the need to understand the dependence of the results on the spatial
+volume of our lattices.  We present results for the charge radius for
+several separations between the nucleon source and sink, demonstrating
+the need to include the contribution of excited nucleon states in the
+fitting procedure.  The calculation is performed at unphysically large
+values of the pion mass, and at one relatively coarse lattice spacing.
+We conclude with a program of future work, and of other applications,
+including the determination of the axial-vector charge radius.
 
-The aim of this paper is not to provide a calculation of the charge radius to confront experiment, but
-rather to present a method that can address one of the main systematic uncertainties that plague present calculations.
+The aim of this paper is not to provide a calculation of the charge
+radius to confront experiment, but rather to present a method that can
+address one of the main systematic uncertainties that plague present
+calculations.
 
 \section{Moments of correlation functions}
-Position-space moment methods was first introduced to
-calculate the slope of the Isgur-Wise function $\xi (w)$ at
-zero-recoil, in order to interpret experimental results near
-zero-recoil for $B \rightarrow D$ semi-leptonic
-decays~\cite{Lellouch:1994zu}, and later adapted to calculate the
-slope of the energy-momentum tensor form factor, yielding the angular
-momentum contribution to the spin of the
+Position-space moment methods were first introduced to calculate the
+slope of the Isgur-Wise function $\xi (w)$ at zero-recoil, in order to
+interpret experimental results near zero-recoil for $B \rightarrow D$
+semi-leptonic decays~\cite{Lellouch:1994zu}, and later adapted to
+calculate the slope of the energy-momentum tensor form factor,
+yielding the angular momentum contribution to the spin of the
 nucleon~\cite{Mathur:1999uf,Gadiyak:2001fe}. Recently, there is
 revitalized interest in applying moment methods to calculate the
 hadronic vacuum polarization~\cite{Chakraborty:2016mwy,Blum:2016xpd},
-and efforts to directly determine the anomalous magnetic moment of the
+and to efforts to directly determine the anomalous magnetic moment of the
 nucleon and radii in nuclear physics~\cite{Alexandrou:2016rbj}. In
 parallel, momentum-space derivative methods are also being explored to
 access similar nucleon structure calculations such as the anomalous
@@ -295,34 +323,40 @@ Derivatives with respect to $k^2$ of the matrix elements of $V_{1,2,3}$ diverge 
 	\caption{Kinematics of the three-point correlator with baryon initial and final states. We work in the rest frame of the final hadron. The diagram for semi-leptonic decays of mesons involves only one spectator quark, but involves the same kinematics. {\color{red} Change $a$ and $b$ to say src and snk.}}
 	\label{fig:3pt_kinematics}
 \end{figure}
-{\color{red} Some more self-plagiarism.}
+%{\color{red} Some more self-plagiarism.}
 \subsubsection{Three-point correlation function}
-Given a three-point correlation function with the initial state at rest, and current insertion with three-momentum $k$, where $k$ points in the $z$-direction without loss of generality, as shown in Fig.~\ref{fig:3pt_kinematics}, the three-momentum-projected three-point has the general form,
+We begin with a three-point correlation function with the sink state at
+rest, and current insertion with three-momentum $k$, where, without
+loss of generality we take $k$ to point
+in the $z$-direction, as shown in
+Fig.~\ref{fig:3pt_kinematics}, which we write as
 \begin{align}
-C^{\text{3pt}}(t, t^\prime) = \sum_{\vec{x},\vec{x}^\prime} \left<N^{\mathrm{snk}}_{t,\vec{x}}\Gamma_{t^\prime,\vec{x}^\prime} \overline{N}^{\mathrm{src}}_{0,\vec{0}}\right> e^{-ikx^\prime_z},
+C^{\text{3pt}}(t, t^\prime) = \sum_{\vec{x},\vec{x}^\prime} \left<N^{\mathrm{snk}}_{t,\vec{x}}\Gamma_{t^\prime,\vec{x}^\prime} \overline{N}^{\mathrm{src}}_{0,\vec{0}}\right> e^{-ikz'},
 \label{eq:3pt}
 \end{align}
-translational invariance allows us to shift the source to the origin
-$\vec{x}_{\mathrm{src}} = 0$ and the sink to $\vec{x}\equiv
-\vec{x}_{\mathrm{snk}} - \vec{x}_{\mathrm{src}}$. Since the sink has
-zero three-momentum, the only momentum dependence left is at the
-current insertion. The operators $N^{\mathrm{src}}$ and
+Here the current is at $(t', x', y', z')$, and the sink nucleon
+operator is at $(t,x,y.z,)$; we use translation invariance to place the
+source nucleon at the origin.
+Since the sink has
+zero three-momentum, and momentum is only inserted at the current,
+momentum conservation implies that the three-momentum of the source
+nucleon is $(0,0,k)$.
+The operators $N^{\mathrm{src}}$ and
 $N^{\mathrm{snk}}$ are the source and sink interpolation operators
 respectively, allowing for different choices of the nucleon
 interpolating operator~\cite{Basak:2005ir,Basak:2007kj} and operator
-smearing profiles. The operator $\Gamma$ is a generic current
-insertion at position $\vec{x}^\prime\equiv
-\vec{x}_J-\vec{x}_{\text{src}}$.
+smearing profiles, and $\Gamma$ is a generic current
+insertion such as the vector current discussed above.
 
 The derivative of the three-point correlator with respect to $k^2$ follows,
 \begin{align}
 C^\prime_{\text{3pt}}(t, t^\prime)
-=& \sum_{\vec{x},\vec{x}^\prime} \frac{-x^\prime_z}{2k}\sin\left(kx^\prime_z\right) \left<N^{\mathrm{snk}}_{t,\vec{x}}\Gamma_{t^\prime,\vec{x}^\prime} \overline{N}^{\mathrm{src}}_{0,\vec{0}}\right>, 
+=& \sum_{\vec{x},\vec{x}^\prime} \frac{-z'}{2k}\sin\left(k z'\right) \left<N^{\mathrm{snk}}_{t,\vec{x}}\Gamma_{t^\prime,\vec{x}^\prime} \overline{N}^{\mathrm{src}}_{0,\vec{0}}\right>, 
 \label{eq:3ptmoment}
 \end{align}
 where in Eq.~(\ref{eq:3ptmoment}), the cosine component vanishes due to symmetry. In the limit of zero momentum, the $k^2 \rightarrow 0$ limit of the integrand is given by L'H\^opital's rule,
 \begin{align}
-\lim_{k^2 \rightarrow 0} C^\prime_{\text{3pt}}(t, t^\prime) = & \sum_{\vec{x},\vec{x}^\prime}\frac{-x^{\prime 2}_z}{2}\left<N^{\mathrm{snk}}_{t,\vec{x}}\Gamma_{t^\prime,\vec{x}^\prime} \overline{N}^{\mathrm{src}}_{0,\vec{0}}\right>.
+\lim_{k^2 \rightarrow 0} C^\prime_{\text{3pt}}(t, t^\prime) = & \sum_{\vec{x},\vec{x}^\prime}\frac{-z^{\prime 2}}{2}\left<N^{\mathrm{snk}}_{t,\vec{x}}\Gamma_{t^\prime,\vec{x}^\prime} \overline{N}^{\mathrm{src}}_{0,\vec{0}}\right>.
 \label{eq:3ptmoment0}
 \end{align}
 
@@ -331,22 +365,32 @@ While it is tempting to think of Eq.~(\ref{eq:3ptmoment0}) as having an $x^{\pri
 \subsubsection{Two-point correlation function}
 Analogously, given a two-point correlator with three-momentum $k$ in the $z$-direction,
 \begin{align}
-C_{\text{2pt}}(t) = \sum_{\vec{x}} \left< N^{\mathrm{snk}}_{t,\vec{x}}\overline{N}^{\mathrm{src}}_{0,\vec{0}}\right> e^{-ikx_z},
+C_{\text{2pt}}(t) = \sum_{\vec{x}} \left< N^{\mathrm{snk}}_{t,\vec{x}}\overline{N}^{\mathrm{src}}_{0,\vec{0}}\right> e^{-ikz},
 \label{eq:2pt}
 \end{align}
 the derivative of the two-point correlator with respect to $k^2$ follows,
 \begin{align}
 C^\prime_{\text{2pt}}(t)
 % \equiv & \frac{\partial}{\partial k^2} C_{\text{2pt}}(t),  \nonumber\\
-= & \sum_{\vec{x}}\frac{-x_z}{2k} \sin\left(kx_z\right) \left<N^{\mathrm{snk}}_{t, \vec{x}}\overline{N}^{\mathrm{src}}_{0,\vec{0}} \right>.
+= & \sum_{\vec{x}}\frac{-z}{2k} \sin\left(kz\right) \left<N^{\mathrm{snk}}_{t, \vec{x}}\overline{N}^{\mathrm{src}}_{0,\vec{0}} \right>.
 \label{eq:2ptmoment}
 \end{align}
  Analogous to the moment of the three-point correlator, the cosine contribution vanishes due to symmetry.  Consequently, in the zero-momentum limit,
 \begin{align}
-\lim_{k^2\rightarrow 0 } C^\prime_{\text{2pt}}(t) = \sum_{\vec{x}} \frac{-x_z^2}{2}\left<N^b_{t, \vec{x}}\overline{N}^b_{0,\vec{0}} \right>.
+\lim_{k^2\rightarrow 0 } C^\prime_{\text{2pt}}(t) = \sum_{\vec{x}} \frac{-z^2}{2}\left<N^{\mathrm{snk}}_{t, \vec{x}}\overline{N}^{\mathrm{src}}_{0,\vec{0}} \right>.
 \label{eq:2ptmoment0}
 \end{align}
-The construction of the moment of the two-point correlator is similar to the moment of the three-point correlator with the exception that the moment now depends on the final state position $x_z$ instead of the current insertion position $x^\prime_z$. In both cases, the spatial dependence for all momenta are even, resulting in a non-vanishing correlator under the Fourier transform, explicitly circumventing the concern raised in Ref~\cite{Wilcox:2002zt}.  Given prior computational investment in generating the propagators and sequential propagators, the generation of the moments of correlators only differ during the Fourier transform, and therefore require negligible additional computing time to construct.
+THus the construction of the moment of the two-point correlator is similar
+to the moment of the three-point correlator, with the exception
+the moment now depends on the final state position $z$ instead of
+the current insertion position $z'$. In both cases, the
+spatial dependence for all momenta are even, resulting in a
+non-vanishing correlator under the Fourier transform, explicitly
+circumventing the concern raised in Ref~\cite{Wilcox:2002zt}.  Given
+the prior computational investment in generating the propagators and
+sequential propagators, the generation of the moments of correlators
+differs only during the computation of the Fourier transform, and therefore requires
+negligible additional computing time to construct.
 
 
 \subsection{Interpretation}
@@ -432,13 +476,21 @@ The valence finite volume corrections results from 1) truncating the spatial mom
 \begin{figure*}[t]{
 		\includegraphics[width=0.49\textwidth]{figures/zcorr_3pt.pdf}
 		\includegraphics[width=0.49\textwidth]{figures/zcorr_d3pt.pdf}
-		\caption{(Left) blah blah..}
+		\caption{The left-hand plot shows the three-point
+                  correlation function as a functions of the
+                  current-insertion position $z'$, together with a
+                  three-state fits to the form of eqn.~\ref{eq:3ptz}.
+                  The lines denote the ground and first excited-state
+                  contributions propagating from $z' = 0$ and $z'=L$,
+                  respectively.  The right-hand plot shows the
+                  corresponding data for the coordinated-weighted
+                  correlation function.}
 		\label{fig:finite_volume}
 }\end{figure*}
 
 Before discussing the volume corrections, we first discuss the various contributions to the three-point correlation function in the spatial direction. In Fig.~\ref{fig:finite_volume} (Left), we plot the correlator as a function of current insertion position $z^\prime$ after projecting to zero-momentum in $x^\prime$, $y^\prime$, and $t^\prime$. We then perform a 3-state fit from $z^\prime = [4,16]$ and extract the ground state and first excited-state parameters. Note that the correlator is symmetric by construction from averaging with the parity inverted counterpart, and in conjunction, a symmetric fit function is also employed defined as the following,
 \begin{equation}
-C(z^\prime) = \sum_n A_n\left(e^{-E_n z^\prime} + e^{-E_n(L-z^\prime)}\right).
+C(z^\prime) = \sum_n A_n\left(e^{-E_n z^\prime} + e^{-E_n(L-z^\prime)}\right).\label{eq:3ptz}
 \end{equation} We observe that at $\sim 400$~MeV pion masses, the propagating scale in the spatial-direction for the three-point correlator is $\sim 820$~MeV, corresponding to the mass of the rho-meson ($m_\rho \sim 770$~MeV) {\color{red} what is the rho at 400 MeV?} with one unit of momentum ($\sim 120$~MeV) for a total energy of $\sim780$~MeV {\color{red} update if rho mass changes?}. This is consistent with expectation since the vector current yields a vector-meson propagating state, and the temporal direction has anti-periodic boundary conditions with length $T=96$. Additionally, we observe that beyond $L/2$, the correlation function is dominated by the ground state.
 
 In Fig.~\ref{fig:finite_volume} (Right), we take the results from Fig.~\ref{fig:finite_volume} (Left) and construct the zero-momentum moment correlation function. As expected, the spatial moment pushes the dominant contribution of the correlation function to larger values of $z^\prime$ (maximally around $z^\prime \sim 7$ instead of at zero). Additionally, since the spatial moment is itself not periodic and truncated at $z^\prime = L/2$, the moment correlation function deviates from Eq.~(\ref{eq:3ptmoment0}). We observe again however, that only the ground-state needs to be considered, since the first-excited state has insignificant contribution for $z^\prime \geq L/2$.
