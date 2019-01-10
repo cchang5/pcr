@@ -1,12 +1,13 @@
 import gvar as gv
 import h5py as h5
 import numpy as np
+import matplotlib.pyplot as plt
 
 def load_switches():
     s = dict()
     # PLOTTING OPTIONS
     s['plot'] = dict()
-    s['plot']['correlator'] = False # data (effective mass, Zs, etc...)
+    s['plot']['correlator'] = True # data (effective mass, Zs, etc...)
     s['plot']['stability'] = True # correlator stability after fit
     # FITTING OPTIONS
     s['fit'] = dict()
@@ -187,3 +188,95 @@ def contract_current(d):
     #for k in data.keys():
     #    print(k,np.shape(data[k]))
     return data
+
+def plot_meff(d,x=[1,15]):
+    fig = plt.figure('effective mass',figsize=(7,4.3))
+    ax = plt.axes([0.14,0.155,0.825,0.825])
+    x = np.arange(x[0],x[1]+1)
+    for k in d.keys():
+        if k.split('_')[0] == 'nucleon':
+            meff = np.log(d[k]/np.roll(d[k],-1))[x]
+            ax.errorbar(x=x,y=[i.mean for i in meff],yerr=[i.sdev for i in meff],ls='None',marker='o',capsize=3,fillstyle='none',label=k)
+    plt.title('effective mass')
+    ax.legend()
+    plt.draw()
+
+def plot_zeff(d,x=[1,15]):
+    fig = plt.figure('scaled correlator',figsize=(7,4.3))
+    ax = plt.axes([0.14,0.155,0.825,0.825])
+    x = np.arange(x[0],x[1]+1)
+    for k in d.keys():
+        if k.split('_')[0] == 'nucleon':
+            meff = np.log(d[k]/np.roll(d[k],-1))
+            scor = (d[k]*np.exp(meff*np.arange(len(d[k]))))[x]
+            ax.errorbar(x=x,y=[i.mean for i in scor],yerr=[i.sdev for i in scor],ls='None',marker='o',capsize=3,fillstyle='none',label=k)
+    plt.title('scaled correlator')
+    ax.legend()
+    plt.draw()
+
+def plot_zcor(d,x=[1,15]):
+    fig = plt.figure('z-correlator effective mass',figsize=(7,4.3))
+    ax = plt.axes([0.14,0.155,0.825,0.825])
+    x = np.arange(x[0],x[1]+1)
+    for k in d.keys():
+        if k.split('_')[0] == 'znucleon':
+            meff = np.log(d[k]/np.roll(d[k],-1))[x]
+            ax.errorbar(x=x,y=[i.mean for i in meff],yerr=[i.sdev for i in meff],ls='None',marker='o',capsize=3,fillstyle='none',label=k)
+    plt.title('z-correlator effective mass')
+    ax.legend()
+    plt.draw()
+
+def plot_gV(d):
+    fig = plt.figure('isovector vector matrix element',figsize=(7,4.3))
+    ax = plt.axes([0.14,0.155,0.825,0.825])
+    meff = dict()
+    scor = dict()
+    for k in d.keys():
+        if k.split('_')[0] == 'nucleon':
+            meff[k.split('_')[1]] = np.log(d[k]/np.roll(d[k],-1))
+            scor[k.split('_')[1]] = np.sqrt(d[k]*np.exp(meff[k.split('_')[1]]*np.arange(len(d[k]))))
+        else: pass
+    for k in d.keys():
+        if k.split('_')[0] == 'gV':
+            T = int(k.split('_')[2][1:])
+            x = np.arange(0,T+1)
+            elem = (d[k]*(np.exp(meff['q0'][3]*float(T))/(scor['q0'][T]*scor[k.split('_')[1]][3])))[x]
+            ax.errorbar(x=x,y=[i.mean for i in elem],yerr=[i.sdev for i in elem],ls='None',marker='o',capsize=3,fillstyle='none',label=k)
+        else: pass
+    plt.title('isovector vector matrix element')
+    ax.legend()
+    plt.draw()
+
+def plot_zgV(d,x=[1,15]):
+    fig = plt.figure('z-gV effective mass',figsize=(7,4.3))
+    ax = plt.axes([0.14,0.155,0.825,0.825])
+    x = np.arange(x[0],x[1]+1)
+    for k in d.keys():
+        if k.split('_')[0] == 'zgV':
+            meff = np.log(d[k]/np.roll(d[k],-1))[x]
+            ax.errorbar(x=x,y=[i.mean for i in meff],yerr=[i.sdev for i in meff],ls='None',marker='o',capsize=3,fillstyle='none',label=k)
+    plt.title('z-gV effective mass')
+    ax.legend()
+    plt.draw()
+
+def plot_dgV(d):
+    fig = plt.figure('isovector vector derivative matrix element',figsize=(7,4.3))
+    ax = plt.axes([0.14,0.155,0.825,0.825])
+    meff = dict()
+    scor = dict()
+    for k in d.keys():
+        if k.split('_')[0] == 'nucleon':
+            meff[k.split('_')[1]] = np.log(d[k]/np.roll(d[k],-1))
+            scor[k.split('_')[1]] = np.sqrt(d[k]*np.exp(meff[k.split('_')[1]]*np.arange(len(d[k]))))
+        else: pass
+    for k in d.keys():
+        if k.split('_')[0] == 'dgV':
+            T = int(k.split('_')[2][1:])
+            q = k.split('_')[1]
+            x = np.arange(0,T+1)
+            elem = (d[k]/d[k[1:]])[x] + (x/(2.*meff[q][T]))[x]
+            ax.errorbar(x=x,y=[i.mean for i in elem],yerr=[i.sdev for i in elem],ls='None',marker='o',capsize=3,fillstyle='none',label=k)
+        else: pass
+    plt.title('isovector derivative vector matrix element')
+    ax.legend()
+    plt.draw()
